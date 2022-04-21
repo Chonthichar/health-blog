@@ -34,6 +34,7 @@ import BonBloy from "../asset/bonbon-boy-thinking-about-the-question.jpg"
 import Com from "../asset/Image Container.jpg"
 import Iphone from "../asset/iphone.jpg"
 import Google from "../asset/google.jpg"
+import Spot from "../asset/spotGroup.jpg"
 
 //section 6 testimonials said
 
@@ -199,17 +200,17 @@ function VideoBg() {
     return (
         <>
             <div className='home-container'>
-                <img src={Pink} alt="backgroundpink" className='dec-3'/>
+                <div className='box-1'></div>
+                <div className='box-2'></div>
+                <div className='box-3'></div>
+                <img src={Spot} alt="spot-group" className='spot-1' />
+                 <img src={Spot} alt="spot-group" className='spot-2' />
+
+
+                {/*<img src={Pink} alt="backgroundpink" className='dec-3'/>*/}
                 <img src={Pho} alt="photo_2" className='dec-1'/>
                 <img src={Pho} alt="photo_2" className='dec-2'/>
-                <video id="background-video" class='background-video' autoPlay loop muted
-                       poster="https://assets.mixkit.co/videos/preview/mixkit-woman-typing-on-her-laptop-in-a-coffee-shop-206-large.mp4">
-                    <source
-                        src="https://assets.mixkit.co/videos/preview/mixkit-woman-typing-on-her-laptop-in-a-coffee-shop-206-large.mp4"
-                        type="video/mp4"/>
-                </video>
-
-                <h1>Looking for a beautiful Website?</h1>
+                <h1>food is delicious</h1>
                 <p>Start by building your business with us.</p>
                 <div className='home-button'>
                     <Button className='button'>
