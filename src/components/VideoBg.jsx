@@ -46,7 +46,7 @@ function VideoBg() {
     const navigate = useNavigate()
 
     return (
-        <div className='container' style={{ background: "linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91))"}}>
+        <div className='container'>
             <div className='home-container container'>
                   {/*<img src={Profile} alt="spot-group" className='profile'/>*/}
                 <img src={Spot} alt="spot-group" className='spot-1'/>
