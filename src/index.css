@@ -1329,7 +1329,7 @@ div#profile {
     }
 
     .top-box-1 {
-        margin-top: 7rem;
+        margin-top: 4rem;
         padding: 0;
         margin-left:1rem;
     }
@@ -1345,7 +1345,7 @@ div#profile {
         justify-content: center;
         text-align: center;
         left: 25%;
-        margin-top: 20rem;
+        margin-top: 15rem;
     }
 
     .box-2 {
@@ -1353,7 +1353,7 @@ div#profile {
         height: 35%;
         border-radius: 20px;
         left: 21%;
-        margin-top: 22rem;
+        margin-top: 17rem;
         /*top: 60%;*/
     }
 
@@ -1362,25 +1362,25 @@ div#profile {
         height: 35%;
         border-radius: 20px;
         left: 21%;
-        margin-top: 22rem;
+        margin-top: 17rem;
         /*top: 60%;*/
     }
 
     .spot-1 {
         left: 30%;
         width: 20%;
-        top: 35%;
+        top: 30%;
     }
 
     .spot-2 {
         left: 7%;
-        /*top: 30%;*/
+        top: 50%;
         width: 40%;
     }
 
     .home-container #profile {
         width: 70%;
-        top: 65%;
+        top: 45%;
         height: 50%;
         left: 10%;
     }
