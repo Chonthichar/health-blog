@@ -42,7 +42,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(101, 193, 140));
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));
 }
 
 .navbar-logo {
@@ -143,7 +143,7 @@ nav a::after {
 
 /*home-section 1*/
 .home-container {
-    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(101, 193, 140));
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));
     height: 800px;
     width: 100%;
     top: 0%;
@@ -297,8 +297,12 @@ div#profile {
 .background-section2 {
     width: 100%;
     height: 500px;
-    border: solid 1px white;
+    border: solid 0.1px white;
+    margin-top: 0;
+      background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));
     /*grid-template-columns: 1fr 1fr;*/
+    padding: 0;
+    margin-bottom: 2rem;
 }
 
 .background-section2 h1 {
@@ -655,7 +659,7 @@ div#profile {
     margin-top: 2rem;
     /*margin-top: 2rem;*/
     /*border: 1px green solid;*/
-    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(101, 193, 140));
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));
 }
 
 .box .head-text {
