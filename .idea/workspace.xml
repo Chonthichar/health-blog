@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6323d662-6a84-44bb-8ddf-7a8e4f61989b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/VideoBg.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoBg.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
@@ -71,6 +72,15 @@
       <workItem from="1650429377113" duration="917000" />
       <workItem from="1650438943822" duration="3156000" />
       <workItem from="1650502769403" duration="1434000" />
+      <workItem from="1650508943662" duration="4237000" />
+      <workItem from="1650532675271" duration="3537000" />
+      <workItem from="1650588894832" duration="2731000" />
+      <workItem from="1650605344458" duration="2870000" />
+      <workItem from="1650631495409" duration="4799000" />
+      <workItem from="1650642762841" duration="3039000" />
+      <workItem from="1650674941682" duration="6162000" />
+      <workItem from="1650682853244" duration="4702000" />
+      <workItem from="1650692695454" duration="8315000" />
     </task>
     <servers />
   </component>
