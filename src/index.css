@@ -327,7 +327,7 @@ div#profile {
     width: 100%;
     margin-top: 10%;
     /*padding-top: 15%;*/
-    font-family: 'Popins';
+    /*font-family: 'Popins';*/
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -356,10 +356,10 @@ div#profile {
     background: orange;
     border-radius: 100px;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     color: white;
-    font-style: normal;
+    /*font-style: normal;*/
     border: none;
 }
 
@@ -1097,7 +1097,8 @@ div#profile {
     }
 
     .background-section2 {
-        height: 720px;
+        margin-top: 2rem;
+        height: 600px;
     }
 
     .background-section2 h1 {
@@ -1107,10 +1108,12 @@ div#profile {
     }
 
     .background-section2 .content-sec2 {
-        margin-top: 8rem;
+        margin-top: 7rem;
         font-size: 18px;
         padding: 1rem;
-        font-style: normal;
+        /*font-style: normal;*/
+        font-style: unset;
+        font-weight: 100;
     }
 
     .contact {
@@ -1126,6 +1129,9 @@ div#profile {
 
     .flex-columns .row {
         flex-direction: column;
+    }
+    .flex-columns .column-2 p {
+        font-weight: 300;
     }
 
     .contacts {
@@ -1178,10 +1184,14 @@ div#profile {
         font-size: 18px;
     }
 
+    .table-text h3 {
+        font-size: 22px;
+    }
     .table-text p {
         /*border: 1px solid black;*/
         padding: 0;
         text-align: center;
+        font-size: 20px;
     }
 
     .background-section4 {
@@ -1205,6 +1215,15 @@ div#profile {
         flex-direction: column;
     }
 
+        .background-section4 .column-2 h3 {
+            font-size: 22px;
+            /*padding: 0;*/
+        }
+        .background-section4 .column-2 p {
+            font-size: 20px;
+            font-weight: 100;
+        }
+
     .background-section6 {
         height: 800px;
     }
@@ -1221,6 +1240,7 @@ div#profile {
         width: 100%;
         padding-left: 2rem;
         padding-right: 2rem;
+        font-weight: 100;
     }
 
     .background-section6 .form-control-1, .background-section6 .form-control-2, .background-section6 .form-control-3 {
