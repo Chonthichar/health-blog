@@ -14,7 +14,7 @@
 }
 
 body, html {
-    background-color: white;
+    background-color: rgb(101, 193, 140);
     margin: 0;
     padding: 0;
 
@@ -23,7 +23,7 @@ body, html {
 /*responsive navbar*/
 nav {
     width: 100%;
-    background-color: #ffebf2;
+    /*background-color: #ffebf2;*/
     position: sticky;
     position: -webkit-sticky;
     top: 0%;
@@ -42,7 +42,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(173, 216, 230));
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(101, 193, 140));
 }
 
 .navbar-logo {
@@ -143,12 +143,12 @@ nav a::after {
 
 /*home-section 1*/
 .home-container {
-    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(173, 216, 230));
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(101, 193, 140));
     height: 800px;
     width: 100%;
     top: 0%;
     margin-top: 0;
-    /*border: 1px solid black;*/
+    border: 1px solid white;
     /*top: 10%;*/
 }
 
@@ -215,7 +215,7 @@ nav a::after {
     left: 60%;
     top: 25%;
     background-color: #CDCDCD;
-    /*border: 2px solid #CDCDCD;*/
+    border: 2px solid #CDCDCD;
     background-repeat: no-repeat;
     background-size: 100%;
     opacity: 1;
@@ -296,21 +296,22 @@ div#profile {
 /*background-section 2*/
 .background-section2 {
     width: 100%;
-    height: 600px;
-    /*border: solid 1px red;*/
+    height: 500px;
+    border: solid 1px white;
     /*grid-template-columns: 1fr 1fr;*/
 }
 
 .background-section2 h1 {
     width: 30%;
     /*border: 1px solid black;*/
-    margin-top: 3%;
+    /*margin-top: 3%;*/
+    /*margin-bottom: 1rem;*/
     position: absolute;
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
-    line-height: 140%;
-    letter-spacing: -0.02em;
+    /*line-height: 140%;*/
+    /*letter-spacing: -0.02em;*/
     color: #585858;
     padding-left: 45px;
 }
@@ -319,13 +320,14 @@ div#profile {
     /*position: absolute;*/
     /*border: 1px solid black;*/
     width: 100%;
-    margin-top: 15%;
+    margin-top: 10%;
+    /*padding-top: 15%;*/
     font-family: 'Popins';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 180%;
-    letter-spacing: -0.02em;
+    /*line-height: 180%;*/
+    /*letter-spacing: -0.02em;*/
     color: #828282;
     padding: 45px;
     /*display: flex;*/
@@ -372,7 +374,7 @@ div#profile {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1rem;
-    border: 2px red solid;
+    /*border: 2px red solid;*/
 }
 
 .flex-columns .column .column-1 {
@@ -650,9 +652,10 @@ div#profile {
     width: 100%;
     height: 700px;
     padding-top: 1rem;
+    margin-top: 2rem;
     /*margin-top: 2rem;*/
     /*border: 1px green solid;*/
-    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(173, 216, 230));
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(101, 193, 140));
 }
 
 .box .head-text {
@@ -874,6 +877,7 @@ div#profile {
 .background-section6 .request-call .btn-call {
     justify-content: center;
     align-items: center;
+    margin-left: 40%;
     width: 20%;
     padding: 1rem;
     background: #FB9333;
@@ -885,10 +889,8 @@ div#profile {
     color: white;
     font-size: 22px;
     margin-top: 2rem;
-    margin-right: auto;
-    margin-left: auto;
     font-weight: 700;
-    left: 50%;
+    /*left: 50%;*/
 }
 
 /*last section main footer*/
@@ -1022,18 +1024,20 @@ div#profile {
 @media (max-width: 600px) {
 
     .home-container h1 {
-        font-size: 30px;
+        font-size: 36px;
+        padding-left: 1rem;
         margin-top: 3rem;
     }
 
     .home-container p {
-        font-size: 28px;
+        font-size: 30px;
         width: 70%;
         margin-top: 1rem;
+        padding-left: 1rem;
     }
 
     .top-box-1 {
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
 
     .home-button .button {
@@ -1109,6 +1113,9 @@ div#profile {
         height: 55px;
         margin-right: auto;
         margin-left: auto;
+        /*font-weight: 400;*/
+        font-style: normal;
+        font-family: Roboto;
     }
 
     .flex-columns .row {
@@ -1137,7 +1144,7 @@ div#profile {
     }
 
     .background-section5 {
-        height: 1550px;
+        height: 1200px;
     }
 
     .box .head-text {
@@ -1161,6 +1168,8 @@ div#profile {
 
     .process-1, .process-2, .process-3 {
         padding: 1rem;
+            font-weight: 100;
+        font-size: 18px;
     }
 
     .table-text p {
@@ -1191,7 +1200,7 @@ div#profile {
     }
 
     .background-section6 {
-        height: 900px;
+        height: 800px;
     }
 
     .background-section6 .request-call {
@@ -1223,8 +1232,7 @@ div#profile {
         height: 50px;
         padding: 0;
         margin-right: auto;
-        margin-left: auto;
-        left: 50%;
+        margin-left: 28%;
         /*padding: 1rem;*/
     }
 
@@ -1251,6 +1259,7 @@ div#profile {
         text-align: center;
         /*border: black solid 1px;*/
         justify-content: center;
+        /*margin-top:1rem;*/
     }
     .social {
         /*border: 1px solid black;*/
@@ -1259,6 +1268,18 @@ div#profile {
         padding-left: 20%;
         padding-top: 0;
         padding-bottom: 0;
+        /*font-size: 20px;*/
+    }
+    #main-footer .copy p {
+        font-size: 16px;
+    }
+    #main-footer .h5, #main-footer p {
+        font-size: 16px;
+    }
+    .background-section6 .line-1 {
+        width: 90%;
+        margin-top: 33rem;
+        left: 0;
     }
 
 }

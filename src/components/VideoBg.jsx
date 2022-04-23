@@ -46,8 +46,8 @@ function VideoBg() {
     const navigate = useNavigate()
 
     return (
-        <div className='container-xxl'>
-            <div className='home-container'>
+        <div className='container'>
+            <div className='home-container container'>
                   {/*<img src={Profile} alt="spot-group" className='profile'/>*/}
                 <img src={Spot} alt="spot-group" className='spot-1'/>
                 <img src={Spot} alt="spot-group" className='spot-2'/>

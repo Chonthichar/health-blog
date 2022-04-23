@@ -43,7 +43,7 @@ function Navbar({title}) {
 
     return (
         <>
-            <nav className='container-xxl'>
+            <nav className='container'>
                 {(toggleMenu || screenWidth > 500) && (
                     <div className='navbarItem-container text-center'>
                         <Link to='/' className='navbar-logo'>

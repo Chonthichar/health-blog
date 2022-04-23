@@ -25,7 +25,7 @@ function Footer() {
         <>
     <footer id="main-footer" className="pt-2 container">
         <div className=" footer-container container">
-            <div>
+            <div className='container'>
                 <h2 className='logos'>
                     <FaChild className='logo'/>Health Me<a href="#"></a></h2>
                 <div className="social">
@@ -33,17 +33,17 @@ function Footer() {
                         <li>
                             <a href="https://www.facebook.com/physicalandmentalhealthgrow" className="f-facebook gap" target="_blank"><i
                                 className=""
-                                aria-hidden="true"> <FaFacebook className='fa-facebook' style={{fontSize: '50px'}}/></i></a></li>
+                                aria-hidden="true"> <FaFacebook className='fa-facebook' style={{fontSize: '40px'}}/></i></a></li>
                         <li>
                             <a href="https://www.instagram.com/warunee2465/" className="i-instagram gap" target="_blank"><i
                                 className=""
-                                aria-hidden="true"><FaInstagram className='fa-instagram' style={{fontSize: '50px'}} /></i></a></li>
+                                aria-hidden="true"><FaInstagram className='fa-instagram' style={{fontSize: '40px'}} /></i></a></li>
 
                         <li>
 
                             <a href="https://www.linkedin.com/in/chonthichar-soythong-3842b31a3/" className="l-linkedin gap"
                                target="_blank"><i className=""
-                                                  aria-hidden="true"> <FaLinkedin className='fa-linkedin' style={{fontSize: '50px'}}/></i></a></li>
+                                                  aria-hidden="true"> <FaLinkedin className='fa-linkedin' style={{fontSize: '40px'}}/></i></a></li>
                     </ul>
                 </div>
             </div>
