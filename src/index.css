@@ -11,10 +11,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /*border: 1px solid red;*/
+       /*background-color: rgb(101, 193, 140);*/
 }
 
 body, html {
-    background-color: rgb(101, 193, 140);
+    /*background-color: rgb(101, 193, 140);*/
     margin: 0;
     padding: 0;
 
@@ -196,17 +198,17 @@ nav a::after {
     transform: rotate(-105deg);
 }
 
-.box-3 {
-    position: absolute;
-    width: 139.84px;
-    height: 139.83px;
-    left: 62.71%;
-    right: 28.13%;
-    top: 15%;
-    bottom: 15%;
-    /*opacity: 0.1;*/
-    transform: matrix(0.84, 0.45, -0.61, 0.87, 0, 0);
-}
+/*.box-3 {*/
+/*    position: absolute;*/
+/*    width: 139.84px;*/
+/*    height: 139.83px;*/
+/*    left: 62.71%;*/
+/*    right: 28.13%;*/
+/*    top: 15%;*/
+/*    bottom: 15%;*/
+/*    !*opacity: 0.1;*!*/
+/*    transform: matrix(0.84, 0.45, -0.61, 0.87, 0, 0);*/
+/*}*/
 
 
 #profile {
@@ -235,7 +237,7 @@ div#profile {
 
 .spot-2 {
     position: absolute;
-    top: 60%;
+    top: 85%;
     left: 50%;
 }
 
@@ -259,8 +261,8 @@ div#profile {
     margin-bottom: 0;
 }
 
-.home-container > p {
-    position: absolute;
+.home-container  p {
+    /*position: absolute;*/
     width: 100%;
     /*top: 10%;*/
     font-style: normal;
@@ -777,7 +779,7 @@ div#profile {
     text-align: center;
     float: right;
     /*border: 1px solid black;*/
-    left: 52%;
+    left: 50%;
     transform: rotate(-5.58deg);
     background-blend-mode: lighten;
     /*background-repeat: no-repeat, repeat;*/
@@ -1078,7 +1080,7 @@ div#profile {
     }
 
     .spot-1 {
-        left: 30%;
+        left: 90%;
         width: 20%;
         top: 30%;
     }
