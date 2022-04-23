@@ -211,13 +211,14 @@ nav a::after {
 
 #profile {
     position: absolute;
-    width: 15%;
-    left: 60%;
-    top: 25%;
-    background-color: #CDCDCD;
-    border: 2px solid #CDCDCD;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    width: 25%;
+    height: 70%;
+    left: 55%;
+    top: 0%;
+    /*background-color: #CDCDCD;*/
+    /*border: 2px solid #CDCDCD;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 100%;*/
     opacity: 1;
     /*height: 30%;*/
 }
@@ -299,7 +300,7 @@ div#profile {
     height: 500px;
     border: solid 0.1px white;
     margin-top: 0;
-      background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));
+      /*background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));*/
     /*grid-template-columns: 1fr 1fr;*/
     padding: 0;
     margin-bottom: 2rem;
@@ -1089,9 +1090,10 @@ div#profile {
     }
 
     .home-container #profile {
-        width: 40%;
-        top: 50%;
-        left: 31%;
+        width: 70%;
+        top: 30%;
+        height: 50%;
+        left: 10%;
     }
 
     .background-section2 {

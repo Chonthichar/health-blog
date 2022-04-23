@@ -36,7 +36,7 @@ import Iphone from "../asset/iphone.jpg"
 import Google from "../asset/google.jpg"
 import Spot from "../asset/spotGroup.jpg"
 import Line from "../asset/Group 8441.png"
-import Profile from "../asset/profile_ploy.jpg"
+import Profile from "../asset/profile_ploy-removebg-preview (2).png"
 
 //section 6 testimonials said
 
