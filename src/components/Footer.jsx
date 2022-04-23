@@ -24,7 +24,7 @@ function Footer() {
     return (
         <>
     <footer id="main-footer" className="pt-2 container">
-        <div className=" footer-container">
+        <div className=" footer-container container">
             <div>
                 <h2 className='logos'>
                     <FaChild className='logo'/>Health Me<a href="#"></a></h2>

@@ -174,7 +174,7 @@ function VideoBg() {
 
 
             {/* section 4 BMI*/}
-            <section id='bmi' className=' flex-columns background-section4'>
+            <section id='bmi' className=' flex-columns background-section4 container'>
                 <div className='row'>
                     <div className='column'>
                         <div className='column-1'>

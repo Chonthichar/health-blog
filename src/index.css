@@ -81,7 +81,7 @@ nav a:hover::after {
 }
 
 nav a::after {
-    border-bottom: solid #b6d4fe 2px;
+    /*border-bottom: solid #b6d4fe 2px;*/
     content: "";
     inline-size: 100%;
     left: 0;
@@ -148,7 +148,7 @@ nav a::after {
     width: 100%;
     top: 0%;
     margin-top: 0;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     /*top: 10%;*/
 }
 
@@ -214,16 +214,18 @@ nav a::after {
     width: 15%;
     left: 60%;
     top: 25%;
-     background-color: #CDCDCD;
-  border: 2px solid #CDCDCD;
-     background-repeat: no-repeat;
-  background-size: 100%;
+    background-color: #CDCDCD;
+    /*border: 2px solid #CDCDCD;*/
+    background-repeat: no-repeat;
+    background-size: 100%;
     opacity: 1;
     /*height: 30%;*/
 }
+
 div#profile {
- background-image: none;
+    background-image: none;
 }
+
 .spot-1 {
     position: absolute;
     top: 35%;
@@ -295,13 +297,13 @@ div#profile {
 .background-section2 {
     width: 100%;
     height: 600px;
-    border: solid 1px red;
+    /*border: solid 1px red;*/
     /*grid-template-columns: 1fr 1fr;*/
 }
 
 .background-section2 h1 {
     width: 30%;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     margin-top: 3%;
     position: absolute;
     font-style: normal;
@@ -315,7 +317,7 @@ div#profile {
 
 .background-section2 .content-sec2 {
     /*position: absolute;*/
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 100%;
     margin-top: 15%;
     font-family: 'Popins';
@@ -911,6 +913,7 @@ div#profile {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     grid-gap: 3rem;
+    width: 100%;
 }
 
 #main-footer .footer-container > *:last-child {
@@ -1076,73 +1079,86 @@ div#profile {
         /*top: 30%;*/
         width: 40%;
     }
-   .home-container #profile {
+
+    .home-container #profile {
         width: 40%;
         top: 50%;
-       left: 31%;
+        left: 31%;
     }
-   .background-section2 {
-       height: 720px;
-   }
-   .background-section2 h1 {
-       font-size: 30px;
-       width: 90%  ;
-       padding: 1rem;
-   }
-   .background-section2 .content-sec2 {
-       margin-top: 8rem;
-       font-size: 18px;
-       padding: 1rem;
-       font-style: normal;
-   }
-   .contact {
-       font-size: 18px;
-       width: 70%;
-       height: 55px;
-       margin-right: auto;
-       margin-left: auto;
-   }
-  .flex-columns .row {
-    flex-direction: column;
-}
-  .contacts {
-      padding: 1rem;
-      width: 60%;
-      height: 50px;
-  }
 
-  .video {
+    .background-section2 {
+        height: 720px;
+    }
 
-  }
-  .flex-columns h4 {
-      font-size: 24px;
-      margin-top: 2rem;
-  }
-  .flex-columns h2 {
-      font-size: 20px;
-      padding-left: 2rem;
+    .background-section2 h1 {
+        font-size: 30px;
+        width: 90%;
+        padding: 1rem;
+    }
 
-  }
+    .background-section2 .content-sec2 {
+        margin-top: 8rem;
+        font-size: 18px;
+        padding: 1rem;
+        font-style: normal;
+    }
 
-  .background-section5 {
-      height: 1550px;
-  }
+    .contact {
+        font-size: 18px;
+        width: 70%;
+        height: 55px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .flex-columns .row {
+        flex-direction: column;
+    }
+
+    .contacts {
+        padding: 1rem;
+        width: 60%;
+        height: 50px;
+    }
+
+    .video {
+
+    }
+
+    .flex-columns h4 {
+        font-size: 24px;
+        margin-top: 2rem;
+    }
+
+    .flex-columns h2 {
+        font-size: 20px;
+        padding-left: 2rem;
+
+    }
+
+    .background-section5 {
+        height: 1550px;
+    }
+
     .box .head-text {
         width: 80%;
         margin-right: auto;
         margin-left: auto;
     }
+
     .box .text-component {
         font-size: 20px;
         width: 60%;
         margin-left: auto;
         margin-right: auto;
     }
+
     .process {
         grid-template-columns: 1fr;
         margin-left: 0;
         margin-right: 1rem;
     }
+
     .process-1, .process-2, .process-3 {
         padding: 1rem;
     }
@@ -1152,31 +1168,99 @@ div#profile {
         padding: 0;
         text-align: center;
     }
-     .background-section4 .table-details th {
-         font-size: 20px;
-         text-align: left;
-     }
+
+    .background-section4 {
+        height: 1500px;
+    }
+
+    .background-section4 .table-details th {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .background-section4 .table-details td {
+        font-size: 18px;
+    }
+
+    .background-section4 .flex-columns .row {
+        flex-direction: column;
+    }
+
+    .background-section4 .flex-columns .row {
+        flex-direction: column;
+    }
+
+    .background-section6 {
+        height: 900px;
+    }
+
+    .background-section6 .request-call {
+        width: 100%;
+    }
+
+    .background-section6 h3 {
+        font-size: 30px;
+    }
+
+    .background-section6 p {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .background-section6 .form-control-1, .background-section6 .form-control-2, .background-section6 .form-control-3 {
+        width: 85%;
+        text-align: center;
+        /*padding: 2rem;*/
+        margin: 2rem;
+        /*padding: 0;*/
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .background-section6 .request-call .btn-call {
+        width: 50%;
+        height: 50px;
+        padding: 0;
+        margin-right: auto;
+        margin-left: auto;
+        left: 50%;
+        /*padding: 1rem;*/
+    }
+
+    #main-footer .footer-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+
+    #main-footer .footer-container > *:last-child {
+        grid-column: 1 / span 1;
+    }
+
+    #main-footer .btn-secondary {
+        font-size: 1rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        padding-top: 1rem;
+        /*padding-top: 0.5rem;*/
+        /*padding: ;*/
+    }
+
+    #main-footer .logo, #main-footer .logos {
+        text-align: center;
+        /*border: black solid 1px;*/
+        justify-content: center;
+    }
+    .social {
+        /*border: 1px solid black;*/
+        justify-content: center;
+        text-align: center;
+        padding-left: 20%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
