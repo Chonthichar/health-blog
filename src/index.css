@@ -1307,7 +1307,101 @@ div#profile {
         margin-top: 33rem;
         left: 0;
     }
+}
+
+/*iphone se*/
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+     .home-container h1 {
+        font-size: 36px;
+        padding-left: 1rem;
+        margin-top: 3rem;
+    }
+
+    .home-container p {
+        font-size: 30px;
+        width: 70%;
+        margin-top: 1rem;
+        padding-left: 1rem;
+    }
+
+    .top-box-1 {
+        margin-top: 7rem;
+        padding: 0;
+        margin-left:1rem;
+    }
+
+    .home-button .button {
+        font-size: 20px;
+        padding: 0;
+        height: 50px;
+        /*top: %;*/
+        /*margin: 0;*/
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        text-align: center;
+        left: 25%;
+        margin-top: 20rem;
+    }
+
+    .box-2 {
+        width: 60%;
+        height: 35%;
+        border-radius: 20px;
+        left: 21%;
+        margin-top: 22rem;
+        /*top: 60%;*/
+    }
+
+    .box-1 {
+        width: 60%;
+        height: 35%;
+        border-radius: 20px;
+        left: 21%;
+        margin-top: 22rem;
+        /*top: 60%;*/
+    }
+
+    .spot-1 {
+        left: 30%;
+        width: 20%;
+        top: 35%;
+    }
+
+    .spot-2 {
+        left: 7%;
+        /*top: 30%;*/
+        width: 40%;
+    }
+
+    .home-container #profile {
+        width: 70%;
+        top: 65%;
+        height: 50%;
+        left: 10%;
+    }
+    .background-section5 {
+        height: 1350px;
+    }
+    .background-section6 .form-control-1, .background-section6 .form-control-2, .background-section6 .form-control-3 {
+        width: 80%;
+        padding-right: 2rem;
+        font-size: 10px;
+    }
+}
+
+/* Portrait  galaxy s4, s5, note 3*/
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: portrait) {
 
 }
+
 
 
