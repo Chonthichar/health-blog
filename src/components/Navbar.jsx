@@ -4,6 +4,7 @@ import {Button, Container, Nav, NavDropdown} from "react-bootstrap";
 import PropTypes from 'prop-types'
 import {Link} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {FaChild} from "react-icons/fa";
 import {FaDropbox} from "react-icons/fa";
 import {FaPeopleCarry} from "react-icons/fa";
 
@@ -47,8 +48,7 @@ function Navbar({title}) {
                 {(toggleMenu || screenWidth > 500) && (
                     <div className='navbarItem-container text-center'>
                         <Link to='/' className='navbar-logo'>
-                            <p className='navbar-text'>Health Me</p><img
-                            src="https://img.icons8.com/plumpy/36/000000/natural-food.png"/>
+                            <p className='navbar-text'>Health Me</p> <FaChild/>
                         </Link>
 
                         <ul className='list'>
@@ -97,7 +97,7 @@ function Navbar({title}) {
                                 className='itemsNav'>
                                 <a className='profiles' onClick={() => navigate('/profile')} style={{
                                     backgroundColor: '#FB9333',
-                                    margin: '24px',
+                                    margin: '0px',
                                     borderRadius: '100px',
                                     color: 'white',
                                     height: '54px',
@@ -105,7 +105,8 @@ function Navbar({title}) {
                                     // padding: '24px 32px',
                                     justifyContent:'center',
                                     alignItems: 'center',
-                                    paddingTop: '10px'
+                                    paddingTop: '10px',
+                                    marginLeft: '0'
                                 }}>
                                     {/*<img src="https://img.icons8.com/color/48/000000/add-user-female.png"/>*/}
                                     {/*         <img src="https://img.icons8.com/small/64/000000/user-location.png"/>*/}
