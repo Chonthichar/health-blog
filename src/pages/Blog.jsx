@@ -2,83 +2,67 @@ import {Link} from 'react-router-dom'
 import travelImage from '../asset/travel_1.jpg'
 import travelImage_1 from '../asset/travel_2.jpg'
 import Slider from "../components/Slider";
+//photo
+import Food1 from "../asset/blog-fodd1.jpg"
+import Food2 from "../asset/blog-food2.jpg"
+import Food3 from "../asset/blpg-food3.jpg"
+import Food4 from "../asset/blog-food4.jpg"
+import Food5 from "../asset/blog-food5.jpg"
+import Inspi from "../asset/blog-inspiration.JPG"
+import Diet from "../asset/blog-food.jpg"
+import Heading1 from "../asset/blog-heading.jpg"
+import Heading2 from "../asset/blog-head2.jpg"
+import Heading3 from "../asset/blog-heading3.jpg"
 
 function Blog() {
 
     return (
-        <div className='explore'>
-            <header>
-                <p className='pageHeader'>Explore</p>
+        <div className='explore container'>
+            <header className='back-ground'>
+                <p className='pageHeader'>"About Blogs" <br/>Life Recipe</p>
+                <button className='exploreHeading'>View Blogs</button>
+                <img src={Heading1} alt="sale" className='photo-grid'/>
+                 <img src={Heading3} alt="sale" className='photo-grid-1'/>
+                 <img src={Heading2} alt="sale" className='photo-grid-2'/>
+
             </header>
             <main>
-               <Slider/>
+                <Slider/>
 
-                <p className='exploreCategoryHeading'>Categories
-                    <div className='exploreCategoRies'>
-                        <Link to='/category/rent'>
-                            <img src={travelImage}
+                <p className='exploreCategoryHeading'>Categories</p>
+                    <div className='gridBlogs'>
+                        <Link to='/category/rent'  style={{textDecoration: 'none'}}>
+                            <img src={Inspi}
                                  alt="rent"
                                  className='exploreCategories'/>
-                            <p>places for sale</p>
+                            <p>Inspiration & Mental Health and Sport</p>
                         </Link>
-                           <Link to='/category/sale'>
-                            <img src={travelImage_1}
+                        <Link to='/category/sale'  style={{textDecoration: 'none'}}>
+                            <img src={Diet}
                                  alt="sale"
                                  className='exploreCategories'/>
-                               <p>Places for rent</p>
+                            <p style={{textDecoration:'none'}}>Food and Diet</p>
                         </Link>
-                    </div></p>
+                    </div>
             </main>
+
+            <div className='photo-last-grid'>
+                {/*<p>call</p>*/}
+                <div className='circle-image'>
+                    <span><img src={Food1} alt="sale" className='last-grid-1'/>Food Diet</span>
+                    <span><img src={Food2} alt="sale" className='last-grid-2'/>Daily Meals</span>
+                    <span><img src={Food3} alt="sale" className='last-grid-3'/>Diet Drink</span>
+                    <span><img src={Food4} alt="sale" className='last-grid-4'/>Desert Coke</span>
+                    <span><img src={Food5} alt="sale" className='last-grid-5'/>Coconut Milk</span>
+                </div>
+                <div className='grid-sub'>
+                    <p>Subscribe</p>
+                    <input type="text" placeholder='subscribe'/>
+                    <button className='sub-button'>scbscribe</button>
+                </div>
+            </div>
         </div>
     )
-
-
-    // return (
-    //     <>
-    //         <div className='services container mx-auto'>
-    //             <section id='work-a' className='text-center py-3'>
-    //                 <h2 className='section-title'>Public your Passion on Your way</h2>
-    //                 <div className='bottom-line'></div>
-    //                 <p className='lead'>
-    //                     Create your own passion and photo here
-    //                 </p>
-    //
-    //                 <div className='items'>
-    //                     <Link to='/category/coding'>
-    //                         <div className='item'>
-    //                             <div className='item-image item'>
-    //                                 <img src={travelImage} alt="" className='item-image item'/>
-    //                             </div>
-    //                             <div className='item-text'>
-    //                                 <div className='item-text-wrap'>
-    //                                     <p className='item-text-category'>Grow</p>
-    //                                     <h2 className='item-text-title'>Grow wit confidence</h2>
-    //                                 </div>
-    //                             </div>
-    //                         </div>
-    //                     </Link>
-    //
-    //                     <Link to='/category/Travel'>
-    //                         <div className='item'>
-    //                             <div className='item-image'>
-    //                                 <img src={travelImage_1} alt=""/>
-    //                             </div>
-    //                             <div className='item-text'>
-    //                                 <div className='item-text-wrap'>
-    //                                     <p className='item-text-category'>Grow</p>
-    //                                     <h2 className='item-text-title'>Grow wit confidence</h2>
-    //                                 </div>
-    //                             </div>
-    //                         </div>
-    //                     </Link>
-    //
-    //
-    //                 </div>
-    //             </section>
-    //
-    //         </div>
-    //     </>
-    // )
 }
 
 export default Blog

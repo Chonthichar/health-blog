@@ -8,6 +8,7 @@ import {FaArrowRight} from "react-icons/fa";
 import {setDoc, doc, serverTimestamp} from 'firebase/firestore'
 import {toast} from "react-toastify";
 import OAuth from "../components/OAuth";
+import {node} from "prop-types";
 
 function SignUp() {
     const [showPassword, setShowPassword] = useState(false);
@@ -55,29 +56,28 @@ function SignUp() {
 
     return (
         <>
-            <div className=' flex flex-col items-center justify-center'>
+            <div className=' flex flex-col items-center justify-center container box-signUp'>
                 <header>
-                    <p className='pageHeader text-3xl antialiased hover:subpixel-antialiased antialiased hover:subpixel-antialiased
-                    text-dark-300'>Welcome
-                        Back To Your Account !</p>
+                    <h1 className='create-account'>Welcome
+                        Back!</h1>
                 </header>
-                <form onSubmit={onSubmit} className="bg-white shadow-md rounded px-8 pb-8 mb-20 mt-0 min-vh-10">
+                <form onSubmit={onSubmit} className="bg-white shadow-md rounded px-8 pb-8 mb-2 mt-0 min-vh-10 consts">
 
-                    <div className='mb-4 cursor-pointer'>
-                        <label className='block text-gray-700 text-sm font-bold mb-2' for='username'>
+                    <div className=' cursor-pointer box-signIn-email'>
+                        <label className=' cursor-pointer  block labelUsername' for='username'>
                             Name
                         </label>
                         <FaUser style={{
                             color: "green",
                             position: "absolute",
-                            height: '50px',
+                            height: '25px',
                             textAlign: 'center',
-                            minWidth: '50px',
-                            padding: '10px',
-                            marginBottom: '10px'
+                            // minWidth: '30px',
+                            marginTop: '2rem',
+                            marginLeft: '2rem'
                         }}/>
                         <input
-                            className=' nameInput shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight
+                            className='bg-white emailInput shadow appearance-none  rounded w-full py-3 px-3 m-3 text-gray-700 leading-tight
                             focus:outline-none focus:shadow-outline text-center'
                             id='name'
                             value={name}
@@ -89,20 +89,20 @@ function SignUp() {
                     </div>
 
                     <div className='mb-4 cursor-pointer'>
-                        <label className='block text-gray-700 text-sm font-bold mb-2' for='username'>
+                        <label className='cursor-pointer  block labelUsername' for='username'>
                             username
                         </label>
                         <FaUser style={{
                             color: "green",
                             position: "absolute",
-                            height: '50px',
+                            height: '25px',
                             textAlign: 'center',
-                            minWidth: '50px',
-                            padding: '10px',
-                            marginBottom: '10px'
+                            // minWidth: '30px',
+                            marginTop: '2rem',
+                            marginLeft: '2rem'
                         }}/>
                         <input
-                            className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight
+                            className='bg-white emailInput shadow appearance-none  rounded w-full py-3 px-3 m-3 text-gray-700 leading-tight
                             focus:outline-none focus:shadow-outline text-center'
                             id='email'
                             value={email}
@@ -114,25 +114,47 @@ function SignUp() {
                     </div>
 
                     <div className='mb-6'>
-                        <label className='block text-gray-700 text-sm font-bold mb-2' for='password'>
+                        <label className='cursor-pointer  block labelUsername' for='password'>
                             Password
                         </label>
-                        <FaEye
+                        {/*<FaEye*/}
+                        {/*    alt='show password'*/}
+                        {/*    className=' bg-white emailInput showPassword cursor-pointer'*/}
+                        {/*    onClick={() => setShowPassword((prevState) => !prevState)}*/}
+                        {/*    style={{*/}
+                        {/*        color: "green",*/}
+                        {/*        position: "absolute",*/}
+                        {/*        height: '25px',*/}
+                        {/*        textAlign: 'center',*/}
+                        {/*        // minWidth: '30px',*/}
+                        {/*        marginTop: '2rem',*/}
+                        {/*        marginLeft: '2rem'*/}
+                        {/*    }}*/}
+                        {/*/>*/}
+                        {/*<input className='bg-white emailInput shadow appearance-none  rounded w-full py-3 px-3 m-3 text-gray-700 leading-tight*/}
+                        {/*    focus:outline-none focus:shadow-outline text-center'*/}
+                        {/*       id='password'*/}
+                        {/*       value={password}*/}
+                        {/*       onChange={onChange}*/}
+                        {/*       type={showPassword ? 'text' : 'password'}*/}
+                        {/*       placeholder='*************'*/}
+                        {/*/>*/}
+                                 <FaEye
                             alt='show password'
                             className='showPassword cursor-pointer'
                             onClick={() => setShowPassword((prevState) => !prevState)}
                             style={{
                                 color: "green",
                                 position: "absolute",
-                                float: 'right',
-                                height: '50px',
-                                minWidth: '50px',
-                                padding: '10px',
-                                marginBottom: '10px',
+                                height: '25px',
+                                textAlign: 'center',
+                                minWidth: '30px',
+                                marginTop: '1.9rem',
+                                marginLeft: '2rem'
                             }}
                         />
-                        <input className='shadow appearance-none border-red-500 rounded w-full py-2 px-3 text-gray-700 leading-tight
-                        focus:outline-none focus:shadow-outline text-center'
+                        <input className='bg-white emailInput shadow appearance-none  rounded w-full py-3 px-3 m-3 text-gray-700 leading-tight
+                            focus:outline-none focus:shadow-outline text-center'
                                id='password'
                                value={password}
                                onChange={onChange}
@@ -141,33 +163,38 @@ function SignUp() {
                         />
 
                         <Link to='/forgot-password'
-                              className='forgotPasswordLink mt-2 d-inline-block align-baseline font-bold text-xs text-green-500 hover:text-blue-800'>
+                              className='forgotPasswordLink mt-2 d-inline-block align-baseline font-bold text-xs text-green-500 hover:text-blue-800'
+                              style={{textDecoration: 'none'}}>
                             Forgot Password
                         </Link>
                     </div>
 
                     <div class='singUpBar md:flex md:items-center"'>
-                        <p className='sinUpText md:w-2/3'>Sign Up</p>
+                        <p className='singInText'>Sign Up</p>
                         <button
-                            className='bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded'>
-                            <FaArrowRight style={{color: 'white', width: '300%'}}/>
+                            className=' buttonSignIn'>
+                            <FaArrowRight style={{
+                                color: 'white',
+                                width: '170px',
+                                height: '50px',
+                                backgroundImage: 'linear-gradient(to right, rgb(255, 255, 255), rgb(46, 204, 113))',
+                                padding: '10px',
+                                borderRadius: '20px'
+                            }}/>
                         </button>
                     </div>
 
                     <div className='signInBar flex align-items-center justify-content-center'>
-                        <span>Already have an account?</span>
-                        <Link to='/sign-in'
+                        {/*<span>Already have an account?</span>*/}
+                        <Link to='/sign-in' style={{textDecoration: 'none'}}
                               className='registerLink forgotPasswordLink mt-2 d-inline-block align-baseline font-bold text-xs text-green-500 hover:text-blue-800'>
                             Sign In Instead
                         </Link>
                     </div>
 
-
+                    {/* Google OAuth*/}
+                    <OAuth/>
                 </form>
-                {/* Google OAuth*/}
-
-                <OAuth/>
-
             </div>
         </>
     )

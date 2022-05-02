@@ -41,95 +41,104 @@ function SignIn() {
         }
     }
 
-return (
-    <>
-        <div className=' flex flex-col items-center justify-center'>
-            <form onSubmit={onSubmit}
-                  className="bg-white shadow-md rounded px-8 pb-8 mb-20 mt-0 min-vh-10">
-                <div className='mb-4 cursor-pointer'>
-                    <label className='block text-gray-700 text-sm font-bold mb-2' for='username'>
-                        username
-                    </label>
-                    <FaUser style={{
-                        color: "green",
-                        position: "absolute",
-                        height: '50px',
-                        textAlign: 'center',
-                        minWidth: '50px',
-                        padding: '10px',
-                        marginBottom: '10px'
-                    }}/>
-                    <input
-                        className='emailInput shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight
-                            focus:outline-none focus:shadow-outline text-center'
-                        id='email'
-                        value={email}
-                        type='email'
-                        placeholder='Email'
-                        onChange={onChange}
+    return (
+        <>
+            <div className=' flex flex-col items-center justify-center container box-signIn'>
+                <h1 className='create-account'>Sign In to get start!</h1>
+                <form onSubmit={onSubmit}
+                      className="const shadow-md rounded px-8 pb-8 mb-20 mt-0 min-vh-10">
 
-                    />
-                </div>
-
-                <div className='mb-6 passwordInputDiv'>
-                    <label className='block text-gray-700 text-sm font-bold mb-2' for='password'>
-                        Password
-                    </label>
-                    <FaEye
-                        alt='show password'
-                        className='showPassword cursor-pointer'
-                        onClick={() => setShowPassword((prevState) => !prevState)}
-                        style={{
+                    <div className='mb-4 cursor-pointer box-signIn-email'>
+                        <label className='block labelUsername' for='username'>
+                            username
+                        </label>
+                        <FaUser style={{
                             color: "green",
                             position: "absolute",
-                            float: 'right',
-                            height: '50px',
-                            minWidth: '50px',
-                            padding: '10px',
-                            marginBottom: '10px',
-                        }}
-                    />
-                    <input className='passwordInput shadow appearance-none border-red-500 rounded w-full py-2 px-3 text-gray-700 leading-tight
-                        focus:outline-none focus:shadow-outline text-center'
-                           id='password'
-                           value={password}
-                           onChange={onChange}
-                           type={showPassword ? 'text' : 'password'}
-                           placeholder='*************'
-                    />
+                            height: '25px',
+                            textAlign: 'center',
+                            minWidth: '30px',
+                            marginTop: '1.9rem',
+                            marginLeft: '2rem'
+                        }}/>
+                        <input
+                            className='bg-white emailInput shadow appearance-none  rounded w-full py-3 px-3 m-3 text-gray-700 leading-tight
+                            focus:outline-none focus:shadow-outline text-center'
+                            id='email'
+                            value={email}
+                            type='email'
+                            placeholder='Email'
+                            onChange={onChange}
 
-                    <Link to='/forgot-password'
-                          className='forgotPasswordLink mt-2 d-inline-block align-baseline font-bold text-xs text-green-500 hover:text-blue-800'>
-                        Forgot Password
-                    </Link>
-                </div>
+                        />
+                    </div>
+
+                    <div className='mb-6 passwordInputDiv'>
+                        <label className='block text-gray-700 text-sm font-bold mb-2 labelPassword' for='password'>
+                            Password
+                        </label>
+                        <FaEye
+                            alt='show password'
+                            className='showPassword cursor-pointer'
+                            onClick={() => setShowPassword((prevState) => !prevState)}
+                            style={{
+                                color: "green",
+                                position: "absolute",
+                                height: '25px',
+                                textAlign: 'center',
+                                minWidth: '30px',
+                                marginTop: '1.9rem',
+                                marginLeft: '2rem'
+                            }}
+                        />
+                        <input className='bg-white emailInput shadow appearance-none  rounded w-full py-3 px-3 m-3 text-gray-700 leading-tight
+                            focus:outline-none focus:shadow-outline text-center'
+                               id='password'
+                               value={password}
+                               onChange={onChange}
+                               type={showPassword ? 'text' : 'password'}
+                               placeholder='*************'
+                        />
+
+                        <div className='forgotPasswordLink'>
+                            <Link to='/forgot-password' style={{textDecoration: 'none'}}>
+                                Forgot Password ?
+                            </Link>
+                        </div>
+                    </div>
 
 
-                <div class='md:flex md:items-center"'>
-                    <p className='sinInText md:w-2/3'>Sign In</p>
-                    <button
-                        className='bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded'>
-                        <FaArrowRight style={{color: 'white', width: '300%'}}/>
-                    </button>
-                </div>
+                    <div class='md:flex md:items-center signInDivBox'>
+                        <p className='singInText'>Sign In</p>
+                        <button
+                            className=' buttonSignIn'>
+                            <FaArrowRight style={{
+                                color: 'white',
+                                width: '170px',
+                                height: '50px',
+                                backgroundImage: 'linear-gradient(to right, rgb(255, 255, 255), rgb(46, 204, 113))',
+                                padding: '10px',
+                                borderRadius: '20px'
+                            }}/>
+                        </button>
+                    </div>
 
 
-                <div className='signInBar flex align-items-center justify-content-center'>
-                    <span>Don't have an Account yet?</span> <br/>
-                    <Link to='/sign-up'
-                          className='registerLink forgotPasswordLink mt-2 d-inline-block align-baseline font-bold text-xs text-green-500 hover:text-blue-800'>
-                        Sign Up Instead
-                    </Link>
-                </div>
-            </form>
-
-
-            {/* Google OAuth*/}
-            <OAuth/>
-
-        </div>
-    </>
-)
+                    <div className='signUpBar'>
+                        {/*<h6>Don't have an Account yet?</h6>*/}
+                        {/*<p> Sign up and discover great amount of new opportunities!</p>*/}
+                        <div className='registerLink'>
+                            <Link to='/sign-up' style={{textDecoration: 'none'}}>
+                                Sign Up Instead
+                            </Link>
+                        </div>
+                    </div>
+                      {/* Google OAuth*/}
+                <OAuth/>
+                </form>
+            </div>
+        </>
+    )
 }
 
 export default SignIn

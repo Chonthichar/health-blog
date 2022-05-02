@@ -37,9 +37,10 @@ import Google from "../asset/google.jpg"
 import Spot from "../asset/spotGroup.jpg"
 import Line from "../asset/Group 8441.png"
 import Profile from "../asset/profile_ploy-removebg-preview (2).png"
+import Video from "../asset/video-2.mp4"
+import {Player} from 'video-react'
 
 //section 6 testimonials said
-
 
 
 function VideoBg() {
@@ -48,14 +49,14 @@ function VideoBg() {
     return (
         <div className='container'>
             <div className='home-container container'>
-                  {/*<img src={Profile} alt="spot-group" className='profile'/>*/}
+                {/*<img src={Profile} alt="spot-group" className='profile'/>*/}
                 <img src={Spot} alt="spot-group" className='spot-1'/>
                 <img src={Spot} alt="spot-group" className='spot-2'/>
 
                 <div className='box-1'></div>
                 <div className='box-2'></div>
                 <div className='box-3'></div>
-                  <img src={Profile} alt="spot-group" className='profile' id='profile'/>
+                <img src={Profile} alt="spot-group" className='profile' id='profile'/>
 
 
                 {/*<img src={Pink} alt="backgroundpink" className='dec-3'/>*/}
@@ -104,8 +105,12 @@ function VideoBg() {
                 <div className='row'>
                     <div className='column'>
                         <div className='column-1'>
-                            <video width='100%' height='800px' controls='controls' className='video'>
-                                <source src='../asset/video.mp4'/>
+                            {/*<Player>*/}
+                            {/*    <source src={Video} width="600" height="300" controls='controls' className='video' autoPlay loop muted />*/}
+                            {/*</Player>*/}
+                            {/*<Video/>*/}
+                            <video controls='controls' className='video' autoPlay loop muted>
+                               <source src={Video} width="600" height="200" controls='controls' className='video' autoPlay loop muted />
                             </video>
                         </div>
                     </div>
@@ -246,7 +251,7 @@ function VideoBg() {
 
             <section className='background-section6' id='contact-customer'>
                 <div className='request-call'>
-                      <img src={Line} alt="spot-group" className='line-1'/>
+                    <img src={Line} alt="spot-group" className='line-1'/>
                     <h5>Our subscribe</h5>
                     <h3>Tell us about your job</h3>
                     <p>We recommended you to subscribe to our promo program,
@@ -276,8 +281,6 @@ function VideoBg() {
 
 
             {/*testimonials section6*/}
-
-
 
 
         </div>
