@@ -28,29 +28,28 @@ function ForgotPassword() {
 
     return (
         <>
-            <div className='pageContainer'>
-                <header>
-                    <p className='pageHeader'>Forgot Password</p>
-                </header>
+            <div className='pageContainer container'>
 
                 <main>
                     <form onSubmit={onSubmit}>
-                        <input type="email" className='emailInput'
+                           <header>
+                    <p className='pageHeader'>Forgot Password</p>
+                </header>
+                        <input type="email" className='emailInput-forgot'
                                placeholder='Email'
                                id='email'
                                value={email}
                                onChange={onChange}/>
-
-                        <Link className='forgotPasswordLink' to='/sign-in'>Sign In</Link>
-                        <div className='signInbar'>
-                            <div className='signInText'>Send Reset Link</div>
+                        <div className='forgotPasswordLink-forgotPage'>
+                        <Link to='/sign-in' style={{textDecoration: 'none'}}>Sign In..</Link>
+                        </div>
+                        <div className='signInbar-Button'>
                             <button className='signInButton'>
-                                <FaArrowRight fill='#ffffff' width='34px' height='34px'/>
+                                Send Reset Link
                             </button>
                         </div>
                     </form>
                 </main>
-
             </div>
         </>
     )

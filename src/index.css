@@ -2350,7 +2350,7 @@ and (orientation: landscape) {
     color: white;
     /*background: darkseagreen;*/
     background: rgb(46, 204, 113);
-    width:39%;
+    width: 39%;
     font-weight: 800;
     margin-right: auto;
     margin-left: auto;
@@ -2530,24 +2530,209 @@ and (orientation: landscape) {
 .signUpBar p {
 
 }
+
 .socialLogin {
     /*border: 1px solid black;*/
     text-align: center;
 }
+
 .socialIconImg {
     color: white;
     font-size: 60px;
     padding: 12px;
     background: cornflowerblue;
-    border-radius: 100% ;
-
+    border-radius: 100%;
 }
 
 
-/*sign Up*/
+/*forgot password*/
+.pageContainer {
+    margin-top: 5rem;
+    /*border: 1px solid green;*/
+    /*background: ;*/
+    background: url("./asset/pi.jpg") no-repeat bottom;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
 
+.pageHeader {
+    margin-top: 2rem;
+    padding: 2rem;
+    font-size: 50px;
+    /*border: 2px solid red;*/
+    color: cornflowerblue;
+}
 
+.emailInput-forgot {
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    /*position: absolute;*/
+    display: grid;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.forgotPasswordLink-forgotPage {
+    /*text-align: right;*/
+    /*border: 1px solid white;*/
+    text-align: center;
+    background-color: white;
+    /*justify-content: right;*/
+    width: 14%;
+    border-radius: 5px;
+    font-size: 22px;
+    color: white;
+    font-weight: 700;
+    /*padding-right: 2rem;*/
+    margin-top: 2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.signInbar-Button {
+    /*border: 1px solid black;*/
+    text-align: center;
+    /*display: inline-block;*/
+    width: 20%;
+    /*position: absolute;*/
+    margin-right: auto;
+    margin-left: auto;
+    /*padding: 2rem;*/
 
+}
 
+.signInButton {
+    background: cornflowerblue;
+    padding: 1rem;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: cornflowerblue;
+}
+
+/*mu profile*/
+.box-profile {
+    background: white;
+    /*margin-top: 21rem;*/
+    width: 50%;
+    height: 1050px;
+    margin-right: auto;
+    margin-left: auto;
+    /*color: black;*/
+}
+
+.myProfile {
+    padding-top: 6rem;
+    /*border: 1px solid red;*/
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.logOut-profile {
+    background: forestgreen;
+    color: white;
+    font-weight: 600;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    /*border: 1px solid black;*/
+}
+
+.logOut-profile:hover {
+    background: mediumseagreen;
+}
+
+.profileDetailHeader {
+    /*border: 1px solid black;*/
+    margin-top: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background-color: whitesmoke;
+}
+
+.personalDetail-profile {
+    /*border: 1px solid black;*/
+    padding-top: 1rem;
+    /*margin-top: 6rem;*/
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.changePersonalDetails {
+    background: forestgreen;
+    color: white;
+    font-weight: 600;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    /*border: 1px solid black;*/
+}
+
+.changePersonalDetails:hover {
+    background: mediumseagreen;
+}
+
+.profileCard {
+    /*border: 1px solid red;*/
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.shadow {
+    margin-bottom: 0.5rem;
+}
+
+.FaHome-profile {
+    color: mediumseagreen;
+    font-size: 40px;
+    padding-left: 5px;
+}
+
+.createListing-profile {
+    display: flex;
+    /*border: 1px solid black;*/
+    /*text-align: center;*/
+    justify-content: center;
+    /*padding: 10px;*/
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+}
+
+.listingsList {
+    color: black;
+    font-size: 30px;
+}
+.checkoutBlogs-Profile {
+    margin-top: 2rem;
+    background: orange;
+    color: white;
+    font-weight: 600;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    padding-bottom: 0;
+    padding-top: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    /*border: 1px solid black;*/
+}
