@@ -108,7 +108,8 @@ function VideoBg() {
                             {/*</Player>*/}
                             {/*<Video/>*/}
                             <video controls='controls' className='video' autoPlay loop muted>
-                               <source src={Video} width="600" height="200" controls='controls' className='video' autoPlay loop muted />
+                                <source src={Video} width="600" height="200" controls='controls' className='video'
+                                        autoPlay loop muted/>
                             </video>
                         </div>
                     </div>
@@ -150,26 +151,27 @@ function VideoBg() {
                             <div className='box-5'></div>
                             <FaPeopleCarry className='process-icon'/>
 
-                            <h3>Web Design</h3>
-                            <p>Help your website stand out with beautiful website design With focus on small components,
-                                layout,
-                                graphics, colors, fonts, structure, content, fit for your business,
-                                ecommerce, online portfolios, and more..</p>
+                            <h3>How to?</h3>
+                            <p>How to?
+                                Exercise and Depression
+                                Exercise is powerful depression fighter. Press me.</p>
                         </div>
 
                         <div className='process-2'>
                             <FaComment className='process-icon'/>
-                            <h3>Restyling Your site</h3>
-                            <p>We offer the good deal for restyling your site, Landing Page and E-commerce to customize
-                                the content up to date. Implement your website in reusable way.</p>
+                            <h3>How To?</h3>
+                            <p>Exercise and anxiety
+                                Exercise is very effective on anti anxiety-treatment. It relieves tension and
+                                stress.</p>
                         </div>
 
 
                         <div className='process-3'>
                             <FaHeart className='process-icon'/>
-                            <h3>Modern styling UI and UX style</h3>
-                            <p>Take advantage of the latest modern technologies to build amazing web experiences for
-                                your clients, included design, web publishing, wen maintenance.</p>
+                            <h3>How To?</h3>
+                            <p>Higher Self Esteem
+                                Daily work out is investment on yourself. Once it becomes your habit, it can foster your
+                                sense of self-worth.</p>
                         </div>
                     </div>
                 </div>
