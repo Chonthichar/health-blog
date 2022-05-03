@@ -2720,6 +2720,7 @@ and (orientation: landscape) {
     color: black;
     font-size: 30px;
 }
+
 .checkoutBlogs-Profile {
     margin-top: 2rem;
     background: orange;
@@ -2736,3 +2737,207 @@ and (orientation: landscape) {
     justify-content: center;
     /*border: 1px solid black;*/
 }
+
+.pageHeader-createListing {
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/*creatingListing*/
+/*.formLabel {*/
+/*    background: whitesmoke;*/
+/*}*/
+.boxSize-CreateListing {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pageHeader-createListing {
+    padding-top: 10px;
+    color: white;
+    font-size: 50px;
+    background: mediumseagreen;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.createListing-page {
+    background: whitesmoke;
+}
+
+.formLabel {
+
+}
+
+.profile-createListing {
+}
+
+.boxSize-CreateListing {
+    background: rgb(211, 228, 205);
+    padding: 2rem;
+}
+
+.topic-blogs {
+    /*background: white;*/
+    /*text-align: center;*/
+}
+
+.formLabel {
+    /*background: white;*/
+    font-size: 24px;
+    color: dimgray;
+    /*font-weight: 500;*/
+}
+
+.formButtons {
+    background: white;
+}
+
+.inspiration-blog {
+    height: 100px;
+    /*margin: 20px;*/
+    text-align: center;
+    color: dimgray;
+    font-size: 22px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    padding: 10px;
+}
+
+.diet-blog {
+    height: 100px;
+    text-align: center;
+    color: dimgray;
+    font-size: 22px;
+}
+
+.formLabel-name, .formLabel {
+    margin-top: 1rem;
+    display: flex;
+    color: dimgray;
+    font-size: 24px;
+}
+
+.formInputName-Essay {
+    height: 500px;
+    width: 100%;
+    /*margin-top: 2rem;*/
+    display: flex;
+    /*text-align: center;*/
+    padding: 20px;
+    font-size: 22px;
+    color: dimgray;
+}
+
+.formInputName, .formInputSmall, .formInputAddress {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+}
+
+.createListingButton {
+    background: rgb(101, 193, 140);
+    color: white;
+    padding: 20px;
+    font-weight: 500;
+    width: 40%;
+    font-size: 26px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.loadMore {
+    font-size: 20px;
+    text-align: center;
+}
+
+/*categories*/
+.category-pageHeader {
+    font-size: 50px;
+    /*background: mediumseagreen;*/
+    /*border: 1px solid red;*/
+}
+
+.categoryListings {
+    font-size: 20px;
+    text-decoration: none;
+    background: linear-gradient(85.38deg, #EDEDE4 -23.38%, #F8F2EB 97.65%);
+    text-align: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid red;
+    /*text-decoration: none;*/
+    /*margin: 5rem;*/
+    /*text-align: center;*/
+}
+
+/*deep to each blogs*/
+.shareIconDiv {
+    color: mediumseagreen;
+    /*border: solid 1px green;*/
+    margin-top: 2rem;
+}
+
+.swiperSlideDiv {
+    border: 1px solid green;
+}
+
+.linkCopied {
+    font-size: 22px;
+    color: green;
+}
+.listingDetails{
+    font-size: 22px;
+    border: 1px solid black;
+    height: 1200px;
+    text-align: center;
+    color: black;
+    font-style: normal;
+}
+.listingName {
+    font-size: 30px;
+}
+.listingLocation{
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.listingType {
+    border: 1px solid red;
+}
+.listingDetailList {
+    border: 1px solid blue;
+}
+.listingLocationTitle {
+    border: 1px solid blueviolet;
+}
+.leafletContainer {
+    width: 100%;
+    /*height: 1000px;*/
+}
+.primaryButton {
+    width: 100%;
+    border: 2px solid yellow;
+}
+
+
+
+
+
+
+
+
+
+
+

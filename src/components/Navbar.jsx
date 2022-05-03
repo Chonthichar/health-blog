@@ -59,12 +59,12 @@ function Navbar({title}) {
                                 </a>
                             </li>
 
-                            <li fill={locationMatchRoute('/about') ? '#2c2c2c' : '8f8f8f'} width='36px' height='36px'
-                                className='itemsNav'>
-                                <a onClick={() => navigate('/about')}>
-                                    About
-                                </a>
-                            </li>
+                            {/*<li fill={locationMatchRoute('/about') ? '#2c2c2c' : '8f8f8f'} width='36px' height='36px'*/}
+                            {/*    className='itemsNav'>*/}
+                            {/*    <a onClick={() => navigate('/about')}>*/}
+                            {/*        About*/}
+                            {/*    </a>*/}
+                            {/*</li>*/}
 
                             <li fill={locationMatchRoute('/blog') ? '#2c2c2c' : '8f8f8f'} width='36px' height='36px'
                                 className='itemsNav'>
@@ -73,12 +73,12 @@ function Navbar({title}) {
                                 </a>
                             </li>
 
-                            <li fill={locationMatchRoute('/offer') ? '#2c2c2c' : '8f8f8f'} width='36px' height='36px'
-                                className='itemsNav'>
-                                <a onClick={() => navigate('/offer')}>
-                                    Offers
-                                </a>
-                            </li>
+                            {/*<li fill={locationMatchRoute('/offer') ? '#2c2c2c' : '8f8f8f'} width='36px' height='36px'*/}
+                            {/*    className='itemsNav'>*/}
+                            {/*    <a onClick={() => navigate('/offer')}>*/}
+                            {/*        Offers*/}
+                            {/*    </a>*/}
+                            {/*</li>*/}
 
                             <li fill={locationMatchRoute('/contact') ? '#2c2c2c' : '#8f8f8f'} width='36px' height='36px'
                                 className='itemsNav'>

@@ -85,13 +85,11 @@ function VideoBg() {
                 {/*< ScrollButton/>*/}
                 <h1>Why choose use <br/> for your healthy food</h1>
                 {/*<div className='underline'></div>*/}
-                <p className='content-sec2'>We are a team for a web development and Web designer base in Thailand and
-                    work for worldwide.
-                    We provide a new high quality website and improve existing websites for both individuals, small
-                    businesses and organization.
-                    We are basically focusing on user-friendly website responsive design and high modern UI and UX
-                    styling
-                    that are easy to use by your clients.
+                <p className='content-sec2'>Passionate in Health care consulting and love to encourage people to care
+                    and love more on themselves. There are few's tips that I would like to share to you through my
+                    experiences. Read through the articles below and decide whether you would like to sign up to be our
+                    member. You will receive Free online tips and good advise on daily workout schedule routine. Free
+                    throughout the course include privacy health and weekly mental health care advising.
                     <br/>
                     {/*<br/> <strong>Contact us for more Details</strong>*/}
                     <br/>

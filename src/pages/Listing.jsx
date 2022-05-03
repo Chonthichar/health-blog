@@ -44,7 +44,7 @@ function Listing() {
     }
 
     return (
-        <main>
+        <main className='container'>
 
             {/*{slider}*/}
             <Swiper
@@ -56,10 +56,9 @@ function Listing() {
                             background: `url(${listing.imageUrls[index]}) 
                             center no-repeat`,
                             backgroundSize: 'cover',
-                            height: '1000px'
+                            height: '500px'
                         }}
                              className="swiperSlideDiv">
-
                         </div>
                     </SwiperSlide>
                 ))}
@@ -121,7 +120,7 @@ function Listing() {
                 <div id='map' className='leafletContainer'>
 
                     <MapContainer
-                        style={{height: '500px', width: '50%'}} center={[51.505, -0.09]} zoom={13}>
+                        style={{height: '1000px', width: '100%'}} center={[51.505, -0.09]} zoom={13}>
                         <TileLayer
                             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

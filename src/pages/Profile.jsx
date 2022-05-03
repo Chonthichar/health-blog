@@ -125,68 +125,68 @@ function Profile() {
                             </p>
 
 
-                            <div className='profileCard'>
-                                <form>
-                                    <input type="text" id="name"
-                                           className={!changeDetails ? 'profileName' : 'profileNameActive'}
-                                           disabled={!changeDetails}
-                                           value={name}
-                                           onChange={onChange}
-                                           className='shadow appearance-none border rounded w-48 md:w-full py-2 px-3 text-gray-700 leading-tight
+                        <div className='profileCard'>
+                            <form>
+                                <input type="text" id="name"
+                                       className={!changeDetails ? 'profileName' : 'profileNameActive'}
+                                       disabled={!changeDetails}
+                                       value={name}
+                                       onChange={onChange}
+                                       className='shadow appearance-none border rounded w-48 md:w-full py-2 px-3 text-gray-700 leading-tight
                             focus:outline-none focus:shadow-outline text-center pt-20'
-                                    />
+                                />
 
-                                    {/*<input type="text" id="email"*/}
-                                    {/*       className={!changeDetails ? 'profileEmail' : 'profileNameEmail'}*/}
-                                    {/*       disabled={!changeDetails}*/}
-                                    {/*       value={email}*/}
-                                    {/*       onChange={onChange}*/}
-                                    {/*       className='shadow appearance-none border rounded w-48 md:w-full py-2 px-3 text-gray-700 leading-tight*/}
-                                    {/*focus:outline-none focus:shadow-outline text-center'*/}
-                                    {/*/>*/}
-                                </form>
-                                <form>
-                                    <input type="text" id="email"
-                                           className={!changeDetails ? 'profileEmail' : 'profileNameEmail'}
-                                           disabled={!changeDetails}
-                                           value={email}
-                                           onChange={onChange}
-                                           className='shadow appearance-none border rounded w-48 md:w-full py-2 px-3 text-gray-700 leading-tight
+                                {/*<input type="text" id="email"*/}
+                                {/*       className={!changeDetails ? 'profileEmail' : 'profileNameEmail'}*/}
+                                {/*       disabled={!changeDetails}*/}
+                                {/*       value={email}*/}
+                                {/*       onChange={onChange}*/}
+                                {/*       className='shadow appearance-none border rounded w-48 md:w-full py-2 px-3 text-gray-700 leading-tight*/}
+                                {/*focus:outline-none focus:shadow-outline text-center'*/}
+                                {/*/>*/}
+                            </form>
+                            <form>
+                                <input type="text" id="email"
+                                       className={!changeDetails ? 'profileEmail' : 'profileNameEmail'}
+                                       disabled={!changeDetails}
+                                       value={email}
+                                       onChange={onChange}
+                                       className='shadow appearance-none border rounded w-48 md:w-full py-2 px-3 text-gray-700 leading-tight
                             focus:outline-none focus:shadow-outline text-center'
-                                    />
-                                </form>
-                            </div>
+                                />
+                            </form>
+                        </div>
 
-                            <Link to='/create-listingBlog' className='createListing-profile'
-                                  style={{textDecoration: 'none'}}>
-                                <FaHome className='FaHome-profile'/>
-                                <p className='createListing-profile'>"Update Your Blogs here"</p>
-                                {/*<FaArrowRight/>*/}
-                            </Link>
+                        <Link to='/create-listingBlog' className='createListing-profile' style={{textDecoration: 'none'}}>
+                            <FaHome className='FaHome-profile'/>
+                            <p className= 'createListing-profile'>"Update Your Blogs here"</p>
+                            {/*<FaArrowRight/>*/}
+                        </Link>
                         </div>
 
                     </main>
-                    <div className='checkoutBlogs-Profile'>
-                        <p>check out Your blogs</p>
-                        {/* loading*/}
-                        {!loading && listings?.length > 0 && (
-                            <>
-                                <p className='listingText'> Checkout Your blogs</p>
-                                <ul className='listingsList'>
-                                    {listings.map((listing) => (
-                                        <ListingItem
-                                            key={listing.id}
-                                            listing={listing.data}
-                                            id={listing.id}
-                                            onDelete={() => onDelete(listing.id)}
-                                            onEdit={() => onEdit(listing.id)}
-                                        />
-                                    ))}
-                                </ul>
-                            </>
-                        )}
-                    </div>
                 </div>
+            </div>
+
+            <div>
+                <p>your listing</p>
+                {/* loading*/}
+                {!loading && listings?.length > 0 && (
+                    <>
+                        <p className='listingText'> Your listings</p>
+                        <ul className='listingsList'>
+                            {listings.map((listing) => (
+                                <ListingItem
+                                    key={listing.id}
+                                    listing={listing.data}
+                                    id={listing.id}
+                                    onDelete={() => onDelete(listing.id)}
+                                    onEdit={() => onEdit(listing.id)}
+                                />
+                            ))}
+                        </ul>
+                    </>
+                )}
             </div>
         </div>
 

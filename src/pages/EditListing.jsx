@@ -246,12 +246,11 @@ function EditListing() {
     }
 
     return (
-        <div className='profile'>
+        <div className='profile-createListing'>
             <header>
                 <p className='pageHeader'>Edit a listing</p>
             </header>
-
-
+            
             <main>
                 <form onSubmit={onSubmit}>
                     <label className='formLabel'>Sell / Rent</label>
