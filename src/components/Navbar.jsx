@@ -13,6 +13,8 @@ import {FaPeopleCarry} from "react-icons/fa";
 
 
 function Navbar({title}) {
+    // const [isNavExpanded, setIsNavExpanded] = useState(false)
+
     const navigate = useNavigate()
     const location = useLocation()
 
@@ -44,80 +46,107 @@ function Navbar({title}) {
 
     return (
         <>
-            <nav className='container'>
-                {(toggleMenu || screenWidth > 500) && (
-                    <div className='navbarItem-container text-center'>
-                        <Link to='/' className='navbar-logo'>
-                            <p className='navbar-text'>Health Me</p> <FaChild/>
-                        </Link>
+            <nav className='navigation-top'>
+                <div className='top-bar'>
+                    <h1>🔥🔥 Just completely update the new blogs here on</h1>
+                    {/*<Link to='/blog' className='top-blog'>blog</Link>*/}
 
-                        <ul className='list'>
-                            <li fill={locationMatchRoute('/') ? '#2c2c2c' : '#8f8f8f'} width='36px' height='36px'
-                                className='itemsNav'>
-                                <a onClick={() => navigate('/')}>
-                                    Home
-                                </a>
-                            </li>
+                    <a href='/blog'>Blogs</a>
 
-                            {/*<li fill={locationMatchRoute('/about') ? '#2c2c2c' : '8f8f8f'} width='36px' height='36px'*/}
-                            {/*    className='itemsNav'>*/}
-                            {/*    <a onClick={() => navigate('/about')}>*/}
-                            {/*        About*/}
-                            {/*    </a>*/}
-                            {/*</li>*/}
+                </div>
+            </nav>
 
-                            <li fill={locationMatchRoute('/blog') ? '#2c2c2c' : '8f8f8f'} width='36px' height='36px'
-                                className='itemsNav'>
-                                <a onClick={() => navigate('/blog')}>
-                                    Blogs
-                                </a>
-                            </li>
+            <nav className='navigation'>
+                {(toggleMenu || screenWidth > 768) && (
+                    <div className='menu'>
 
-                            {/*<li fill={locationMatchRoute('/offer') ? '#2c2c2c' : '8f8f8f'} width='36px' height='36px'*/}
-                            {/*    className='itemsNav'>*/}
-                            {/*    <a onClick={() => navigate('/offer')}>*/}
-                            {/*        Offers*/}
-                            {/*    </a>*/}
-                            {/*</li>*/}
 
-                            <li fill={locationMatchRoute('/contact') ? '#2c2c2c' : '#8f8f8f'} width='36px' height='36px'
-                                className='itemsNav'>
-                                <a onClick={() => navigate('/contact')}>
-                                    {/*<img src="https://img.icons8.com/color/60/000000/user-location.png"/>*/}
-                                    {/*<img src="https://img.icons8.com/doodle/48/000000/mail-contact.png"/>*/}
-                                    {/*<img*/}
-                                    {/*    src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-send-essentials-tanah-basah-glyph-tanah-basah.png"*/}
-                                    {/*style={{color:'white'}}/>*/}
-                                    <img
-                                        src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/30/000000/external-send-contact-flatart-icons-flat-flatarticons.png"/>
-                                </a>
-                            </li>
+                        {/*<button className='hamburger'*/}
+                        {/*        onClick={toggleNav}>*/}
+                        {/*    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"*/}
+                        {/*         fill="currentColor">*/}
+                        {/*        <path fill-rule="evenodd"*/}
+                        {/*              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1*/}
+                        {/*      1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"*/}
+                        {/*                  clip-rule="evenodd"/>*/}
+                        {/*    </svg>*/}
+                        {/*</button>*/}
 
-                            <li fill={locationMatchRoute('/profile') ? '#2c2c2c' : '8f8f8f'} width='36px' height='30px'
-                                className='itemsNav'>
-                                <a className='profiles' onClick={() => navigate('/profile')} style={{
-                                    backgroundColor: '#FB9333',
-                                    margin: '0px',
-                                    borderRadius: '100px',
-                                    color: 'white',
-                                    height: '54px',
-                                    width: '126px',
-                                    // padding: '24px 32px',
-                                    justifyContent:'center',
-                                    alignItems: 'center',
-                                    paddingTop: '10px',
-                                    marginLeft: '0'
-                                }}>
-                                    {/*<img src="https://img.icons8.com/color/48/000000/add-user-female.png"/>*/}
-                                    {/*         <img src="https://img.icons8.com/small/64/000000/user-location.png"/>*/}
-                                    Profile
-                                </a>
-                            </li>
-                        </ul>
+                        {/*<div className='menu-1'>*/}
+                            <ul className='list'>
+                                {/*<li fill={locationMatchRoute('/') ? '#2c2c2c' : '#8f8f8f'} width='36px' height='36px'*/}
+                                {/*    className='itemsNav'>*/}
+                                    <Link to='/' className='brand-name'>
+                                        <FaChild/>
+                                    </Link>
+                                {/*</li>*/}
+
+                                {/*<li fill={locationMatchRoute('/') ? '#2c2c2c' : '#8f8f8f'} width='36px' height='36px'*/}
+                                {/*    className='itemsNav'>*/}
+                                    <a onClick={() => navigate('/')} className='home'>
+                                        Home
+                                    </a>
+                                {/*</li>*/}
+
+                                {/*<li fill={locationMatchRoute('/about') ? '#2c2c2c' : '8f8f8f'} width='36px' height='36px'*/}
+                                {/*    className='itemsNav'>*/}
+                                {/*    <a onClick={() => navigate('/about')}>*/}
+                                {/*        About*/}
+                                {/*    </a>*/}
+                                {/*</li>*/}
+
+                                {/*<li fill={locationMatchRoute('/blog') ? '#2c2c2c' : '8f8f8f'} width='36px' height='36px'*/}
+                                {/*    className='itemsNav'>*/}
+                                    <a onClick={() => navigate('/blog')}  className='home'>
+                                        Blogs
+                                    </a>
+                                {/*</li>*/}
+
+                                {/*<li fill={locationMatchRoute('/offer') ? '#2c2c2c' : '8f8f8f'} width='36px' height='36px'*/}
+                                {/*    className='itemsNav'>*/}
+                                {/*    <a onClick={() => navigate('/offer')}>*/}
+                                {/*        Offers*/}
+                                {/*    </a>*/}
+                                {/*</li>*/}
+
+                                {/*<li fill={locationMatchRoute('/contact') ? '#2c2c2c' : '#8f8f8f'} width='36px'*/}
+                                {/*    height='36px'*/}
+                                {/*    className='itemsNav'>*/}
+                                    <a onClick={() => navigate('/contact')}  className='home'>
+                                        {/*<img src="https://img.icons8.com/color/60/000000/user-location.png"/>*/}
+                                        <img src="https://img.icons8.com/doodle/48/000000/mail-contact.png"/>
+                                        {/*<img*/}
+                                        {/*    src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-send-essentials-tanah-basah-glyph-tanah-basah.png"*/}
+                                        {/*style={{color:'white'}}/>*/}
+                                        {/*<img*/}
+                                        {/*    src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/30/000000/*/}
+                                        {/*    external-send-contact-flatart-icons-flat-flatarticons.png"/>*/}
+                                    </a>
+                                {/*</li>*/}
+
+                                {/*<li fill={locationMatchRoute('/profile') ? '#2c2c2c' : '8f8f8f'} width='36px'*/}
+                                {/*    height='30px'*/}
+                                {/*    className='itemsNav'>*/}
+                                    <a className='profiles' onClick={() => navigate('/profile')} style={{
+                                    }}>
+                                        {/*<img src="https://img.icons8.com/color/48/000000/add-user-female.png"/>*/}
+                                        {/*         <img src="https://img.icons8.com/small/64/000000/user-location.png"/>*/}
+                                        Profile
+                                    </a>
+                                {/*</li>*/}
+                            </ul>
+                        {/*</div>*/}
                     </div>
                 )}
-                <button onClick={toggleNav} className='btn'><img
-                    src="https://img.icons8.com/external-smashingstocks-glyph-smashing-stocks/30/000000/external-down-arrow-maps-and-navigations-smashingstocks-glyph-smashing-stocks.png"/>
+                <button className='hamburger'
+                        onClick={toggleNav}>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                         fill="white">
+                        <path fill-rule="evenodd"
+                              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1
+                              1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                              clip-rule="evenodd"/>
+                    </svg>
                 </button>
             </nav>
         </>
