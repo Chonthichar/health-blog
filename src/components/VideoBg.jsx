@@ -39,6 +39,7 @@ import Line from "../asset/Group 8441.png"
 import Profile from "../asset/profile_ploy-removebg-preview (2).png"
 import Video from "../asset/video-2.mp4"
 import {Player} from 'video-react'
+import Warunee from "../asset/warunee-removebg-preview.png"
 
 //section 6 testimonials said
 
@@ -49,7 +50,7 @@ function VideoBg() {
     return (
         <>
             <div className='container-fluid'>
-                <div className='home-container'>
+                <div className='home-container container-fluid'>
                     {/*<img src={Profile} alt="spot-group" className='profile'/>*/}
                     <img src={Spot} alt="spot-group" className='spot-1'/>
                     <img src={Spot} alt="spot-group" className='spot-2'/>
@@ -57,7 +58,7 @@ function VideoBg() {
                     <div className='box-1'></div>
                     <div className='box-2'></div>
                     <div className='box-3'></div>
-                    <img src={Profile} alt="spot-group" className='profile' id='profile'/>
+                    <img src={Warunee} alt="spot-group" className='profile' id='profile'/>
 
 
                     {/*<img src={Pink} alt="backgroundpink" className='dec-3'/>*/}

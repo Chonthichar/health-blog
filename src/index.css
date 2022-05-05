@@ -434,11 +434,11 @@ nav a::after {
 /*home-section 1*/
 .home-container {
     background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));
-    height: 800px;
+    height: 720px;
     /*width: 1304px;*/
-    top: 0%;
+    top: 0;
     margin-top: 0;
-    /*border: 1px solid red;*/
+    border: 1px solid white;
     /*top: 10%;*/
 }
 
@@ -455,7 +455,7 @@ nav a::after {
     height: 53px;
     margin-left: 45px;
     /*left: 0%;*/
-    top: 218px;
+    top: 270px;
     background: #FFF0DC;
     border-radius: 100px;
     color: orange;
@@ -468,7 +468,7 @@ nav a::after {
     width: 481.86px;
     height: 481.86px;
     left: 55%;
-    top: 20%;
+    top: 30%;
     background: #FFC97D;
     border-radius: 80px;
     transform: matrix(-0.5, -0.87, -0.87, 0.5, 0, 0);
@@ -479,7 +479,7 @@ nav a::after {
     width: 481.86px;
     height: 481.86px;
     left: 55%;
-    top: 20%;
+    top: 30%;
 
     background: #FFE8C8;
     border-radius: 80px;
@@ -501,10 +501,10 @@ nav a::after {
 
 #profile {
     position: absolute;
-    width: 25%;
+    width: 38%;
     height: 70%;
-    left: 55%;
-    top: 0%;
+    left: 50%;
+    top: 15%;
     /*background-color: #CDCDCD;*/
     /*border: 2px solid #CDCDCD;*/
     /*background-repeat: no-repeat;*/
@@ -519,19 +519,19 @@ div#profile {
 
 .spot-1 {
     position: absolute;
-    top: 35%;
-    left: 55%;
+    top: 25%;
+    left: 12%;
 }
 
 .spot-2 {
     position: absolute;
-    top: 85%;
+    top: 80%;
     left: 50%;
 }
 
 .home-container h1 {
     /*top: 50%;*/
-    margin-top: 25%;
+    margin-top: 15%;
     padding-left: 45px;
     /*left: 20%;*/
     /*color: black;*/
@@ -575,7 +575,7 @@ div#profile {
     /*border: 5px solid black;*/
     /*padding-left: 45px;*/
     /*left: 132px;*/
-    top: 70%;
+    top: 79%;
     background: orange;
     border-radius: 100px;
     font-size: 24px;
@@ -587,13 +587,14 @@ div#profile {
 /*background-section 2*/
 .background-section2 {
     width: 100%;
-    height: 500px;
+    height: 350px;
     border: solid 0.1px white;
-    margin-top: 0;
+    margin-top: 1rem;
     /*background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));*/
     /*grid-template-columns: 1fr 1fr;*/
     padding: 0;
     margin-bottom: 2rem;
+     background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), whitesmoke);
 }
 
 .background-section2 h1 {
@@ -615,15 +616,17 @@ div#profile {
     /*position: absolute;*/
     /*border: 1px solid black;*/
     width: 100%;
-    margin-top: 10%;
+    margin-top: 7%;
+    /*margin-right: 4rem;*/
     /*padding-top: 15%;*/
     /*font-family: 'Popins';*/
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 20px;
     /*line-height: 180%;*/
     /*letter-spacing: -0.02em;*/
     color: #828282;
+    display: flex;
     padding: 45px;
     /*display: flex;*/
 }
@@ -637,7 +640,7 @@ div#profile {
     /*margin-left: 45px;*/
     /*position: absolute;*/
     /*width: 192px;*/
-    width: 320px;
+    width: 40%;
     height: 68px;
     /*border: 5px solid black;*/
     /*padding-left: 45px;*/
@@ -645,12 +648,13 @@ div#profile {
     /*top: 70%;*/
     background: orange;
     border-radius: 100px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     text-decoration: none;
     color: white;
     /*font-style: normal;*/
     border: none;
+    margin-left: 6rem;
 }
 
 /*background section-3*/
@@ -775,6 +779,7 @@ div#profile {
     width: 100%;
     height: 650px;
     margin-top: 2rem;
+     /*background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), whitesmoke);*/
 }
 
 .background-section4 .row, .background-section4 .column {
@@ -948,9 +953,10 @@ div#profile {
     height: 700px;
     padding-top: 1rem;
     margin-top: 2rem;
+    /*background: whitesmoke;*/
     /*margin-top: 2rem;*/
     /*border: 1px green solid;*/
-    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), whitesmoke);
 }
 
 .box .head-text {
