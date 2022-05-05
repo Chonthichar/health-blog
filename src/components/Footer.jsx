@@ -7,7 +7,7 @@ import react from 'react';
 //     FooterLink,
 //     Heading,
 // } from "./FooterStyle";
-import {FaAddressBook, FaBeer, FaHome, FaKiwiBird} from "react-icons/fa"
+import {FaAddressBook, FaBeer, FaHome, FaKiwiBird, FaTwitter} from "react-icons/fa"
 import {FaFacebook} from "react-icons/fa";
 import {FaInstagram} from "react-icons/fa";
 import {FaLinkedin} from "react-icons/fa";
@@ -23,27 +23,31 @@ function Footer() {
 
     return (
         <>
-    <footer id="main-footer" className="pt-2 container">
-        <div className=" footer-container container">
+    <footer id="main-footer" className="pt-2 container-fluid">
+        <div className=" footer-container ">
             <div className='container'>
                 <h2 className='logos'>
                     <FaChild className='logo'/>Health Me<a href="#"></a></h2>
                 <div className="social">
                     <ul>
-                        <li>
+
                             <a href="https://www.facebook.com/physicalandmentalhealthgrow" className="f-facebook gap" target="_blank"><i
                                 className=""
-                                aria-hidden="true"> <FaFacebook className='fa-facebook' style={{fontSize: '40px'}}/></i></a></li>
-                        <li>
+                                aria-hidden="true"> <FaFacebook className='fa-facebook' style={{fontSize: '40px'}}/></i></a>
+
                             <a href="https://www.instagram.com/warunee2465/" className="i-instagram gap" target="_blank"><i
                                 className=""
-                                aria-hidden="true"><FaInstagram className='fa-instagram' style={{fontSize: '40px'}} /></i></a></li>
+                                aria-hidden="true"><FaInstagram className='fa-instagram' style={{fontSize: '40px'}} /></i></a>
 
-                        <li>
+
 
                             <a href="https://www.linkedin.com/in/chonthichar-soythong-3842b31a3/" className="l-linkedin gap"
                                target="_blank"><i className=""
-                                                  aria-hidden="true"> <FaLinkedin className='fa-linkedin' style={{fontSize: '40px'}}/></i></a></li>
+                                                  aria-hidden="true"> <FaLinkedin className='fa-linkedin' style={{fontSize: '40px'}}/></i></a>
+
+                         <a href="https://www.linkedin.com/in/chonthichar-soythong-3842b31a3/" className="l-linkedin gap"
+                               target="_blank"><i className=""
+                                                  aria-hidden="true"> <FaTwitter className='fa-linkedin' style={{fontSize: '40px'}}/></i></a>
                     </ul>
                 </div>
             </div>
@@ -70,9 +74,7 @@ function Footer() {
                 <a href="#" className="btn btn-secondary">Join Us For Free</a>
             </div>
             <div className="copy">
-                <p>
                     Copyright &copy;2021, All Right Reserved
-                </p>
             </div>
         </div>
     </footer>

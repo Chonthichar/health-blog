@@ -1196,8 +1196,8 @@ div#profile {
 
 /*last section main footer*/
 #main-footer {
-    background: whitesmoke;
-    color: #575757;
+    background: #575757;
+    color: white;
     /*border: black 1px solid;*/
     width: 100%;
 }
@@ -1208,7 +1208,7 @@ div#profile {
 }
 
 #main-footer p {
-    color: #575757;
+    color: white;
     font-size: 20px;
 }
 
@@ -1220,12 +1220,13 @@ div#profile {
 }
 
 #main-footer .footer-container > *:last-child {
-    background: #b6d4fe;
+    background: darkseagreen;
     grid-column: 1 / span 4;
     /*padding: 2rem;*/
     font-size: 20px;
+    margin: 0;
     padding: 1rem;
-    padding-bottom: 0;
+    padding-bottom: 1rem;
     /*border: 1px solid black;*/
     text-align: center;
     color: white;
@@ -1280,44 +1281,75 @@ div#profile {
 }
 
 /*}*/
+
+/*#main-footer .copy {*/
+/*    font-size: 18px;*/
+/*}*/
 .gap {
     margin-right: 10px;
 }
 
-#main-footer .social ul li a i {
+#main-footer .social {
     font-size: 25px;
+    padding: 0;
     /*border: 1px solid #e0e0e0;*/
-    width: 40px;
-    height: 40px;
-    padding-top: 5px;
+    width: 55%;
+    justify-content: center;
+    text-align: center;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*height: 100%;*/
+    /*padding-top: 5px;*/
 }
 
+#main-footer .f-facebook {
+    /*border: 1px solid red;*/
+    padding-right: 0;
+    width: 50px;
+    text-align: center;
+    justify-content: center;
+}
+#main-footer .i-instagram {
+    /*border: 1px solid red;*/
+    /*border: 1px solid red;*/
+    padding-right: 0;
+    width: 50px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 0;
+}
 
 #main-footer .f-facebook:hover {
     color: #2a66b3;
-    background: #2a66b3;
+    /*background: #2a66b3;*/
     /*border: 1px solid #2a66b3;*/
 }
 
 #main-footer .i-instagram:hover {
     color: #f09433;
-    background: #f09433;
+    /*background: #f09433;*/
+    /*border: 1px solid navajowhite;*/
 }
 
 
 #main-footer .l-linkedin:hover {
     color: #007bb5;
-    background: #007bb5;
+    /*background: #007bb5;*/
 }
 
 
 .logos {
     display: flex;
+    font-size: 28px;
+     color: rgb(113, 223, 231);
+    /*border: 1px solid brown;*/
+    width: 50%;
+    margin-left: 1rem;
 }
 
 .logo {
     color: rgb(113, 223, 231);
-    font-size: 35px;
+    font-size: 30px;
 }
 
 
@@ -1598,7 +1630,7 @@ div#profile {
         /*font-size: 20px;*/
     }
 
-    #main-footer .copy p {
+    #main-footer .copy  {
         font-size: 16px;
     }
 
