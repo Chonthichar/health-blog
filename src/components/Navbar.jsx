@@ -48,7 +48,7 @@ function Navbar({title}) {
         <>
             <nav className='navigation-top container-fluid'>
                 <div className='top-bar'>
-                    <h1>🔥🔥 Just completely update the new blogs here on</h1>
+                    <h1>🔥🔥 Just update the new blogs</h1>
                     {/*<Link to='/blog' className='top-blog'>blog</Link>*/}
 
                     <a href='/blog'>Blogs</a>
