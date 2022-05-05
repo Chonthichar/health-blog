@@ -48,7 +48,7 @@ function VideoBg() {
 
     return (
         <>
-            <div className='container-fulid'>
+            <div className='container-fluid'>
                 <div className='home-container'>
                     {/*<img src={Profile} alt="spot-group" className='profile'/>*/}
                     <img src={Spot} alt="spot-group" className='spot-1'/>

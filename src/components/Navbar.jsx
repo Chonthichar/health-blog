@@ -46,7 +46,7 @@ function Navbar({title}) {
 
     return (
         <>
-            <nav className='navigation-top'>
+            <nav className='navigation-top container-fluid'>
                 <div className='top-bar'>
                     <h1>🔥🔥 Just completely update the new blogs here on</h1>
                     {/*<Link to='/blog' className='top-blog'>blog</Link>*/}
@@ -76,9 +76,9 @@ function Navbar({title}) {
                             <ul className='list'>
                                 {/*<li fill={locationMatchRoute('/') ? '#2c2c2c' : '#8f8f8f'} width='36px' height='36px'*/}
                                 {/*    className='itemsNav'>*/}
-                                    <Link to='/' className='brand-name'>
-                                        <FaChild/>
-                                    </Link>
+                                {/*    <Link to='/' className='brand-name'>*/}
+                                {/*        <FaChild/>*/}
+                                {/*    </Link>*/}
                                 {/*</li>*/}
 
                                 {/*<li fill={locationMatchRoute('/') ? '#2c2c2c' : '#8f8f8f'} width='36px' height='36px'*/}
