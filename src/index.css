@@ -1398,7 +1398,7 @@ div#profile {
         justify-content: center;
         text-align: center;
         left: 25%;
-        margin-top: 12rem;
+        margin-top: 11rem;
         font-weight: 300;
     }
 
@@ -1455,7 +1455,7 @@ div#profile {
 
     .background-section2 .content-sec2 {
         display: grid;
-        margin-top: 3rem;
+        margin-top: 3.5rem;
         font-size: 18px;
         padding: 1rem;
         /*font-style: normal;*/
