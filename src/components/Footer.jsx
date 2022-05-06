@@ -23,7 +23,7 @@ function Footer() {
 
     return (
         <>
-    <footer id="main-footer" className="pt-2 container-fluid">
+    <footer id="main-footer" className=" container-fluid">
         <div className=" footer-container ">
             <div className='container'>
                 <h2 className='logos'>
@@ -51,12 +51,12 @@ function Footer() {
                     </ul>
                 </div>
             </div>
-            <div>
+            <div className='textFoot'>
                 <h5>Email Newsletter</h5>
                 <p>Please contact us for more details</p>
                 <form name="contact" method="POST" data-netlify="true">
                     <input type="email" name="email" placeholder="Enter Emails" />
-                    <input type="submit" value="Subscribe" className="btn btn-primary" />
+                    <input type="submit" value="Subscribe" className="btn-primary" />
                 </form>
             </div>
             {/*<div>*/}
@@ -69,7 +69,7 @@ function Footer() {
             {/*    </ul>*/}
             {/*</div>*/}
             <div>
-                <h5>Member Guide</h5>
+                <h5 className='h-foot'>Member Guide</h5>
                 <p>Apply to be a members for free tips and monthly health care guide</p>
                 <a href="#" className="btn btn-secondary">Join Us For Free</a>
             </div>
