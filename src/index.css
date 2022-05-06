@@ -1783,7 +1783,7 @@ div#profile {
 }
 
 /*iphone se*/
-/*Galaxsy s8*/
+/*Galaxsy s8+*/
 /*i phone XR*/
 @media only screen
 and (min-device-width: 320px)
@@ -1843,9 +1843,10 @@ and (orientation: portrait) {
     }
 
     .top-box-1 {
-        margin-top: 4rem;
+        margin-top: 4.9rem;
         padding: 0;
         margin-left: 1rem;
+        display: none;
     }
 
     .home-button .button {
@@ -1889,7 +1890,7 @@ and (orientation: portrait) {
 
     .spot-2 {
         left: 7%;
-        top: 50%;
+        top: 60%;
         width: 20%;
     }
 
