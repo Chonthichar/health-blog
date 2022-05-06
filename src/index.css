@@ -1224,7 +1224,7 @@ div#profile {
 }
 
 #main-footer .footer-container > *:last-child {
-    background: darkseagreen;
+    background: rgb(255, 164, 91);
     grid-column: 1 / span 4;
     /*padding: 2rem;*/
     font-size: 18px;
