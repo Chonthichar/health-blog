@@ -1366,6 +1366,7 @@ div#profile {
         width: 100%;
         /*border: 1px solid red;*/
         height: 900px;
+        background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));
     }
 
     .home-container h1 {
