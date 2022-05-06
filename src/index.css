@@ -1285,6 +1285,7 @@ div#profile {
     /*background: #f7c08a;*/
 }
 
+
 /*}*/
 
 /*#main-footer .copy {*/
@@ -1298,7 +1299,7 @@ div#profile {
     font-size: 25px;
     padding: 0;
     /*border: 1px solid #e0e0e0;*/
-    width: 55%;
+    width: 100%;
     justify-content: center;
     text-align: center;
     /*margin-left: auto;*/
@@ -1397,7 +1398,7 @@ div#profile {
         justify-content: center;
         text-align: center;
         left: 25%;
-        margin-top: 10rem;
+        margin-top: 12rem;
         font-weight: 300;
     }
 
@@ -1406,7 +1407,7 @@ div#profile {
         height: 30%;
         border-radius: 20px;
         left: 21%;
-        margin-top: 12rem;
+        margin-top: 14rem;
         /*top: 60%;*/
     }
 
@@ -1415,14 +1416,14 @@ div#profile {
         height: 30%;
         border-radius: 20px;
         left: 18%;
-        margin-top: 12rem;
+        margin-top: 14rem;
         /*top: 60%;*/
     }
 
     .spot-1 {
         left: 7%;
-        width: 20%;
-        top: 10%;
+        width: 10%;
+        top: 13%;
     }
 
     .spot-2 {
@@ -1743,9 +1744,11 @@ div#profile {
         margin-bottom: 0;
         /*font-size: 16px;*/
         padding-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
         /*font-size: 20px;*/
         /*border: 1px solid red;*/
-        /*width: 100%;*/
+        width: 100%;
     }
 
     #main-footer .copy {
