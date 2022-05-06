@@ -1398,7 +1398,7 @@ div#profile {
         justify-content: center;
         text-align: center;
         left: 25%;
-        margin-top: 11rem;
+        margin-top: 10rem;
         font-weight: 300;
     }
 
@@ -1428,8 +1428,8 @@ div#profile {
 
     .spot-2 {
         left: 7%;
-        /*top: 30%;*/
-        width: 40%;
+        top: 60%;
+        width: 30%;
     }
 
 
@@ -1581,6 +1581,7 @@ div#profile {
 
     .background-section4 {
         height: 1150px;
+        /*margin-bottom: 1rem;*/
     }
 
     .background-section4 .table-details th {
@@ -1628,7 +1629,7 @@ div#profile {
     }
     .background-section6 {
         height: 600px;
-        margin-top: 0;
+        margin-top: 2.5rem;
         margin-bottom: 0;
     }
 
@@ -1718,8 +1719,13 @@ div#profile {
         /*padding: ;*/
     }
 
-    #main-footer .logo, #main-footer .logos {
-        text-align: center;
+    .logo {
+        width: 12%;
+        padding-right: 2px;
+        /*border: 1px solid red;*/
+    }
+    #main-footer .logos {
+        /*text-align: center;*/
         margin-right: auto;
         margin-left: auto;
         /*border: black solid 1px;*/
@@ -1778,6 +1784,7 @@ div#profile {
 
 /*iphone se*/
 /*Galaxsy s8*/
+/*i phone XR*/
 @media only screen
 and (min-device-width: 320px)
 and (max-device-width: 568px)
@@ -1819,7 +1826,7 @@ and (orientation: portrait) {
     .home-container {
         background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));
         width: 100%;
-        height: 860px;
+        height: 950px;
     }
 
     .home-container h1 {
@@ -1836,7 +1843,7 @@ and (orientation: portrait) {
     }
 
     .top-box-1 {
-        margin-top: 7rem;
+        margin-top: 4rem;
         padding: 0;
         margin-left: 1rem;
     }
@@ -1852,15 +1859,15 @@ and (orientation: portrait) {
         justify-content: center;
         text-align: center;
         left: 25%;
-        margin-top: 15rem;
+        margin-top: 10.5rem;
     }
 
     .box-2 {
         width: 60%;
         height: 35%;
         border-radius: 20px;
-        left: 16%;
-        margin-top: 15rem;
+        left: 19%;
+        margin-top: 13rem;
         /*top: 60%;*/
     }
 
@@ -1868,33 +1875,34 @@ and (orientation: portrait) {
         width: 60%;
         height: 35%;
         border-radius: 20px;
-        left: 15%;
-        margin-top: 15rem;
+        left: 18%;
+        margin-top: 12rem;
         /*top: 60%;*/
     }
 
     .spot-1 {
-        left: 10%;
-        width: 10%;
-        top: 15%;
+        display: none;
+        /*left: 10%;*/
+        /*width: 10%;*/
+        /*top: 15%;*/
     }
 
     .spot-2 {
         left: 7%;
-        top: 70%;
+        top: 50%;
         width: 20%;
     }
 
     .home-container #profile {
         width: 100%;
-        top: 75%;
-        height: 60%;
+        top: 60%;
+        height: 50%;
         left: 2%;
     }
 
     .background-section2 {
         /*display: unset;*/
-        height: 800px;
+        height: 570px;
     }
 
     .background-section2 .content-sec2 {
