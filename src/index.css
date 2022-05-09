@@ -2081,37 +2081,32 @@ and (orientation: portrait) {
     }
 
     .explore .exploreCategoryHeading {
-        font-size: 42px;
-        font-family: Barlow Condensed, sans-serif;
-        font-weight: 700;
-        padding-top: 5rem;
-        border-bottom: 2px solid black;
-        width: 49%;
-        padding-bottom: 10px;
-        /*text-align: center;*/
-    }
-
-    .gridBlogs {
-        display: flex;
-        width: 100%;
-        gap: 1rem;
+        font-size: 22px;
+        padding-top: 1rem;
         margin-right: auto;
         margin-left: auto;
+        text-align: center;
     }
 
+    main .gridBlogs {
+        display: grid;
+        gap: 0;
+        /*width: 50%;*/
+        /*height: 50%;*/
+        /*height: 30px;*/
+        /*border: 1px solid green;*/
+    }
+
+    /*box for warunee name*/
     .columnGrid .grid {
         width: 100%;
         margin-left: 0rem;
         /*border: 1px solid red;*/
     }
 
-    .gridBlogs .exploreCategories {
-        width: 100%;
-        height: 400px;
-        margin-right: auto;
-        border: 1px solid blue;
-        margin-left: auto;
-        /*left: 20%;*/
+
+    main .gridBlogs .exploreCategories {
+        height: 200px;
     }
 
 
@@ -2133,20 +2128,15 @@ and (orientation: portrait) {
         font-size: 18px;
     }
 
-    .grid h3 {
-        text-align: center;
-        font-size: 24px;
-        margin-top: 1.8rem;
-        border-bottom: solid black 2px;
-        width: 70%;
-        margin-right: auto;
-        margin-left: auto;
-        /*padding-bottom: 1rem;*/
+    .columnGrid .grid h3 {
+        font-size: 18px;
+        width: 60%;
+        padding-bottom: 3px;
     }
 
     .gridSubscripe {
         margin-top: 1rem;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         grid-gap: 10px;
         /*background: lightgrey;*/
         color: white;
@@ -2178,19 +2168,10 @@ and (orientation: portrait) {
         /*margin-top: 5px;*/
     }
 
-    .gridBlogs p {
-        font-size: 24px;
-        text-decoration: #FE4A51;
-        text-align: center;
-        /*margin: 2rem;*/
-        color: white;
-        background: #575757;
-        /*background: linear-gradient(rgba(255, 255, 255), rgba(255, 99, 99));*/
-        width: 100%;
-        padding: 1rem;
-        /*border-bottom: #FE4A51;*/
-        height: 70px;
-        /*margin-bottom: 3rem;*/
+    main .gridBlogs p {
+        font-size: 18px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .gridBlogs p:hover {
@@ -2224,74 +2205,66 @@ and (orientation: portrait) {
         border: #FE4A51;
     }
 
-    .photo-last-grid {
-        width: 100%;
+    .explore .photo-last-grid {
         /*border: 1px solid red;*/
-        /*text-align: center;*/
-        /*justify-content: center;*/
-        height: 250px;
-        grid-gap: 2rem;
-        /*background-color: darkseagreen;*/
-        display: flex;
-        /*padding: 2rem;*/
-        /*border-radius: 50px;*/
+        height: 1400px;
+        grid-gap: 1rem;
+        display: grid;
+        background-color: #FFE5E6;
     }
 
-    .grid-sub {
+    .photo-last-grid .grid-sub {
         background: white;
-        height: 230px;
+        height: 200px;
+        margin-top: 0;
+        /*border: 1px solid red;*/
     }
 
-    .grid-sub p {
-        text-align: center;
-        margin-top: 1rem;
-        font-size: 26px;
-        font-style: normal;
-        color: #575757;
+    .photo-last-grid .grid-sub p {
+        margin-top: 10px;
+        font-size: 20px;
     }
 
-    .grid-sub input {
-        position: relative;
-        width: 250px;
-        left: 14%;
+    .photo-last-grid .grid-sub input {
+        /*position: relative;*/
+        width: 80%;
+        font-size: 16px;
+        justify-content: center;
+        /*position: absolute;*/
+        left: 10%;
         margin-right: auto;
         margin-left: auto;
         /*justify-content: center;*/
-        height: 70px;
-        background: lightgrey;
+        height: 40px;
         text-align: center;
     }
 
-    .grid-sub button {
-        position: relative;
-        /*width: 250px;*/
-        left: 37%;
-        /*width: 20%;*/
+    .photo-last-grid .grid-sub button {
+        left: 33%;
+        font-size: 18px;
         background: #FE4A51;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 2px;
+        padding-bottom: 2px;
         margin-top: 1rem;
         justify-content: center;
-        /*border: solid 1px black;*/
-        /*position: relative;*/
         margin-right: auto;
         color: white;
         margin-left: auto;
+        margin-bottom: 0;
     }
 
-    .circle-image {
-        display: flex;
-        grid-gap: 1.5rem;
-        padding-left: 3rem;
-        padding-right: 3rem;
-        background-color: #FFE5E6;
-        height: 230px;
-        margin-left: 0;
-        float: left;
+    .photo-last-grid .circle-image {
+        margin-right: auto;
+        margin-left: auto;
+        display: grid;
+        grid-gap: 0rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        /*border: 1px solid red;*/
+        height: 1130px;
+        /*margin-left: 0;*/
+        /*float: unset;*/
         font-size: 16px;
-        text-align: center;
         /*padding-top: 2rem;*/
     }
 
