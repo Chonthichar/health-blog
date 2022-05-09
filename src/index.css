@@ -2245,7 +2245,7 @@ and (orientation: portrait) {
    .back-ground .photo-grid-2 {
         /*display: none;*/
         width: 45%;
-       left: 50%;
+       left: 48%;
     }
 
     .photo-grid:hover, .photo-grid-1:hover, .photo-grid-2:hover {
