@@ -2038,9 +2038,10 @@ and (orientation: portrait) {
         /*position:relative;*/
         /*top: 70%;*/
         width: 330px;
-        /*height: 10px;*/
+        /*height: 500px;*/
         border: white solid 10px;
         /*background-image: url("./asset/grass.jpg");*/
+        margin-bottom: 4rem;
     }
 
     .grid .profile-photo {
@@ -2207,7 +2208,7 @@ and (orientation: portrait) {
 
     .explore .photo-last-grid {
         /*border: 1px solid red;*/
-        height: 1400px;
+        height: 1500px;
         grid-gap: 1rem;
         display: grid;
         background-color: #FFE5E6;
@@ -2217,7 +2218,6 @@ and (orientation: portrait) {
         background: white;
         height: 200px;
         margin-top: 0;
-        /*border: 1px solid red;*/
     }
 
     .photo-last-grid .grid-sub p {
