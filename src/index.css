@@ -2007,88 +2007,55 @@ and (orientation: portrait) {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
 
     /*Blog Page*/
-    .columnGridText {
-        display: flex;
+    main .columnGridText {
+        display: grid;
     }
 
-    .columnGrid {
-        display: flex;
+    main .columnGrid {
+        display: grid;
     }
 
-    .swipperHeading {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 109.9%;
-        color: #2D2D2D;
-        margin-top: 10rem;
-        margin-bottom: 3rem;
-        border-bottom: black solid 2px;
-        padding-bottom: 1rem;
-        width: 50%;
-        padding-left: 0;
-        text-align: left;
-    }
-
-    .swipperHeading-1 {
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 109.9%;
-        color: #2D2D2D;
-        margin-top: 10rem;
-        margin-bottom: 3rem;
-        /*border-bottom: black solid 2px;*/
-        padding-bottom: 1rem;
-        width: 70%;
-        padding-left: 0;
-        text-align: right;
-        padding-right: 8rem;
-        /*left: 90%;*/
-    }
-
-    .swipperSlider {
-        margin-top: 0rem;
-        /*position:relative;*/
-        top: 70%;
+    .columnGridText .swipperHeading {
+        padding-bottom: 0;
+        font-size: 18px;
+        margin-top: 1rem;
+        margin-bottom: 0rem;
         width: 100%;
-        height: 20%;
-        justify-content: center;
         text-align: center;
-        margin-right: auto;
-        margin-left: auto;
-        float: left;
+        /*border: 1px solid blueviolet;*/
+
+    }
+
+    .columnGridText .swipperHeading-1 {
+        display: none;
+    }
+
+    .columnGrid .swipperSlider {
+        margin-top: 1rem;
+        /*position:relative;*/
+        /*top: 70%;*/
+        width: 330px;
+        /*height: 10px;*/
         border: white solid 10px;
         /*background-image: url("./asset/grass.jpg");*/
     }
 
-    .profile-photo {
-        /*border: 1px solid green;*/
-        padding: 0;
-        border-radius: 100%;
-        width: 200px;
-        height: 200px;
-        /*margin-left: 3rem;*/
-        /*float: left;*/
-        text-align: center;
-        justify-content: center;
-        margin-right: auto;
+    .grid .profile-photo {
+        margin-top: 10px;
         margin-left: auto;
-        /*left: 50%;*/
+        margin-right: auto;
+
     }
 
-    .swiperSlideText {
-        font-size: 30px;
-        margin-top: 2rem;
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-        padding: 1rem;
-        color: white;
-        font-style: normal;
+    .columnGrid .swipperSlider .swiperSlideText {
+        font-size: 18px;
     }
 
-    .swiperSlidePrice {
-
+    .columnGrid .swipperSlider .swiperSlidePrice {
+        font-size: 18px;
     }
 
     .back-ground {
@@ -2127,38 +2094,43 @@ and (orientation: portrait) {
     .gridBlogs {
         display: flex;
         width: 100%;
-        gap: 2rem;
+        gap: 1rem;
         margin-right: auto;
         margin-left: auto;
     }
 
-    .grid {
-        width: 130%;
-        margin-left: 2rem;
+    .columnGrid .grid {
+        width: 100%;
+        margin-left: 0rem;
+        /*border: 1px solid red;*/
     }
 
     .gridBlogs .exploreCategories {
         width: 100%;
         height: 400px;
         margin-right: auto;
+        border: 1px solid blue;
         margin-left: auto;
         /*left: 20%;*/
     }
 
 
     .grid h2 {
-        text-align: center;
-        /*margin: 2rem;*/
-        padding-top: 1rem;
-        /*margin-top: 0.5rem;*/
+        /*padding: 0;*/
+        padding-top: 0;
+        font-size: 24px;
+        /*margin: 1rem;*/
+        /*border: 1px solid red;*/
+        width: 50%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .grid p {
-        margin-top: 1rem;
-        text-align: center;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
     }
 
     .grid h3 {
@@ -2237,15 +2209,15 @@ and (orientation: portrait) {
 
     }
 
-   .back-ground .photo-grid-1 {
+    .back-ground .photo-grid-1 {
         display: none;
 
     }
 
-   .back-ground .photo-grid-2 {
+    .back-ground .photo-grid-2 {
         /*display: none;*/
         width: 45%;
-       left: 48%;
+        left: 48%;
     }
 
     .photo-grid:hover, .photo-grid-1:hover, .photo-grid-2:hover {
