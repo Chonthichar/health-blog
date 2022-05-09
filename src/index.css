@@ -1796,6 +1796,9 @@ div#profile {
     }
 }
 
+/*work on the screen try media max wide 500*/
+
+
 /*iphone se*/
 /*Galaxsy s8+*/
 /*i phone XR*/
@@ -1804,7 +1807,6 @@ and (min-device-width: 320px)
 and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
-
 
     .navbarItem-container {
 
@@ -2005,6 +2007,362 @@ and (orientation: portrait) {
     }
 }
 
+@media (max-width: 480px) {
+
+    /*Blog Page*/
+    .columnGridText {
+        display: flex;
+    }
+
+    .columnGrid {
+        display: flex;
+    }
+
+    .swipperHeading {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 109.9%;
+        color: #2D2D2D;
+        margin-top: 10rem;
+        margin-bottom: 3rem;
+        border-bottom: black solid 2px;
+        padding-bottom: 1rem;
+        width: 50%;
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .swipperHeading-1 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 109.9%;
+        color: #2D2D2D;
+        margin-top: 10rem;
+        margin-bottom: 3rem;
+        /*border-bottom: black solid 2px;*/
+        padding-bottom: 1rem;
+        width: 70%;
+        padding-left: 0;
+        text-align: right;
+        padding-right: 8rem;
+        /*left: 90%;*/
+    }
+
+    .swipperSlider {
+        margin-top: 0rem;
+        /*position:relative;*/
+        top: 70%;
+        width: 100%;
+        height: 20%;
+        justify-content: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        float: left;
+        border: white solid 10px;
+        /*background-image: url("./asset/grass.jpg");*/
+    }
+
+    .profile-photo {
+        /*border: 1px solid green;*/
+        padding: 0;
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+        /*margin-left: 3rem;*/
+        /*float: left;*/
+        text-align: center;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        /*left: 50%;*/
+    }
+
+    .swiperSlideText {
+        font-size: 30px;
+        margin-top: 2rem;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+        padding: 1rem;
+        color: white;
+        font-style: normal;
+    }
+
+    .swiperSlidePrice {
+
+    }
+
+    .back-ground {
+        background-color: whitesmoke;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./asset/grass.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+    }
+
+    .back-ground .pageHeader {
+        font-size: 26px;
+    }
+
+    .back-ground .exploreHeading {
+        left: 40%;
+        /*border: 1px solid red;*/
+        font-size: 10px;
+        margin-top: 0;
+        margin-right: auto;
+        margin-left: auto;
+        /*position: relative;*/
+    }
+
+    .explore .exploreCategoryHeading {
+        font-size: 42px;
+        font-family: Barlow Condensed, sans-serif;
+        font-weight: 700;
+        padding-top: 5rem;
+        border-bottom: 2px solid black;
+        width: 49%;
+        padding-bottom: 10px;
+        /*text-align: center;*/
+    }
+
+    .gridBlogs {
+        display: flex;
+        width: 100%;
+        gap: 2rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .grid {
+        width: 130%;
+        margin-left: 2rem;
+    }
+
+    .gridBlogs .exploreCategories {
+        width: 100%;
+        height: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        /*left: 20%;*/
+    }
+
+
+    .grid h2 {
+        text-align: center;
+        /*margin: 2rem;*/
+        padding-top: 1rem;
+        /*margin-top: 0.5rem;*/
+    }
+
+    .grid p {
+        margin-top: 1rem;
+        text-align: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grid h3 {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 1.8rem;
+        border-bottom: solid black 2px;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        /*padding-bottom: 1rem;*/
+    }
+
+    .gridSubscripe {
+        margin-top: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        /*background: lightgrey;*/
+        color: white;
+        display: grid;
+        text-decoration: none;
+    }
+
+    .gridSubscripe button {
+        display: flex;
+        /*padding: 5px;*/
+        background-color: lightgrey;
+        padding-bottom: 10px;
+        font-size: 16px;
+        padding-top: 10px;
+        color: white;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    .gridSubscripe button:hover {
+        background-color: dimgray;
+    }
+
+    .gridSubscripe .fa {
+        font-size: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        color: white;
+        /*margin-top: 5px;*/
+    }
+
+    .gridBlogs p {
+        font-size: 24px;
+        text-decoration: #FE4A51;
+        text-align: center;
+        /*margin: 2rem;*/
+        color: white;
+        background: #575757;
+        /*background: linear-gradient(rgba(255, 255, 255), rgba(255, 99, 99));*/
+        width: 100%;
+        padding: 1rem;
+        /*border-bottom: #FE4A51;*/
+        height: 70px;
+        /*margin-bottom: 3rem;*/
+    }
+
+    .gridBlogs p:hover {
+        color: whitesmoke;
+        text-decoration: none;
+        background: lightgrey;
+        /*border-bottom: none;*/
+    }
+
+    .back-ground .photo-grid {
+        /*display: flex;*/
+        /*position: absolute;*/
+        /*top: 40%;*/
+        left: 8%;
+        width: 45%;
+
+    }
+
+   .back-ground .photo-grid-1 {
+        display: none;
+
+    }
+
+   .back-ground .photo-grid-2 {
+        /*display: none;*/
+        width: 45%;
+       left: 50%;
+    }
+
+    .photo-grid:hover, .photo-grid-1:hover, .photo-grid-2:hover {
+        border: #FE4A51;
+    }
+
+    .photo-last-grid {
+        width: 100%;
+        /*border: 1px solid red;*/
+        /*text-align: center;*/
+        /*justify-content: center;*/
+        height: 250px;
+        grid-gap: 2rem;
+        /*background-color: darkseagreen;*/
+        display: flex;
+        /*padding: 2rem;*/
+        /*border-radius: 50px;*/
+    }
+
+    .grid-sub {
+        background: white;
+        height: 230px;
+    }
+
+    .grid-sub p {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 26px;
+        font-style: normal;
+        color: #575757;
+    }
+
+    .grid-sub input {
+        position: relative;
+        width: 250px;
+        left: 14%;
+        margin-right: auto;
+        margin-left: auto;
+        /*justify-content: center;*/
+        height: 70px;
+        background: lightgrey;
+        text-align: center;
+    }
+
+    .grid-sub button {
+        position: relative;
+        /*width: 250px;*/
+        left: 37%;
+        /*width: 20%;*/
+        background: #FE4A51;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 1rem;
+        justify-content: center;
+        /*border: solid 1px black;*/
+        /*position: relative;*/
+        margin-right: auto;
+        color: white;
+        margin-left: auto;
+    }
+
+    .circle-image {
+        display: flex;
+        grid-gap: 1.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        background-color: #FFE5E6;
+        height: 230px;
+        margin-left: 0;
+        float: left;
+        font-size: 16px;
+        text-align: center;
+        /*padding-top: 2rem;*/
+    }
+
+    .last-grid-1 {
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        margin-top: 2rem;
+        box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .last-grid-2 {
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        margin-top: 2rem;
+        box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .last-grid-3 {
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        margin-top: 2rem;
+        box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .last-grid-4 {
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        margin-top: 2rem;
+        box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .last-grid-5 {
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        margin-top: 2rem;
+        box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.15);
+    }
+}
 
 /*..........................................*/
 
@@ -2018,6 +2376,8 @@ and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (orientation: portrait)
 and (-webkit-min-device-pixel-ratio: 1) {
+
+
     .home-container {
         width: 100%;
         /*border: 1px solid red;*/
@@ -2489,9 +2849,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
 /*sumsung A12*/
 /*sumsung A 51 / 71*/
 @media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape) {
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape) {
 
     .home-container {
         width: 100%;
@@ -2964,15 +3324,16 @@ and (orientation : landscape) {
 
 /*landscape for Ipad mini only*/
 @media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape)  {
-     .home-container {
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape) {
+    .home-container {
         width: 100%;
         /*border: 1px solid red;*/
         height: 800px;
         background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));
     }
+
     .home-container h1 {
 
         /*font-size: 36px;*/
@@ -3011,7 +3372,6 @@ and (orientation : landscape)  {
         justify-content: center;
         text-align: center;
         left: 40%;
-        margin-top: 15rem;
         width: 24%;
         font-weight: 300;
     }
@@ -3099,7 +3459,7 @@ and (orientation : landscape)  {
 
     .flex-columns .row {
         flex-direction: row;
-        width:  100%;
+        width: 100%;
         /*border: 1px solid red;*/
         padding: 0;
         /*margin: 0;*/
@@ -3441,8 +3801,6 @@ and (orientation : landscape)  {
 }
 
 
-
-
 /*galaxy note 2 galaxy Note 2 galaxy s 3*/
 /*galaxy s9+*/
 /*landscape for ipad*/
@@ -3604,7 +3962,7 @@ and (orientation: landscape) {
 
     .flex-columns .row {
         flex-direction: row;
-        width:  100%;
+        width: 100%;
         /*border: 1px solid red;*/
         padding: 0;
         /*margin: 0;*/
