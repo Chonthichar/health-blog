@@ -57,7 +57,7 @@ function Navbar({title}) {
             </nav>
 
             <nav className='navigation'>
-                {(toggleMenu || screenWidth > 768) && (
+                {(toggleMenu || screenWidth > 767) && (
                     <div className='menu'>
 
 

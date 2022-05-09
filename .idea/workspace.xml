@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6323d662-6a84-44bb-8ddf-7a8e4f61989b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +29,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="280sI9VrHFO8siccIduBKjkVWKK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -114,7 +119,11 @@
       <workItem from="1651771076814" duration="1202000" />
       <workItem from="1651774779795" duration="501000" />
       <workItem from="1651812669780" duration="3171000" />
-      <workItem from="1651816068534" duration="5786000" />
+      <workItem from="1651816068534" duration="10948000" />
+      <workItem from="1651834936047" duration="299000" />
+      <workItem from="1651900059602" duration="2243000" />
+      <workItem from="1652071208546" duration="1309000" />
+      <workItem from="1652082452904" duration="726000" />
     </task>
     <servers />
   </component>
