@@ -64,18 +64,18 @@ function Slider() {
             <div className='columnGrid'>
                 <Swiper slidesPerView={1}
                         pagination={{clickable: true}}
-                        breakpoints={{
+                        // breakpoints={{?
                             // when window width is >= 640px
-                            500: {
-                                width: 500,
-                                slidesPerView: 1,
-                            },
+                            // 768: {
+                            //     width: 768,
+                            //     slidesPerView: 1,
+                            // },
                             // when window width is >= 768px
                             // 768: {
                             //     width: 768,
                             //     slidesPerView: 1,
                             // },
-                        }}
+                        // }}
                 >
 
                     {listings.map(({data, id}) => (
@@ -84,7 +84,8 @@ function Slider() {
                                 background: `url(${data.imageUrls[0]})
                         center no-repeat`,
                                 backgroundSize: 'cover',
-                                height: '400px'
+                                height: '500px',
+                                // width: '600px'
                             }}
                                  className='swipperSlider'>
                                 <p className='swiperSlideText'>{data.name}</p>

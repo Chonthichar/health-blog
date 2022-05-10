@@ -4263,9 +4263,7 @@ and (orientation: landscape) {
 }
 
 /*swiper query in responsive*/
-.swiper-container {
-    width: 480px;
-}
+
 
 
 .swipperHeading {
