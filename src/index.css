@@ -2012,7 +2012,7 @@ and (orientation: portrait) {
     /*Blog Page*/
 
     .swiper-container {
-    width: 500px;
+    width: 200px;
   }
     main .columnGridText {
         display: grid;

@@ -64,63 +64,70 @@ function Slider() {
             <div className='columnGrid'>
                 <Swiper slidesPerView={1}
                         pagination={{clickable: true}}
-                        breakpoints={{
-                            // when window width is >= 640px
-                            // 768: {
-                            //     width: 768,
-                            //     slidesPerView: 1,
-                            // },
-                            // when window width is >= 768px
-                            200: {
-                                width: 200,
-                                slidesPerView: 1,
-                            },
-                        }}
-                >
 
-                    {listings.map(({data, id}) => (
-                        <SwiperSlide key={id} onClick={() => navigate(`/category/${data.type}/${id}`)}>
-                            <div style={{
-                                background: `url(${data.imageUrls[0]})
+                        // breakpoints={{
+                        //     300: {
+                        //         width: 300,
+                        //         slidesPerView: 1,
+                        //         600: {
+                        //             width: 900,
+                        //             slidesPerView: 1,
+                        //             300: {
+                        //                 width: 1200,
+                        //                 slidesPerView: 1
+                        //             },
+                        //         }}
+                                // sizes {(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 900px) 900px, (max-width: 1200px) 1200px}
+                                    >
+
+                                    {
+                                        listings.map(({data, id}) => (
+                                            <SwiperSlide key={id}
+                                                         onClick={() => navigate(`/category/${data.type}/${id}`)}>
+                                                <div style={{
+                                                    background: `url(${data.imageUrls[0]})
                         center no-repeat`,
-                                backgroundSize: 'cover',
-                                height: '500px',
-                                // width: '600px'
-                            }}
-                                 className='swipperSlider'>
-                                <p className='swiperSlideText'>{data.name}</p>
-                                <p className='swiperSlidePrice'>${data.discountedPrice ?? data.regularPrice}
-                                    {data.type === 'rent' && '/month'}
-                                </p>
-                            </div>
+                                                    backgroundSize: 'cover',
+                                                    height: '500px',
+                                                    width: '100%'
+                                                }}
 
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-                <div className='grid'>
-                    <img src={Ploy} alt="{Profile" className='profile-photo'/>
-                    <h2>Warunee S.</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, cursus velit commodo</p>
-                    <h3>Subscribe and Follow</h3>
-                    <div className='gridSubscripe'>
-                        <a href="https://www.facebook.com/Ploywaruneest" style={{textDecoration: 'none'}}>
+
+                                                     className='swipperSlider'>
+                                                    <p className='swiperSlideText'>{data.name}</p>
+                                                    <p className='swiperSlidePrice'>${data.discountedPrice ?? data.regularPrice}
+                                                        {data.type === 'rent' && '/month'}
+                                                    </p>
+                                                </div>
+
+                                            </SwiperSlide>
+                                        ))
+                                    }
+                            </Swiper>
+                            <div className='grid'>
+                            <img src={Ploy} alt="{Profile" className='profile-photo'/>
+                            <h2>Warunee S.</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, cursus velit commodo</p>
+                            <h3>Subscribe and Follow</h3>
+                            <div className='gridSubscripe'>
+                            <a href="https://www.facebook.com/Ploywaruneest" style={{textDecoration: 'none'}}>
                             <button type='button'><FaFacebook className='fa'/> Follow me on</button>
-                        </a>
-                        <a href="https://www.instagram.com/warunee2465/?hl=en" style={{textDecoration: 'none'}}>
+                            </a>
+                            <a href="https://www.instagram.com/warunee2465/?hl=en" style={{textDecoration: 'none'}}>
                             <button><FaInstagram className='fa'/>Follow mw on</button>
-                        </a>
-                        <a href="https://www.linkedin.com/" style={{textDecoration: 'none'}}>
+                            </a>
+                            <a href="https://www.linkedin.com/" style={{textDecoration: 'none'}}>
                             <button><FaLinkedin className='fa'/>Follow mw on</button>
-                        </a>
-                        <a href="https://www.youtube.com/shorts/Q5SoHn-3IN0" style={{textDecoration: 'none'}}>
+                            </a>
+                            <a href="https://www.youtube.com/shorts/Q5SoHn-3IN0" style={{textDecoration: 'none'}}>
                             <button><FaSubscript className='fa'/>Subscribe</button>
-                        </a>
+                            </a>
 
-                    </div>
-                </div>
-            </div>
-        </>
-    )
-}
+                            </div>
+                            </div>
+                            </div>
+                            </>
+                            )
+                        }
 
-export default Slider
+                            export default Slider
