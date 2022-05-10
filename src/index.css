@@ -2010,10 +2010,10 @@ and (orientation: portrait) {
 @media (max-width: 500px) {
 
     /*Blog Page*/
-
     .swiper-container {
-    width: 200px;
-  }
+        width: 200px;
+    }
+
     main .columnGridText {
         display: grid;
     }
@@ -2212,7 +2212,7 @@ and (orientation: portrait) {
 
     .explore .photo-last-grid {
         /*border: 1px solid red;*/
-        height: 1500px;
+        height: 1400px;
         grid-gap: 1rem;
         display: grid;
         background-color: #FFE5E6;
@@ -2220,8 +2220,9 @@ and (orientation: portrait) {
 
     .photo-last-grid .grid-sub {
         background: white;
-        height: 200px;
+        height: 180px;
         margin-top: 0;
+        width: 100%;
     }
 
     .photo-last-grid .grid-sub p {
@@ -2316,10 +2317,10 @@ and (orientation: portrait) {
 /*land scape*/
 @media (max-height: 580px) {
     /*Blog Page*/
-
     .swiper-container {
-    width: 500px;
-  }
+        width: 500px;
+    }
+
     main .columnGridText {
         display: grid;
     }
@@ -2344,18 +2345,22 @@ and (orientation: portrait) {
     }
 
     .columnGrid .swipperSlider {
-        margin-top: 1rem;
+        margin-top: 0rem;
+        top: 0;
         /*position:relative;*/
         /*top: 70%;*/
-        width: 400px;
+        width: 450px;
+        /*left: 200px;*/
         /*height: 500px;*/
         border: white solid 10px;
+        margin-left: 2rem;
         /*background-image: url("./asset/grass.jpg");*/
-        margin-bottom: 4rem;
-        margin-left: auto;
-        margin-right: auto;
+        margin-bottom: 1rem;
+        position: -webkit-sticky;
         justify-content: center;
         text-align: center;
+
+
     }
 
     .grid .profile-photo {
@@ -2516,7 +2521,7 @@ and (orientation: portrait) {
 
     .back-ground .photo-grid-1 {
         /*display: none;*/
-         width: 28%;
+        width: 28%;
         left: 35%;
         margin-top: 13rem;
 
@@ -2546,6 +2551,7 @@ and (orientation: portrait) {
         background: white;
         height: 200px;
         margin-top: 0;
+        width: 100%;
     }
 
     .photo-last-grid .grid-sub p {
@@ -2640,31 +2646,36 @@ and (orientation: portrait) {
 
 /*portrait*/
 @media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
     .explore .pageHeader {
         color: white;
     }
-    .back-ground .exploreHeading{
+
+    .back-ground .exploreHeading {
         margin-top: 0;
         left: 43%;
     }
+
     .back-ground .photo-grid {
         left: 8%;
-        margin-top: 2rem;
+        margin-top: 3rem;
         width: 30%;
     }
+
     .back-ground .photo-grid-1 {
         left: 35%;
-        margin-top: 2rem;
+        margin-top: 3rem;
         width: 30%;
     }
+
     .back-ground .photo-grid-2 {
         left: 62%;
-        margin-top: 2rem;
+        margin-top: 3rem;
         width: 30%;
     }
+
     .columnGridText .swipperHeading {
         font-size: 30px;
         width: 50%;
@@ -2673,6 +2684,7 @@ and (orientation: portrait) {
         /*padding: 0;*/
         /*border: 1px solid green;*/
     }
+
     .columnGridText .swipperHeading-1 {
         text-align: right;
         /*left: 50%;*/
@@ -2682,18 +2694,22 @@ and (orientation: portrait) {
         padding-right: 2rem;
         /*padding-bottom: 0;*/
     }
+
     .swipperSlider {
         height: 800px;
     }
+
     .grid p {
         font-size: 18px;
     }
-   .main .gridBlogs .exploreCategories {
+
+    .main .gridBlogs .exploreCategories {
         /*width: 100%;*/
     }
-   .photo-last-grid {
-       display: inline-grid;
-   }
+
+    .photo-last-grid {
+        display: inline-grid;
+    }
 
     .explore .photo-last-grid {
         /*border: 1px solid red;*/
@@ -2702,29 +2718,90 @@ and (orientation: portrait) {
         display: grid;
         background-color: #FFE5E6;
     }
-   .circle-image .last-grid-1,  .circle-image .last-grid-2,  .circle-image .last-grid-3,  .circle-image .last-grid-4,  .circle-image .last-grid-5  {
-    height: 50%;
-       width: 250px;
-       padding: 0;
-   }
-   .photo-last-grid .grid-sub {
-       /*display: flex;*/
-       margin: 0;
-       padding: 0;
-   }
-   .photo-last-grid .grid-sub input {
-       width: 80%;
-       height: 22%;
-   }
-   .photo-last-grid .grid-sub button{
-       /*padding: 1px;*/
-   }
 
+    .circle-image .last-grid-1, .circle-image .last-grid-2, .circle-image .last-grid-3, .circle-image .last-grid-4, .circle-image .last-grid-5 {
+        height: 50%;
+        width: 400px;
+        padding: 0;
+        /*border: 1px solid red;*/
+        /*margin: ;*/
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .photo-last-grid .grid-sub {
+        /*display: flex;*/
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .photo-last-grid .grid-sub input {
+        width: 80%;
+        height: 22%;
+        font-size: 14px;
+    }
+
+    .photo-last-grid .grid-sub button {
+        /*padding: 1px;*/
+        font-size: 18px;
+        left: 0;
+        margin-top: 0;
+        height: 54px;
+    }
+
+    .grid .gridSubscripe {
+        display: block;
+        padding: 0;
+        /*border: 1px solid red;*/
+    }
+
+    .grid .gridSubscripe button {
+        /*display: inline-grid;*/
+        grid-template-columns: 1fr;
+        padding: 0.3rem;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .columnGrid .grid h3 {
+        font-size: 20px;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .exploreCategoryHeading {
+        /*border: 1px solid red;*/
+        padding-top: 0;
+        margin-top: 0;
+        text-align: center;
+      /*line-height: 0;*/
+      /*  height: 0;*/
+        border-bottom: none;
+    }
+   main .gridBlogs .exploreCategories {
+        height: 250px;
+    }
 }
+
 /*..........................................*/
+/*ipad mini ipad air*/
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .photo-grid-1 {
+        margin-top: 10rem;
+    }
+    .pageHeader {
+        color: green;
+    }
+}
+
+
 
 /* ----------- iPad 1, 2, Mini and Air ----------- */
-
 
 /**/
 /* Portrait */
@@ -3209,6 +3286,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
 and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (orientation: landscape) {
+
+
 
     .home-container {
         width: 100%;
@@ -4677,7 +4756,6 @@ and (orientation: landscape) {
 /*swiper query in responsive*/
 
 
-
 .swipperHeading {
     font-weight: 700;
     font-size: 36px;
@@ -4941,7 +5019,7 @@ and (orientation: landscape) {
     /*text-align: center;*/
     /*justify-content: center;*/
     height: 250px;
-    grid-gap: 2rem;
+    grid-gap: 7px;
     /*background-color: darkseagreen;*/
     display: flex;
     /*padding: 2rem;*/
@@ -4951,6 +5029,7 @@ and (orientation: landscape) {
 .grid-sub {
     background: white;
     height: 230px;
+    width: 30%;
 }
 
 .grid-sub p {
@@ -4963,18 +5042,20 @@ and (orientation: landscape) {
 
 .grid-sub input {
     position: relative;
+    font-size: 14px;
     width: 250px;
     left: 14%;
     margin-right: auto;
     margin-left: auto;
     /*justify-content: center;*/
-    height: 70px;
+    height: 60px;
     background: lightgrey;
     text-align: center;
 }
 
 .grid-sub button {
     position: relative;
+    font-size: 14px;
     /*width: 250px;*/
     left: 37%;
     /*width: 20%;*/
@@ -4994,7 +5075,7 @@ and (orientation: landscape) {
 
 .circle-image {
     display: flex;
-    grid-gap: 1.5rem;
+    grid-gap: 1rem;
     padding-left: 3rem;
     padding-right: 3rem;
     background-color: #FFE5E6;
@@ -5267,7 +5348,7 @@ and (orientation: landscape) {
     padding: 2rem;
     font-size: 50px;
     /*border: 2px solid red;*/
-    color: cornflowerblue;
+    color: white;
 }
 
 .emailInput-forgot {
