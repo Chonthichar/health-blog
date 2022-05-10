@@ -64,18 +64,18 @@ function Slider() {
             <div className='columnGrid'>
                 <Swiper slidesPerView={1}
                         pagination={{clickable: true}}
-                        // breakpoints={{?
+                        breakpoints={{
                             // when window width is >= 640px
                             // 768: {
                             //     width: 768,
                             //     slidesPerView: 1,
                             // },
                             // when window width is >= 768px
-                            // 768: {
-                            //     width: 768,
-                            //     slidesPerView: 1,
-                            // },
-                        // }}
+                            200: {
+                                width: 200,
+                                slidesPerView: 1,
+                            },
+                        }}
                 >
 
                     {listings.map(({data, id}) => (
