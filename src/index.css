@@ -2010,6 +2010,10 @@ and (orientation: portrait) {
 @media (max-width: 500px) {
 
     /*Blog Page*/
+
+    .swiper-container {
+    width: 500px;
+  }
     main .columnGridText {
         display: grid;
     }
