@@ -2313,6 +2313,414 @@ and (orientation: portrait) {
     }
 }
 
+/*land scape*/
+@media (max-height: 580px) {
+    /*Blog Page*/
+
+    .swiper-container {
+    width: 500px;
+  }
+    main .columnGridText {
+        display: grid;
+    }
+
+    main .columnGrid {
+        display: grid;
+    }
+
+    .columnGridText .swipperHeading {
+        padding-bottom: 0.5rem;
+        font-size: 18px;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        width: 100%;
+        text-align: center;
+        /*border: 1px solid blueviolet;*/
+
+    }
+
+    .columnGridText .swipperHeading-1 {
+        display: none;
+    }
+
+    .columnGrid .swipperSlider {
+        margin-top: 1rem;
+        /*position:relative;*/
+        /*top: 70%;*/
+        width: 400px;
+        /*height: 500px;*/
+        border: white solid 10px;
+        /*background-image: url("./asset/grass.jpg");*/
+        margin-bottom: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .grid .profile-photo {
+        margin-top: 10px;
+        width: 30%;
+        height: 30%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .columnGrid .swipperSlider .swiperSlideText {
+        font-size: 18px;
+    }
+
+    .columnGrid .swipperSlider .swiperSlidePrice {
+        font-size: 18px;
+    }
+
+    .back-ground {
+        background-color: whitesmoke;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./asset/grass.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+    }
+
+    .back-ground .pageHeader {
+        font-size: 28px;
+        color: white;
+
+    }
+
+    .back-ground .exploreHeading {
+        left: 42%;
+        /*border: 1px solid red;*/
+        font-size: 18px;
+        color: white;
+        margin-top: 0;
+        margin-right: auto;
+        margin-left: auto;
+        /*position: relative;*/
+    }
+
+    .explore .exploreCategoryHeading {
+        font-size: 22px;
+        padding-top: 1rem;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    main .gridBlogs {
+        display: grid;
+        gap: 0;
+        /*width: 50%;*/
+        /*height: 50%;*/
+        /*height: 30px;*/
+        /*border: 1px solid green;*/
+    }
+
+    /*box for warunee name*/
+    .columnGrid .grid {
+        width: 100%;
+        margin-left: 0rem;
+        /*background-color: #FE4A51;*/
+        /*border: 1px solid red;*/
+    }
+
+
+    main .gridBlogs .exploreCategories {
+        height: 350px;
+    }
+
+
+    .grid h2 {
+        /*padding: 0;*/
+        padding-top: 0;
+        font-size: 24px;
+        /*margin: 1rem;*/
+        /*border: 1px solid red;*/
+        width: 50%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grid p {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        /*background-color: #FE4A51;*/
+    }
+
+    .columnGrid .grid h3 {
+        font-size: 18px;
+        width: 60%;
+        padding-bottom: 3px;
+    }
+
+    .gridSubscripe {
+        margin-top: 1rem;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        /*background: lightgrey;*/
+        color: white;
+        display: grid;
+        text-decoration: none;
+    }
+
+    .gridSubscripe button {
+        display: flex;
+        /*padding: 5px;*/
+        background-color: lightgrey;
+        padding-bottom: 10px;
+        font-size: 16px;
+        padding-top: 10px;
+        color: white;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    .gridSubscripe button:hover {
+        background-color: dimgray;
+    }
+
+    .gridSubscripe .fa {
+        font-size: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        color: white;
+        /*margin-top: 5px;*/
+    }
+
+    main .gridBlogs p {
+        font-size: 18px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .gridBlogs p:hover {
+        color: whitesmoke;
+        text-decoration: none;
+        background: lightgrey;
+        /*border-bottom: none;*/
+    }
+
+    .back-ground .photo-grid {
+        /*display: flex;*/
+        /*position: absolute;*/
+        /*top: 40%;*/
+        left: 12%;
+        width: 28%;
+        /*left: 60%;*/
+        margin-top: 13rem;
+
+    }
+
+    .back-ground .photo-grid-1 {
+        /*display: none;*/
+         width: 28%;
+        left: 35%;
+        margin-top: 13rem;
+
+    }
+
+    .back-ground .photo-grid-2 {
+        /*display: none;*/
+        width: 28%;
+        left: 60%;
+        margin-top: 13rem;
+        /*top: 20%;*/
+    }
+
+    .photo-grid:hover, .photo-grid-1:hover, .photo-grid-2:hover {
+        border: #FE4A51;
+    }
+
+    .explore .photo-last-grid {
+        /*border: 1px solid red;*/
+        height: 1500px;
+        grid-gap: 1rem;
+        display: grid;
+        background-color: #FFE5E6;
+    }
+
+    .photo-last-grid .grid-sub {
+        background: white;
+        height: 200px;
+        margin-top: 0;
+    }
+
+    .photo-last-grid .grid-sub p {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .photo-last-grid .grid-sub input {
+        /*position: relative;*/
+        width: 80%;
+        font-size: 16px;
+        justify-content: center;
+        /*position: absolute;*/
+        left: 10%;
+        margin-right: auto;
+        margin-left: auto;
+        /*justify-content: center;*/
+        height: 40px;
+        text-align: center;
+    }
+
+    .photo-last-grid .grid-sub button {
+        left: 0%;
+        display: flex;
+        font-size: 18px;
+        background: #FE4A51;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        margin-top: 1rem;
+        justify-content: center;
+        margin-right: auto;
+        color: white;
+        margin-left: auto;
+        margin-bottom: 0;
+    }
+
+    .photo-last-grid .circle-image {
+        margin-right: auto;
+        margin-left: auto;
+        display: grid;
+        grid-gap: 0rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        /*border: 1px solid red;*/
+        height: 1130px;
+        /*margin-left: 0;*/
+        /*float: unset;*/
+        font-size: 20px;
+        /*padding-top: 2rem;*/
+    }
+
+    .last-grid-1 {
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        margin-top: 2rem;
+        box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .last-grid-2 {
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        margin-top: 2rem;
+        box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .last-grid-3 {
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        margin-top: 2rem;
+        box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .last-grid-4 {
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        margin-top: 2rem;
+        box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .last-grid-5 {
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        margin-top: 2rem;
+        box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/*portrait*/
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .explore .pageHeader {
+        color: white;
+    }
+    .back-ground .exploreHeading{
+        margin-top: 0;
+        left: 43%;
+    }
+    .back-ground .photo-grid {
+        left: 8%;
+        margin-top: 2rem;
+        width: 30%;
+    }
+    .back-ground .photo-grid-1 {
+        left: 35%;
+        margin-top: 2rem;
+        width: 30%;
+    }
+    .back-ground .photo-grid-2 {
+        left: 62%;
+        margin-top: 2rem;
+        width: 30%;
+    }
+    .columnGridText .swipperHeading {
+        font-size: 30px;
+        width: 50%;
+        text-align: center;
+        /*margin-bottom: 0;*/
+        /*padding: 0;*/
+        /*border: 1px solid green;*/
+    }
+    .columnGridText .swipperHeading-1 {
+        text-align: right;
+        /*left: 50%;*/
+        margin-bottom: 0;
+        padding: 0;
+        /*border: 1px solid green;*/
+        padding-right: 2rem;
+        /*padding-bottom: 0;*/
+    }
+    .swipperSlider {
+        height: 800px;
+    }
+    .grid p {
+        font-size: 18px;
+    }
+   .main .gridBlogs .exploreCategories {
+        /*width: 100%;*/
+    }
+   .photo-last-grid {
+       display: inline-grid;
+   }
+
+    .explore .photo-last-grid {
+        /*border: 1px solid red;*/
+        height: 500px;
+        grid-gap: 1rem;
+        display: grid;
+        background-color: #FFE5E6;
+    }
+   .circle-image .last-grid-1,  .circle-image .last-grid-2,  .circle-image .last-grid-3,  .circle-image .last-grid-4,  .circle-image .last-grid-5  {
+    height: 50%;
+       width: 250px;
+       padding: 0;
+   }
+   .photo-last-grid .grid-sub {
+       /*display: flex;*/
+       margin: 0;
+       padding: 0;
+   }
+   .photo-last-grid .grid-sub input {
+       width: 80%;
+       height: 22%;
+   }
+   .photo-last-grid .grid-sub button{
+       /*padding: 1px;*/
+   }
+
+}
 /*..........................................*/
 
 /* ----------- iPad 1, 2, Mini and Air ----------- */

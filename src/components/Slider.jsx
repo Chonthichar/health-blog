@@ -89,7 +89,9 @@ function Slider() {
                         center no-repeat`,
                                                     backgroundSize: 'cover',
                                                     height: '500px',
-                                                    width: '100%'
+                                                    marginRight: 'auto',
+                                                    marginTop: 'auto'
+                                                    // width: '50%'
                                                 }}
 
 
