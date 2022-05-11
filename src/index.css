@@ -2312,6 +2312,572 @@ and (orientation: portrait) {
         margin-top: 2rem;
         box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.15);
     }
+
+
+    /*sign In*/
+    /*sign In*/
+    .box-signIn .create-account {
+        /*border: 1px solid black;*/
+        font-size: 22px;
+        font-weight: 400;
+        width: 100%;
+        padding: 12px;
+        margin-top: 0;
+        top: 0;
+    }
+
+    .box-signIn .const {
+        /*border: solid 1px green;*/
+        margin-top: 0rem;
+        padding-top: 1rem;
+        width: 330px;
+        height: 900px;
+        /*background-color: mediumseagreen;*/
+    }
+
+    .box-signIn .consts {
+        /*border: solid 1px green;*/
+        background: green;
+        /*padding: 1rem;*/
+        margin-top: 4rem;
+        padding-top: 1rem;
+        overflow: hidden;
+        position: relative;
+        width: 500px;
+        height: 1010px;
+        /*height: ;*/
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1rem;
+        /*background-color: mediumseagreen;*/
+    }
+
+
+    .box-signIn {
+    }
+
+
+    .box-signUp {
+        /*border: red solid 1px;*/
+        background: url("./asset/leaf-4.jpg") no-repeat center;
+        margin-top: 0;
+        /*margin-top: auto;*/
+        padding-top: 7rem;
+        /*position: relative;*/
+        width: 100%;
+        height: 1500px;
+        transition: transform 1.2s ease-in-out;
+        /*padding: 50px 30px 0;*/
+        font-size: 20px;
+    }
+
+
+    .const .box-signIn-email {
+        /*display: flex;*/
+        /*border: #FE4A51 1px solid;*/
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 10px;
+    }
+
+    /*.box-signIn {*/
+    /*    border: 1px solid red;*/
+    /*}*/
+    .box-signIn-email .labelUsername {
+        padding-left: 1rem;
+        /*border: solid 1px green;*/
+        margin-top: 0rem;
+        display: flex;
+        /*padding-top: 1rem;*/
+        font-size: 20px;
+    }
+
+    /**/
+    .box-signIn-email .emailInput {
+        /*border: solid 1px red;*/
+        width: 90%;
+        height: 70px;
+        /*padding: 20px;*/
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 16px;
+    }
+
+    .box-signIn .passwordInputDiv {
+        /*border: solid 1px black;*/
+        /*height: 10px;*/
+    }
+
+    .box-signIn .labelPassword {
+
+    }
+
+    .passwordInputDiv .passwordInput {
+        /*border: solid 1px red;*/
+        /*display: flex;*/
+        height: 70px;
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .forgotPasswordLink, .registerLink {
+
+    }
+
+
+    .singInDivBox {
+        /*border: solid 1px mediumseagreen;*/
+    }
+
+    .buttonSignIn {
+        /*border: solid 1px green;*/
+        width: 40%;
+        justify-content: center;
+        position: relative;
+        left: 30%;
+        /*background: #FE4A51;*/
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 20px;
+    }
+
+    .buttonSignIn:hover {
+        /*background: green;*/
+    }
+
+
+    .singInText {
+        /*border: 1px solid red;*/
+        text-align: center;
+        /*padding: 1rem;*/
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .box-signIn .signUpBar {
+        /*border: 1px solid black;*/
+        margin: 0rem;
+        text-align: center;
+        font-size: 20px;
+        padding: 15px;
+        color: black;
+    }
+
+    .signUpBar h6 {
+
+    }
+
+    .signUpBar p {
+
+    }
+
+    .socialLogin {
+        /*border: 1px solid black;*/
+        text-align: center;
+    }
+
+    .socialIconImg {
+        color: white;
+        font-size: 60px;
+        padding: 12px;
+        background: cornflowerblue;
+        border-radius: 100%;
+    }
+
+
+    /*forgot password*/
+    .pageContainer {
+        margin-top: 5rem;
+        /*border: 1px solid green;*/
+        /*background: ;*/
+        background: url("./asset/pi.jpg") no-repeat bottom;
+        background-size: cover;
+        height: 500px;
+        width: 100%;
+    }
+
+    .pageHeader {
+        margin-top: 2rem;
+        padding: 2rem;
+        font-size: 50px;
+        /*border: 2px solid red;*/
+        color: white;
+    }
+
+    .emailInput-forgot {
+        width: 60%;
+        text-align: center;
+        justify-content: center;
+        /*position: absolute;*/
+        display: grid;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .forgotPasswordLink-forgotPage {
+        /*text-align: right;*/
+        /*border: 1px solid white;*/
+        text-align: center;
+        background-color: white;
+        /*justify-content: right;*/
+        width: 14%;
+        border-radius: 5px;
+        font-size: 22px;
+        color: white;
+        font-weight: 700;
+        /*padding-right: 2rem;*/
+        margin-top: 2rem;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .signInbar-Button {
+        /*border: 1px solid black;*/
+        text-align: center;
+        /*display: inline-block;*/
+        width: 20%;
+        /*position: absolute;*/
+        margin-right: auto;
+        margin-left: auto;
+        /*padding: 2rem;*/
+
+    }
+
+    .signInButton {
+        background: cornflowerblue;
+        padding: 1rem;
+        color: white;
+        font-size: 20px;
+        border-radius: 5px;
+        box-shadow: cornflowerblue;
+    }
+
+    /*mu profile*/
+    .box-profile {
+        background: white;
+        /*margin-top: 21rem;*/
+        width: 50%;
+        height: 1050px;
+        margin-right: auto;
+        margin-left: auto;
+        /*color: black;*/
+    }
+
+    .myProfile {
+        padding-top: 6rem;
+        /*border: 1px solid red;*/
+        text-align: center;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+    }
+
+    .logOut-profile {
+        background: forestgreen;
+        color: white;
+        font-weight: 600;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        /*border: 1px solid black;*/
+    }
+
+    .logOut-profile:hover {
+        background: mediumseagreen;
+    }
+
+    .profileDetailHeader {
+        /*border: 1px solid black;*/
+        margin-top: 3rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        background-color: whitesmoke;
+    }
+
+    .personalDetail-profile {
+        /*border: 1px solid black;*/
+        padding-top: 1rem;
+        /*margin-top: 6rem;*/
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .changePersonalDetails {
+        background: forestgreen;
+        color: white;
+        font-weight: 600;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        /*border: 1px solid black;*/
+    }
+
+    .changePersonalDetails:hover {
+        background: mediumseagreen;
+    }
+
+    .profileCard {
+        /*border: 1px solid red;*/
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .shadow {
+        margin-bottom: 0.5rem;
+    }
+
+    .FaHome-profile {
+        color: mediumseagreen;
+        font-size: 40px;
+        padding-left: 5px;
+    }
+
+    .createListing-profile {
+        display: flex;
+        /*border: 1px solid black;*/
+        /*text-align: center;*/
+        justify-content: center;
+        /*padding: 10px;*/
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 22px;
+    }
+
+    .listingsList {
+        color: black;
+        font-size: 30px;
+    }
+
+    .checkoutBlogs-Profile {
+        margin-top: 2rem;
+        background: orange;
+        color: white;
+        font-weight: 600;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        padding-bottom: 0;
+        padding-top: 15px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        /*border: 1px solid black;*/
+    }
+
+    .pageHeader-createListing {
+        margin-top: 6rem;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    /*creatingListing*/
+    /*.formLabel {*/
+    /*    background: whitesmoke;*/
+    /*}*/
+    .boxSize-CreateListing {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .pageHeader-createListing {
+        padding-top: 10px;
+        color: white;
+        font-size: 50px;
+        background: mediumseagreen;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .createListing-page {
+        background: whitesmoke;
+    }
+
+    .formLabel {
+
+    }
+
+    .profile-createListing {
+    }
+
+    .boxSize-CreateListing {
+        background: rgb(211, 228, 205);
+        padding: 2rem;
+    }
+
+    .topic-blogs {
+        /*background: white;*/
+        /*text-align: center;*/
+    }
+
+    .formLabel {
+        /*background: white;*/
+        font-size: 24px;
+        color: dimgray;
+        /*font-weight: 500;*/
+    }
+
+    .formButtons {
+        background: white;
+    }
+
+    .inspiration-blog {
+        height: 100px;
+        /*margin: 20px;*/
+        text-align: center;
+        color: dimgray;
+        font-size: 22px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .diet-blog {
+        height: 100px;
+        text-align: center;
+        color: dimgray;
+        font-size: 22px;
+    }
+
+    .formLabel-name, .formLabel {
+        margin-top: 1rem;
+        display: flex;
+        color: dimgray;
+        font-size: 24px;
+    }
+
+    .formInputName-Essay {
+        height: 500px;
+        width: 100%;
+        /*margin-top: 2rem;*/
+        display: flex;
+        /*text-align: center;*/
+        padding: 20px;
+        font-size: 22px;
+        color: dimgray;
+    }
+
+    .formInputName, .formInputSmall, .formInputAddress {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+    }
+
+    .createListingButton {
+        background: rgb(101, 193, 140);
+        color: white;
+        padding: 20px;
+        font-weight: 500;
+        width: 40%;
+        font-size: 26px;
+        text-align: center;
+        justify-content: center;
+        border-radius: 10px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .loadMore {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /*categories*/
+    .category-pageHeader {
+        font-size: 50px;
+        /*background: mediumseagreen;*/
+        /*border: 1px solid red;*/
+    }
+
+    .categoryListings {
+        font-size: 20px;
+        text-decoration: none;
+        background: linear-gradient(85.38deg, #EDEDE4 -23.38%, #F8F2EB 97.65%);
+        text-align: center;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        border: 1px solid red;
+        /*text-decoration: none;*/
+        /*margin: 5rem;*/
+        /*text-align: center;*/
+    }
+
+    /*deep to each blogs*/
+    .shareIconDiv {
+        color: mediumseagreen;
+        /*border: solid 1px green;*/
+        margin-top: 2rem;
+    }
+
+    .swiperSlideDiv {
+        border: 1px solid green;
+    }
+
+    .linkCopied {
+        font-size: 22px;
+        color: green;
+    }
+
+    .listingDetails {
+        font-size: 22px;
+        border: 1px solid black;
+        height: 1200px;
+        text-align: center;
+        color: black;
+        font-style: normal;
+    }
+
+    .listingName {
+        font-size: 30px;
+    }
+
+    .listingLocation {
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .listingType {
+        border: 1px solid red;
+    }
+
+    .listingDetailList {
+        border: 1px solid blue;
+    }
+
+    .listingLocationTitle {
+        border: 1px solid blueviolet;
+    }
+
+    .leafletContainer {
+        width: 100%;
+        /*height: 1000px;*/
+    }
+
+    .primaryButton {
+        width: 100%;
+        border: 2px solid yellow;
+    }
 }
 
 /*land scape*/
@@ -2775,30 +3341,15 @@ and (-webkit-min-device-pixel-ratio: 2) {
         padding-top: 0;
         margin-top: 0;
         text-align: center;
-      /*line-height: 0;*/
-      /*  height: 0;*/
+        /*line-height: 0;*/
+        /*  height: 0;*/
         border-bottom: none;
     }
-   main .gridBlogs .exploreCategories {
+
+    main .gridBlogs .exploreCategories {
         height: 250px;
     }
 }
-
-/*..........................................*/
-/*ipad mini ipad air*/
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    .photo-grid-1 {
-        margin-top: 10rem;
-    }
-    .pageHeader {
-        color: green;
-    }
-}
-
 
 
 /* ----------- iPad 1, 2, Mini and Air ----------- */
@@ -3286,7 +3837,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
 and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (orientation: landscape) {
-
 
 
     .home-container {
@@ -5278,7 +5828,7 @@ and (orientation: landscape) {
 
 .buttonSignIn {
     /*border: solid 1px green;*/
-    width: 43%;
+    /*width: 30%;*/
     justify-content: center;
     position: relative;
     left: 30%;

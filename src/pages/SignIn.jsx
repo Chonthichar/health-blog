@@ -91,7 +91,7 @@ function SignIn() {
                                 marginLeft: '2rem'
                             }}
                         />
-                        <input className='bg-white emailInput shadow appearance-none  rounded w-full py-3 px-3 m-3 text-gray-700 leading-tight
+                        <input className='bg-white passwordInput shadow appearance-none  rounded w-full py-3 px-3 m-3 text-gray-700 leading-tight
                             focus:outline-none focus:shadow-outline text-center'
                                id='password'
                                value={password}
@@ -113,12 +113,13 @@ function SignIn() {
                         <button
                             className=' buttonSignIn'>
                             <FaArrowRight style={{
-                                color: 'white',
-                                width: '170px',
+                                 color: 'white',
+                                width: '150px',
                                 height: '50px',
-                                backgroundImage: 'linear-gradient(to right, rgb(255, 255, 255), rgb(46, 204, 113))',
+                                backgroundImage: 'linear-gradient(rgb(255, 255, 255), rgb(46, 204, 113))',
                                 padding: '10px',
-                                borderRadius: '20px'
+                                borderRadius: '20px',
+                                // left: '30%'
                             }}/>
                         </button>
                     </div>
