@@ -114,12 +114,13 @@ function SignIn() {
                             className=' buttonSignIn'>
                             <FaArrowRight style={{
                                  color: 'white',
-                                width: '150px',
+                                width: '100%',
                                 height: '50px',
-                                backgroundImage: 'linear-gradient(rgb(255, 255, 255), rgb(46, 204, 113))',
+                                backgroundColor: 'rgb(78, 148, 79)',
                                 padding: '10px',
                                 borderRadius: '20px',
-                                // left: '30%'
+                                marginLeft: '0%'
+                                // left: '80%'
                             }}/>
                         </button>
                     </div>
