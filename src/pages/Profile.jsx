@@ -133,7 +133,7 @@ function Profile() {
                                        value={name}
                                        onChange={onChange}
                                        className='shadow appearance-none border rounded w-48 md:w-full py-2 px-3 text-gray-700 leading-tight
-                            focus:outline-none focus:shadow-outline text-center pt-20'
+                            focus:outline-none focus:shadow-outline text-center pt-20 whoSignIn'
                                 />
 
                                 {/*<input type="text" id="email"*/}
@@ -152,7 +152,7 @@ function Profile() {
                                        value={email}
                                        onChange={onChange}
                                        className='shadow appearance-none border rounded w-48 md:w-full py-2 px-3 text-gray-700 leading-tight
-                            focus:outline-none focus:shadow-outline text-center'
+                            focus:outline-none focus:shadow-outline text-center whoSignIn'
                                 />
                             </form>
                         </div>
@@ -169,7 +169,7 @@ function Profile() {
             </div>
 
             <div>
-                <p>your listing</p>
+                <p className='yourListing'>Checkout your listing</p>
                 {/* loading*/}
                 {!loading && listings?.length > 0 && (
                     <>

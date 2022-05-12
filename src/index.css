@@ -2529,83 +2529,62 @@ and (orientation: portrait) {
         font-size: 18px;
     }
 
-    /*mu profile*/
-    .box-profile {
-        background: white;
-        /*margin-top: 21rem;*/
-        width: 50%;
-        height: 1050px;
-        margin-right: auto;
-        margin-left: auto;
-        /*color: black;*/
+    /*when login to the profile*/
+    .profile .box-profile {
+        width: 95%;
+        height: 650px;
     }
 
-    .myProfile {
-        padding-top: 6rem;
-        /*border: 1px solid red;*/
-        text-align: center;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 50px;
+    .profileHeader .myProfile {
+        width: 100%;
+        padding-top: 1rem;
+        font-size: 35px;
     }
 
-    .logOut-profile {
+    .profileHeader .logOut-profile {
         background: forestgreen;
-        color: white;
-        font-weight: 600;
-        width: 30%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 15px;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        /*border: 1px solid black;*/
+        font-weight: 300;
+        width: 70%;
+        padding: 10px;
     }
 
     .logOut-profile:hover {
         background: mediumseagreen;
     }
 
-    .profileDetailHeader {
+    main .profileDetailHeader {
         /*border: 1px solid black;*/
-        margin-top: 3rem;
-        margin-right: 1rem;
-        margin-left: 1rem;
-        background-color: whitesmoke;
+        margin-top: 1rem;
+        font-size: 24px;
     }
 
-    .personalDetail-profile {
-        /*border: 1px solid black;*/
-        padding-top: 1rem;
-        /*margin-top: 6rem;*/
-        text-align: center;
-        font-size: 30px;
-        font-weight: 500;
+    main .personalDetail-profile {
+        font-size: 24px;
     }
 
-    .changePersonalDetails {
-        background: forestgreen;
-        color: white;
-        font-weight: 600;
-        width: 30%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 15px;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        /*border: 1px solid black;*/
+    .profileDetailHeader .changePersonalDetails {
+        width: 50%;
+        padding: 10px;
+        font-weight: 400;
     }
 
     .changePersonalDetails:hover {
         background: mediumseagreen;
     }
 
-    .profileCard {
+    form .whoSignIn {
+        /*margin: 0;*/
+        font-size: 14px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .profileDetailHeader .profileCard {
         /*border: 1px solid red;*/
+        width: 100%;
         text-align: center;
-        margin: 1rem;
+        margin: 0rem;
         padding: 1rem;
     }
 
@@ -2613,26 +2592,28 @@ and (orientation: portrait) {
         margin-bottom: 0.5rem;
     }
 
-    .FaHome-profile {
-        color: mediumseagreen;
-        font-size: 40px;
+    .createListing-profile .FaHome-profile {
+        color: white;
+        font-size: 35px;
         padding-left: 5px;
     }
 
-    .createListing-profile {
-        display: flex;
-        /*border: 1px solid black;*/
-        /*text-align: center;*/
-        justify-content: center;
-        /*padding: 10px;*/
-        padding-left: 5px;
-        padding-top: 5px;
-        font-size: 22px;
+    .profileDetailHeader .createListing-profile {
+        font-size: 18px;
+        background: green;
+        color: white;
+        margin-bottom: 10px;
     }
 
     .listingsList {
         color: black;
         font-size: 30px;
+    }
+
+    /*check out your listing*/
+    #root div .yourListing {
+        font-size: 20px;
+        width: 80%;
     }
 
     .checkoutBlogs-Profile {
@@ -3182,7 +3163,8 @@ and (orientation: portrait) {
         margin-top: 2rem;
         box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.15);
     }
-     /*forgot password*/
+
+    /*forgot password*/
     #root .pageContainer {
         margin-top: 0;
         height: 600px;
@@ -5938,18 +5920,18 @@ and (orientation: landscape) {
 
 /*forgot password*/
 .pageContainer {
-    margin-top: 5rem;
+    margin-top: 0rem;
     /*border: 1px solid green;*/
     /*background: ;*/
     background: url("./asset/pi.jpg") no-repeat bottom;
     background-size: cover;
-    height: 500px;
+    height: 600px;
     width: 100%;
 }
 
 .pageHeader {
     margin-top: 2rem;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 50px;
     /*border: 2px solid red;*/
     color: white;
@@ -5979,7 +5961,7 @@ and (orientation: landscape) {
     font-weight: 700;
     /*padding-right: 2rem;*/
     margin-top: 2rem;
-    padding: 1rem;
+    padding: 10px;
     margin-bottom: 2rem;
     margin-left: auto;
     margin-right: auto;
@@ -5998,27 +5980,29 @@ and (orientation: landscape) {
 }
 
 .signInButton {
+    width: 40%;
     background: cornflowerblue;
-    padding: 1rem;
+    padding: 20px;
     color: white;
     font-size: 20px;
     border-radius: 5px;
     box-shadow: cornflowerblue;
 }
 
+
 /*mu profile*/
 .box-profile {
-    background: white;
+    background: ghostwhite;
     /*margin-top: 21rem;*/
     width: 50%;
-    height: 1050px;
+    height: 800px;
     margin-right: auto;
     margin-left: auto;
     /*color: black;*/
 }
 
 .myProfile {
-    padding-top: 6rem;
+    padding-top: 1rem;
     /*border: 1px solid red;*/
     text-align: center;
     font-style: normal;
@@ -6110,6 +6094,25 @@ and (orientation: landscape) {
 .listingsList {
     color: black;
     font-size: 30px;
+}
+
+/*check out your listing*/
+div .yourListing {
+    /*color: green;*/
+    width: 50%;
+    text-align: center;
+    background: orange;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    font-size: 26px;
+    margin-top: 1rem;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+div .yourListing:hover {
+    background: darkorange;
 }
 
 .checkoutBlogs-Profile {
