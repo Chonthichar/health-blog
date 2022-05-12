@@ -2498,8 +2498,8 @@ and (orientation: portrait) {
         font-size: 26px;
     }
 
-   .pageContainer .emailInput-forgot {
-       margin-top: 0;
+    .pageContainer .emailInput-forgot {
+        margin-top: 0;
         width: 100%;
         font-size: 16px;
     }
@@ -2510,18 +2510,23 @@ and (orientation: portrait) {
         font-size: 20px;
     }
 
-  .signInbar-Button {
-
+    .signInbar-Button {
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        text-align: center;
 
     }
 
-  .signInbar-Button  .signInButton {
-      width: 300%;
-      left: 0;
-      justify-content: center;
-      float: left;
-      padding: 1px;
-      font-size: 18px;
+    .signInbar-Button .signInButton {
+        width: 100%;
+        /*left: 0;*/
+        justify-content: center;
+        float: left;
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
     }
 
     /*mu profile*/
@@ -5897,7 +5902,7 @@ and (orientation: landscape) {
     /*border: 1px solid black;*/
     text-align: center;
     /*display: inline-block;*/
-    width: 20%;
+    width: 100%;
     /*position: absolute;*/
     margin-right: auto;
     margin-left: auto;
