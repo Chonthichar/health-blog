@@ -3,6 +3,9 @@ import {useParams, useSearchParams} from "react-router-dom";
 import {doc, getDoc} from "firebase/firestore";
 import {db} from '../firebase.config';
 import {toast} from "react-toastify";
+import {FaLinkedin} from "react-icons/fa";
+import {FaFacebook} from "react-icons/fa";
+import {FaInstagram} from "react-icons/fa";
 
 function Contact() {
     const [message, setMessage] = useState('')
@@ -59,6 +62,46 @@ function Contact() {
                     </form>
                 </main>
             )}
+                         {/*section 5 contact*/}
+
+            <div className="main-contact" id='main-contact'>
+                <div className="containers">
+                    <div className="image">
+                    </div>
+                    <div className="form-area">
+                        <h2>Send Me a Message</h2>
+                        <form action="https://formsubmit.co/chonthichar.soythong@gmail.com" method="POST">
+                            <input type="text" name="name" placeholder="Your Name"/>
+                            <input type="email" name="email" placeholder="Email Address"/>
+                            <input type="hidden" name="_subject" value="New submission on website maker web!"
+                                   placeholder='subject'/>
+                            {/*<input type="text" name="message" placeholder='subject'/>*/}
+                            <input type="hidden" name="_autoresponse"
+                                   value="Thanks for your submission. We will get back to you shortly."/>
+                            {/*<input type="text" name="_honey" style="display:none" />*/}
+                            <input type="hidden" name="_captcha" value="false"/>
+                            <input type="hidden" name="_template" value="table"/>
+                            <textarea name="message" cols="30" rows="5" placeholder="Your Message">
+                  </textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/chonthichar-soythong-3842b31a3/"><FaLinkedin
+                                className='ico'/></a>
+                            <a href="https://www.facebook.com/chonthichar.soythong/"><FaFacebook className='ico'/></a>
+                            <a href="https://www.instagram.com/chonthicharsoythong/"><FaInstagram className='ico'/></a>
+                        </div>
+
+                           {/*<div className='copys'>*/}
+                           {/*     <p className='copy'><FaHome className='phone'/> Hua Hin Thailand 77110</p>*/}
+                           {/*     <p className='copy'><FaPhone className='phone'/>+66 871651655</p>*/}
+                           {/*     <p className='copy'>chonthichar.soythong@gmail.com</p>*/}
+                           {/*     <p className='copy'><FaLine className='phone'/>0871651655</p>*/}
+                           {/* </div>*/}
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     )
