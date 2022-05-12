@@ -2633,21 +2633,20 @@ and (orientation: portrait) {
         /*border: 1px solid black;*/
     }
 
-    .pageHeader-createListing {
-        margin-top: 6rem;
-        text-align: center;
-        font-size: 40px;
-        font-weight: 700;
-    }
 
     /*creatingListing*/
     /*.formLabel {*/
-    /*    background: whitesmoke;*/
     /*}*/
-    .boxSize-CreateListing {
-        width: 70%;
-        margin-right: auto;
-        margin-left: auto;
+    header .pageHeader-createListing {
+        margin-top: 10px;
+        font-size: 26px;
+        width: 100%;
+        padding: 10px;
+        font-weight: 400;
+    }
+
+    #root .boxSize-CreateListing {
+        width: 100%;
     }
 
     .pageHeader-createListing {
@@ -2662,35 +2661,61 @@ and (orientation: portrait) {
 
     .createListing-page {
         background: whitesmoke;
+        margin-top: 0;
+        top: 0;
     }
 
-    .formLabel {
-
+    .topic-blogs .formLabel {
+        font-size: 20px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        /*border: 1px solid red;*/
     }
 
     .profile-createListing {
     }
 
-    .boxSize-CreateListing {
+    #root .boxSize-CreateListing {
         background: rgb(211, 228, 205);
-        padding: 2rem;
+        padding: 5px;
     }
 
-    .topic-blogs {
+    form .topic-blogs {
         /*background: white;*/
         /*text-align: center;*/
+        width: 100%;
+        margin-left: 0;
+        left: 0;
     }
 
-    .formLabel {
+    .topic-blogs .formLabel {
         /*background: white;*/
-        font-size: 24px;
-        color: dimgray;
+        font-size: 22px;
+        color: black;
+        width: 100%;
         /*font-weight: 500;*/
+        margin-bottom: 5px;
+        left: 0;
     }
 
-    .formButtons {
-        background: white;
+    form .topic-blogs .formButtons {
+        font-size: 18px;
+        left: 0;
+        /*background: red;*/
+        width: 100%;
+        /*border: 1px solid white;*/
+        margin: 0;
     }
+
+    .imagesInfo {
+        font-size: 16px;
+    }
+
+    .formInputFile {
+        font-size: 18px;
+    }
+
 
     .inspiration-blog {
         height: 100px;
@@ -2711,34 +2736,29 @@ and (orientation: portrait) {
         font-size: 22px;
     }
 
-    .formLabel-name, .formLabel {
+    form .formLabel-name, form .formLabel {
         margin-top: 1rem;
         display: flex;
-        color: dimgray;
-        font-size: 24px;
+        /*color: dimgray;*/
+        font-size: 22px;
+        color: black;
     }
 
-    .formInputName-Essay {
-        height: 500px;
-        width: 100%;
-        /*margin-top: 2rem;*/
-        display: flex;
-        /*text-align: center;*/
-        padding: 20px;
-        font-size: 22px;
-        color: dimgray;
+    form .formInputName-Essay {
+        padding-top: 2rem;
+        font-size: 14px;
+        color: black;
     }
 
     .formInputName, .formInputSmall, .formInputAddress {
         width: 100%;
         height: 100px;
         padding: 10px;
+        font-size: 14px;
     }
 
     .createListingButton {
-        background: rgb(101, 193, 140);
-        color: white;
-        padding: 20px;
+        padding: 10px;
         font-weight: 500;
         width: 40%;
         font-size: 26px;
@@ -2747,6 +2767,13 @@ and (orientation: portrait) {
         border-radius: 10px;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    form .primaryButton {
+        width: 100%;
+        border: none;
+        padding: 12px;
+        color: white;
     }
 
     .loadMore {
@@ -2829,10 +2856,6 @@ and (orientation: portrait) {
         /*height: 1000px;*/
     }
 
-    .primaryButton {
-        width: 100%;
-        border: 2px solid yellow;
-    }
 
     /*sing up instead*/
     #root .box-signUp {
@@ -2849,6 +2872,7 @@ and (orientation: portrait) {
     #root .consts {
         width: 100%;
     }
+
     .emailInput {
         height: 60px;
     }
@@ -6326,9 +6350,10 @@ div .yourListing:hover {
 }
 
 .pageHeader-createListing {
-    margin-top: 6rem;
+    margin-top: 1rem;
     text-align: center;
     font-size: 40px;
+    /*width: 100%;*/
     font-weight: 700;
 }
 
@@ -6337,7 +6362,7 @@ div .yourListing:hover {
 /*    background: whitesmoke;*/
 /*}*/
 .boxSize-CreateListing {
-    width: 70%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -6347,7 +6372,7 @@ div .yourListing:hover {
     color: white;
     font-size: 50px;
     background: mediumseagreen;
-    width: 70%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -6429,6 +6454,7 @@ div .yourListing:hover {
 
 .createListingButton {
     background: rgb(101, 193, 140);
+    /*border: none;*/
     color: white;
     padding: 20px;
     font-weight: 500;
@@ -6461,7 +6487,7 @@ div .yourListing:hover {
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     /*text-decoration: none;*/
     /*margin: 5rem;*/
     /*text-align: center;*/
@@ -6523,7 +6549,7 @@ div .yourListing:hover {
 
 .primaryButton {
     width: 100%;
-    border: 2px solid yellow;
+    /*border: 2px solid yellow;*/
 }
 
 /*sumsung A12*/
