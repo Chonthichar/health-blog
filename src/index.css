@@ -2430,7 +2430,7 @@ and (orientation: portrait) {
         /*border: solid 1px mediumseagreen;*/
     }
 
-   button .buttonSignIn {
+    button .buttonSignIn {
         border: solid 1px green;
         width: 100%;
         /*justify-content: center;*/
@@ -2477,7 +2477,7 @@ and (orientation: portrait) {
         text-align: center;
     }
 
-   .passwordInputDiv .socialIconImg {
+    .passwordInputDiv .socialIconImg {
         color: white;
         font-size: 30px;
         padding: 12px;
@@ -2487,74 +2487,41 @@ and (orientation: portrait) {
 
 
     /*forgot password*/
-        #root .pageContainer {
+    #root .pageContainer {
         margin-top: 0;
-        /*border: 1px solid green;*/
-        /*background: ;*/
-        background: url("./asset/pi.jpg") no-repeat bottom;
-        background-size: cover;
-        height: 200px;
+        height: 600px;
+    }
+
+    header .pageHeader {
+        margin-top: 0rem;
+        margin-bottom: 0;
+        font-size: 26px;
+    }
+
+   .pageContainer .emailInput-forgot {
+       margin-top: 0;
         width: 100%;
-            top: 0;
+        font-size: 16px;
     }
 
-    .pageHeader {
-        margin-top: 2rem;
-        padding: 2rem;
-        font-size: 50px;
-        /*border: 2px solid red;*/
-        color: white;
-    }
-
-    .emailInput-forgot {
-        width: 60%;
-        text-align: center;
-        justify-content: center;
-        /*position: absolute;*/
-        display: grid;
-        height: 60px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .forgotPasswordLink-forgotPage {
-        /*text-align: right;*/
-        /*border: 1px solid white;*/
-        text-align: center;
-        background-color: white;
-        /*justify-content: right;*/
-        width: 14%;
-        border-radius: 5px;
-        font-size: 22px;
-        color: white;
-        font-weight: 700;
-        /*padding-right: 2rem;*/
-        margin-top: 2rem;
-        padding: 1rem;
-        margin-bottom: 2rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .signInbar-Button {
-        /*border: 1px solid black;*/
-        text-align: center;
-        /*display: inline-block;*/
-        width: 20%;
-        /*position: absolute;*/
-        margin-right: auto;
-        margin-left: auto;
-        /*padding: 2rem;*/
-
-    }
-
-    .signInButton {
-        background: cornflowerblue;
-        padding: 1rem;
-        color: white;
+    form .forgotPasswordLink-forgotPage {
+        width: 50%;
+        padding: 5px;
         font-size: 20px;
-        border-radius: 5px;
-        box-shadow: cornflowerblue;
+    }
+
+  .signInbar-Button {
+
+
+    }
+
+  .signInbar-Button  .signInButton {
+      width: 300%;
+      left: 0;
+      justify-content: center;
+      float: left;
+      padding: 1px;
+      font-size: 18px;
     }
 
     /*mu profile*/
