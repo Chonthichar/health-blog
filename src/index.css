@@ -3207,6 +3207,92 @@ and (orientation: portrait) {
         margin-right: auto;
         font-size: 18px;
     }
+        /*when login to the profile*/
+    .profile .box-profile {
+        width: 95%;
+        height: 650px;
+    }
+
+    .profileHeader .myProfile {
+        width: 100%;
+        padding-top: 1rem;
+        font-size: 35px;
+    }
+
+    .profileHeader .logOut-profile {
+        background: forestgreen;
+        font-weight: 300;
+        width: 70%;
+        padding: 10px;
+    }
+
+    .logOut-profile:hover {
+        background: mediumseagreen;
+    }
+
+    main .profileDetailHeader {
+        /*border: 1px solid black;*/
+        margin-top: 1rem;
+        font-size: 24px;
+    }
+
+    main .personalDetail-profile {
+        font-size: 24px;
+    }
+
+    .profileDetailHeader .changePersonalDetails {
+        width: 50%;
+        padding: 10px;
+        font-weight: 400;
+    }
+
+    .changePersonalDetails:hover {
+        background: mediumseagreen;
+    }
+
+    form .whoSignIn {
+        /*margin: 0;*/
+        font-size: 14px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .profileDetailHeader .profileCard {
+        /*border: 1px solid red;*/
+        width: 100%;
+        text-align: center;
+        margin: 0rem;
+        padding: 1rem;
+    }
+
+    .shadow {
+        margin-bottom: 0.5rem;
+    }
+
+    .createListing-profile .FaHome-profile {
+        color: white;
+        font-size: 35px;
+        padding-left: 5px;
+    }
+
+    .profileDetailHeader .createListing-profile {
+        font-size: 18px;
+        background: green;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .listingsList {
+        color: black;
+        font-size: 30px;
+    }
+
+    /*check out your listing*/
+    #root div .yourListing {
+        font-size: 20px;
+        width: 80%;
+    }
 }
 
 /*portrait*/
@@ -3391,6 +3477,92 @@ and (-webkit-min-device-pixel-ratio: 2) {
         margin-left: auto;
         margin-right: auto;
         font-size: 18px;
+    }
+        /*when login to the profile*/
+    .profile .box-profile {
+        width: 95%;
+        height: 650px;
+    }
+
+    .profileHeader .myProfile {
+        width: 100%;
+        padding-top: 1rem;
+        font-size: 35px;
+    }
+
+    .profileHeader .logOut-profile {
+        background: forestgreen;
+        font-weight: 300;
+        width: 70%;
+        padding: 10px;
+    }
+
+    .logOut-profile:hover {
+        background: mediumseagreen;
+    }
+
+    main .profileDetailHeader {
+        /*border: 1px solid black;*/
+        margin-top: 1rem;
+        font-size: 24px;
+    }
+
+    main .personalDetail-profile {
+        font-size: 24px;
+    }
+
+    .profileDetailHeader .changePersonalDetails {
+        width: 50%;
+        padding: 10px;
+        font-weight: 400;
+    }
+
+    .changePersonalDetails:hover {
+        background: mediumseagreen;
+    }
+
+    form .whoSignIn {
+        /*margin: 0;*/
+        font-size: 14px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .profileDetailHeader .profileCard {
+        /*border: 1px solid red;*/
+        width: 100%;
+        text-align: center;
+        margin: 0rem;
+        padding: 1rem;
+    }
+
+    .shadow {
+        margin-bottom: 0.5rem;
+    }
+
+    .createListing-profile .FaHome-profile {
+        color: white;
+        font-size: 35px;
+        padding-left: 5px;
+    }
+
+    .profileDetailHeader .createListing-profile {
+        font-size: 18px;
+        background: green;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .listingsList {
+        color: black;
+        font-size: 30px;
+    }
+
+    /*check out your listing*/
+    #root div .yourListing {
+        font-size: 20px;
+        width: 80%;
     }
 }
 
