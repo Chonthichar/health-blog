@@ -179,7 +179,9 @@ function SignUp() {
                                 height: '50px',
                                 backgroundImage: 'linear-gradient(to right, rgb(255, 255, 255), rgb(46, 204, 113))',
                                 padding: '10px',
-                                borderRadius: '20px'
+                                borderRadius: '20px',
+                                marginLeft: 'auto',
+                                marginRight: 'auto'
                             }}/>
                         </button>
                     </div>

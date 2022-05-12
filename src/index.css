@@ -2397,7 +2397,7 @@ and (orientation: portrait) {
     .box-signIn-email .emailInput {
         /*border: solid 1px red;*/
         width: 90%;
-        height: 70px;
+        height: 60px;
         /*padding: 20px;*/
         margin-right: auto;
         margin-left: auto;
@@ -2416,7 +2416,7 @@ and (orientation: portrait) {
     .passwordInputDiv .passwordInput {
         /*border: solid 1px red;*/
         /*display: flex;*/
-        height: 70px;
+        height: 60px;
         width: 90%;
         font-size: 20px;
     }
@@ -2833,6 +2833,25 @@ and (orientation: portrait) {
         width: 100%;
         border: 2px solid yellow;
     }
+
+    /*sing up instead*/
+    #root .box-signUp {
+        top: 0;
+        margin-top: 0;
+    }
+
+    header .create-account {
+        margin-top: 0;
+        width: 100%;
+        top: 0;
+    }
+
+    #root .consts {
+        width: 100%;
+    }
+    .emailInput {
+        height: 60px;
+    }
 }
 
 /*land scape*/
@@ -3207,7 +3226,8 @@ and (orientation: portrait) {
         margin-right: auto;
         font-size: 18px;
     }
-        /*when login to the profile*/
+
+    /*when login to the profile*/
     .profile .box-profile {
         width: 95%;
         height: 650px;
@@ -3478,7 +3498,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
         margin-right: auto;
         font-size: 18px;
     }
-        /*when login to the profile*/
+
+    /*when login to the profile*/
     .profile .box-profile {
         width: 95%;
         height: 650px;
@@ -5951,7 +5972,7 @@ and (orientation: landscape) {
     background: url("./asset/leaf-4.jpg") no-repeat center;
     margin-top: 0;
     /*margin-top: auto;*/
-    padding-top: 7rem;
+    padding-top: 2rem;
     /*position: relative;*/
     width: 100%;
     height: 1250px;
@@ -5966,10 +5987,10 @@ and (orientation: landscape) {
     background: url("./asset/leaf-4.jpg") no-repeat center;
     margin-top: 0;
     /*margin-top: auto;*/
-    padding-top: 7rem;
+    padding-top: 2rem;
     /*position: relative;*/
     width: 100%;
-    height: 1500px;
+    height: 1200px;
     transition: transform 1.2s ease-in-out;
     /*padding: 50px 30px 0;*/
     font-size: 20px;
