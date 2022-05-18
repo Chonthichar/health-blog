@@ -16,6 +16,7 @@ function ListingItem({listing, id, onEdit, onDelete}) {
                 <div className='categoryListingDetails'>
                     <p className='categoryListingLocation'>{listing.location}</p>
                     <p className='categoryListingName'>{listing.name}</p>
+                    <p className='categoryListingsEssay'>{listing.essay}</p>
                     <p className='categoryListingPrice'>
                         ${listing.offer ? listing.discountedPrice
                             .toString()

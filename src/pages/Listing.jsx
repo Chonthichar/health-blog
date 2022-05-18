@@ -80,6 +80,8 @@ function Listing() {
             <div className='listingDetails'>
                 <p className='listingName'>
                     {listing.name} - $
+                    {/*have to mute the price behind*/}
+                    {/*  {listing.name} - $*/}
                     {listing.offer
                         ? listing.discountedPrice
                             .toString()
@@ -94,6 +96,10 @@ function Listing() {
                 <p className='listingType'>
                     For {listing.type === 'rent' ? 'Rent' : 'Sale'}
                 </p>
+                {/*new on essay*/}
+                <p className='listingEssay'>
+                    {listing.essay}
+                </p>
 
                 {listing.offer && (
                     <p className='discountPrice'>
@@ -102,17 +108,18 @@ function Listing() {
                     </p>
                 )}
 
-                <ul className='listingDetailList'>
-                    <li>
-                        {listing.bedRooms > 1 ? `${listing.bedRooms} Bedrooms` : '1 Bedroom'}
-                    </li>
+                {/*mute bedroom and bathroom section*/}
+                {/*<ul className='listingDetailList'>*/}
+                {/*    <li>*/}
+                {/*        {listing.bedRooms > 1 ? `${listing.bedRooms} Bedrooms` : '1 Bedroom'}*/}
+                {/*    </li>*/}
 
-                    <li>
-                        {listing.bedRooms > 1 ? `${listing.bathRooms} Bathroom` : '1 Bathroom'}
-                    </li>
-                    <li>{listing.parking && 'parking Spot'}</li>
-                    <li>{listing.furnished && 'Furnished'}</li>
-                </ul>
+                {/*    <li>*/}
+                {/*        {listing.bedRooms > 1 ? `${listing.bathRooms} Bathroom` : '1 Bathroom'}*/}
+                {/*    </li>*/}
+                {/*    <li>{listing.parking && 'parking Spot'}</li>*/}
+                {/*    <li>{listing.furnished && 'Furnished'}</li>*/}
+                {/*</ul>*/}
 
 
                 <p className='listingLocationTitle'>Location</p>

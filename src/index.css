@@ -2331,7 +2331,7 @@ and (orientation: portrait) {
         margin-top: 0rem;
         padding-top: 1rem;
         width: 330px;
-        height: 850px;
+        height: 800px;
         margin-bottom: 0;
         /*background-color: mediumseagreen;*/
     }
@@ -2345,7 +2345,7 @@ and (orientation: portrait) {
         overflow: hidden;
         position: relative;
         width: 500px;
-        height: 1010px;
+        height: 900px;
         /*height: ;*/
         margin-right: auto;
         margin-left: auto;
@@ -3337,6 +3337,55 @@ and (orientation: portrait) {
         font-size: 20px;
         width: 80%;
     }
+        /*.main-contact {*/
+    /*    height:  100px;*/
+    /*}*/
+
+    .main-contact .containers {
+        width: 98%;
+        /*height: 1000px;*/
+        flex-direction: column;
+        margin: 20px 0px;
+        box-shadow: none;
+    }
+
+    .main-contact .containers .image {
+        height: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-contact .containers .image::before {
+        height: 200px;
+        clip-path: polygon(0% 0%, 100% 0, 100% 81%, 50% 100%, 0 81%);
+    }
+
+    .main-contact .containers .image img {
+        height: 150px;
+        margin-left: 0px;
+        margin-top: -40px;
+    }
+
+    .main-contact .containers .form-area {
+        width: 100%;
+
+    }
+
+    .main-contact .containers .form-area h2 {
+        font-size: 25px;
+        margin-top: 2rem;
+    }
+
+    .main-contact .containers .form-area form {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .main-contact .containers .social-icons .ico {
+        margin: 5px;
+        /*font-size: 2rem;*/
+    }
 }
 
 /*portrait*/
@@ -3621,7 +3670,6 @@ and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (orientation: portrait)
 and (-webkit-min-device-pixel-ratio: 1) {
-
 
     .home-container {
         width: 100%;
@@ -4088,6 +4136,60 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .btn-primary {
         border: 1px solid red;
     }
+        /*.main-contact {*/
+    /*    height:  100px;*/
+    /*}*/
+
+    .main-contact .containers {
+        width: 100%;
+        /*height: 1000px;*/
+        flex-direction: column;
+        margin-top: 0;
+        top: 0;
+        /*margin: 20px 0px;*/
+        box-shadow: none;
+    }
+
+    .main-contact .containers .image {
+        height: 200px;
+        width: 100%;
+        margin-top: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-contact .containers .image::before {
+        height: 200px;
+        clip-path: polygon(0% 0%, 100% 0, 100% 81%, 50% 100%, 0 81%);
+    }
+
+    .main-contact .containers .image img {
+        height: 150px;
+        margin-left: 0px;
+        margin-top: -40px;
+        /*top: 0;*/
+    }
+
+    .main-contact .containers .form-area {
+        width: 100%;
+
+    }
+
+    .main-contact .containers .form-area h2 {
+        font-size: 30px;
+        margin-top: 3.5rem;
+    }
+
+    .main-contact .containers .form-area form {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .main-contact .containers .social-icons .ico {
+        margin: 5px;
+        /*font-size: 2rem;*/
+    }
 }
 
 /* Landscape for iphone xr */
@@ -4097,6 +4199,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (orientation: landscape) {
+
 
 
     .home-container {
@@ -6570,6 +6673,10 @@ div .yourListing:hover {
 /*main contact*/
 /*main contacts*/
 .main-contact {
+    top: 0;
+    /*border: 1px solid red;*/
+    padding-top: 0;
+    margin-top: 0;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -6599,7 +6706,7 @@ div .yourListing:hover {
 /*}*/
 .containers {
     width: 80%;
-    height: 700px;
+    height: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6801,7 +6908,7 @@ div .yourListing:hover {
 
     .main-contact .containers .form-area h2 {
         font-size: 25px;
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 
     .main-contact .containers .form-area form {
@@ -6811,7 +6918,7 @@ div .yourListing:hover {
 
     .main-contact .containers .social-icons .ico {
         margin: 5px;
-        font-size: 2rem;
+        /*font-size: 2rem;*/
     }
 }
 
