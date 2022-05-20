@@ -2821,19 +2821,19 @@ and (orientation: portrait) {
         /*border: 1px solid red;*/
     }
 
-    .categoryListings {
-        font-size: 20px;
-        text-decoration: none;
-        background: linear-gradient(85.38deg, #EDEDE4 -23.38%, #F8F2EB 97.65%);
-        text-align: center;
-        justify-content: center;
-        margin-right: auto;
-        margin-left: auto;
-        border: 1px solid red;
-        /*text-decoration: none;*/
-        /*margin: 5rem;*/
-        /*text-align: center;*/
-    }
+    /*.categoryListings {*/
+    /*    font-size: 20px;*/
+    /*    text-decoration: none;*/
+    /*    background: linear-gradient(85.38deg, #EDEDE4 -23.38%, #F8F2EB 97.65%);*/
+    /*    text-align: center;*/
+    /*    justify-content: center;*/
+    /*    margin-right: auto;*/
+    /*    margin-left: auto;*/
+    /*    border: 1px solid red;*/
+    /*    !*text-decoration: none;*!*/
+    /*    !*margin: 5rem;*!*/
+    /*    !*text-align: center;*!*/
+    /*}*/
 
 
     /*sing up instead*/
@@ -6639,19 +6639,20 @@ div .yourListing:hover {
     /*border: 1px solid red;*/
 }
 
-.categoryListings {
-    font-size: 20px;
-    text-decoration: none;
-    background: linear-gradient(85.38deg, #EDEDE4 -23.38%, #F8F2EB 97.65%);
-    text-align: center;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    /*border: 1px solid red;*/
-    /*text-decoration: none;*/
-    /*margin: 5rem;*/
-    /*text-align: center;*/
-}
+/*Listing item old*/
+/*.categoryListings {*/
+/*    font-size: 20px;*/
+/*    text-decoration: none;*/
+/*    background: linear-gradient(85.38deg, #EDEDE4 -23.38%, #F8F2EB 97.65%);*/
+/*    text-align: center;*/
+/*    justify-content: center;*/
+/*    margin-right: auto;*/
+/*    margin-left: auto;*/
+/*    !*border: 1px solid red;*!*/
+/*    !*text-decoration: none;*!*/
+/*    !*margin: 5rem;*!*/
+/*    !*text-align: center;*!*/
+/*}*/
 
 /*!*deep to each blogs*!*/
 /*.shareIconDiv {*/
@@ -7114,8 +7115,49 @@ div .yourListing:hover {
 }
 
 
-
-
+/*listing-conclusion listing Item*/
+.listing-conclusion {
+    /*background: #b6d4fe;*/
+    border: 1px solid whitesmoke;
+    background: white;
+    /*gap: 2rem;*/
+}
+.categoryListingLink{
+    border: 1px solid green;
+}
+.categoryListingImg {
+    width: 40%;
+    /*border: 1px solid black;*/
+    /*background: whitesmoke;*/
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.categoryListingDetails{
+    padding-top: 10px;
+    padding-bottom: 0;
+    background: whitesmoke;
+    text-align: center;
+    /*border: 1px solid red;*/
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.categoryListingLocation{
+    text-decoration: none;
+    /*border: 1px solid saddlebrown;*/
+}
+.categoryListingName{
+    font-size: 26px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-top: 0;
+}
 
 
 

@@ -253,7 +253,7 @@ function EditListing() {
             
             <main>
                 <form onSubmit={onSubmit}>
-                    <label className='formLabel'>Sell / Rent</label>
+                    <label className='formLabel'>Inspiration / Food</label>
 
                     <div className='formButtons'>
                         <button type='button'
