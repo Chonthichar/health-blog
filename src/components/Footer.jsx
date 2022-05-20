@@ -74,7 +74,7 @@ function Footer() {
                 <a href="#" className="btn btn-secondary">Join Us For Free</a>
             </div>
             <div className="copy">
-                    Copyright &copy;2021, All Right Reserved
+                    Copyright &copy;{footerYear}, All Right Reserved
             </div>
         </div>
     </footer>
