@@ -226,26 +226,28 @@ function CreateListing() {
             <main className='boxSize-CreateListing' >
                 <form onSubmit={onSubmit}>
                     <div className='topic-blogs'>
-                        <label className='formLabel'>To Do Blogs</label>
+                        <label className='formLabel'>Choose the categories</label>
                         <div className='formButtons'>
                             <button type='button'
                                     className={type === 'sale' ? 'formButtonActive' : 'formButton'}
-                                    id='type'
+                                    className='typeIs'
+                                    id='type-in'
                                     value='sale'
                                     onClick={onMutate}
                                     // className='inspiration-blog'
                                     >
-                                Inspiration, Mental Health and Sport/
+                                Inspiration or
                             </button>
-
+                            {/*<br/>*/}
                             <button type='button'
                                     className={type === 'rent' ? 'formButtonActive' : 'formButton'}
-                                    id='type'
+                                    className='typeName'
+                                    id='type-food'
                                     value='rent'
                                     onClick={onMutate}
                                     // className='diet-blog'
                                     >
-                                Food and Diet
+                               &nbsp;Diet
                             </button>
                         </div>
                     </div>

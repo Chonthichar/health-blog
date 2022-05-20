@@ -1,12 +1,12 @@
 import react from 'react';
-// import {
-//     Box,
-//     Container,
-//     Row,
-//     Column,
-//     FooterLink,
-//     Heading,
-// } from "./FooterStyle";
+import {
+    Box,
+    Container,
+    Row,
+    Column,
+    FooterLink,
+    Heading,
+} from "./FooterStyle";
 import {FaAddressBook, FaBeer, FaHome, FaKiwiBird, FaTwitter} from "react-icons/fa"
 import {FaFacebook} from "react-icons/fa";
 import {FaInstagram} from "react-icons/fa";

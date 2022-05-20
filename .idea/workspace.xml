@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6323d662-6a84-44bb-8ddf-7a8e4f61989b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ListingItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListingItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Slider.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/CreateListing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CreateListing.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Listing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Listing.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +142,12 @@
       <workItem from="1652361827978" duration="321000" />
       <workItem from="1652369499907" duration="608000" />
       <workItem from="1652606071578" duration="781000" />
-      <workItem from="1652863585862" duration="1591000" />
+      <workItem from="1652863585862" duration="7421000" />
+      <workItem from="1652886451081" duration="640000" />
+      <workItem from="1652887229789" duration="1012000" />
+      <workItem from="1652942542523" duration="2013000" />
+      <workItem from="1652968020219" duration="1027000" />
+      <workItem from="1653024369712" duration="7816000" />
     </task>
     <servers />
   </component>
@@ -151,7 +159,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/pages/Listing.jsx</url>
-          <line>19</line>
+          <line>20</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
