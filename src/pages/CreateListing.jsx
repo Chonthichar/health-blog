@@ -260,7 +260,7 @@ function CreateListing() {
                            onChange={onMutate}
                            maxLength='2000'
                            minLength='10'
-                           placeholder='Add your name'
+                           placeholder='Add your Topic here'
                            required/>
 
                     <label className='formLabel'
