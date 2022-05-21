@@ -1,13 +1,13 @@
 import {Link} from 'react-router-dom'
 import {FaTrash} from "react-icons/fa";
-import {FaBacon} from "react-icons/fa";
-import {FaRestroom} from "react-icons/fa";
+
 import {FaEdit} from "react-icons/fa";
 
 
 function ListingItem({listing, id, onEdit, onDelete}) {
     return (
-        <li className='listing-conclusion container'>
+        <div className='container new'>
+        <li className=''>
             <Link to={`/category/${listing.type}/${id}`}
                   className='categoryListingLink' style={{textDecoration:'none'}}>
                 <img src={listing.imageUrls[0]} alt={listing.name}
@@ -48,6 +48,7 @@ function ListingItem({listing, id, onEdit, onDelete}) {
             {onEdit &&
             <FaEdit className='editIcon' onClick={() => onEdit(id)} />}
         </li>
+        </div>
     )
 }
 

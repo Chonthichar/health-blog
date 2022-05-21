@@ -86,13 +86,14 @@ function Category() {
         }
 
     return (
-        <div className='category container'>
+        <div className='.listing-conclusion container'>
             <header>
-                <p className='PageHeader category-pageHeader'>
+                <p className='PageHeader category-pageHeader main-topic-blogs'>
                     {params.categoryName === 'rent'
-                        ? 'Places for rent'
-                        : 'Places for sale'}
+                        ? 'Inspirations Topics'
+                        : 'Food and Daily Diet'}
                 </p>
+                <p className='check-out'>check out</p>
             </header>
             {loading ? (<p>loading...</p>) : listings && listings.length > 0 ? <>
                     <ul className='categoryListings' style={{textDecoration: 'none'}}>

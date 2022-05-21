@@ -21,7 +21,7 @@ function Contact() {
 
             if (docSnap.exists()) {
                 // setLandlord(docSnap.data())
-                console.log(docSnap.data())
+                // console.log(docSnap.data())
             } else {
                 toast.error('Could not get the writer contact')
             }
@@ -37,9 +37,9 @@ function Contact() {
 
     return (
         <div className='pageContainer'>
-            <header>
-                <p className='pageHeader'>Contact the writer</p>
-            </header>
+            {/*<header>*/}
+            {/*    <p className='pageHeader'>Contact the writer</p>*/}
+            {/*</header>*/}
 
             {landlord !== null && (
                 <main>
