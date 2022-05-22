@@ -945,6 +945,8 @@ div#profile {
     font-weight: 700;
     border-radius: 100px;
     font-size: 20px;
+    text-align: center;
+    width: 30%;
 }
 
 
@@ -2172,17 +2174,28 @@ and (orientation: portrait) {
         padding-bottom: 3px;
     }
 
-    .gridSubscripe {
+    div .gridSubscripe {
         margin-top: 1rem;
-        grid-template-columns: 1fr;
+        width: 100%;
+        /*grid-template-columns: 1fr;*/
         grid-gap: 10px;
+        /*border: 1px solid red;*/
         /*background: lightgrey;*/
         color: white;
         display: grid;
         text-decoration: none;
+        /*margin: 0;*/
+        /*width: 300%;*/
+        left: 0;
+        margin-left: 0;
+        /*height: 400px;*/
+
     }
 
     .gridSubscripe button {
+        /*border: 1px solid blue;*/
+        margin-left: 0;
+        width: 100%;
         display: flex;
         /*padding: 5px;*/
         background-color: lightgrey;
@@ -2191,7 +2204,7 @@ and (orientation: portrait) {
         padding-top: 10px;
         color: white;
         text-decoration: none;
-        width: 100%;
+        /*width: 100%;*/
     }
 
     .gridSubscripe button:hover {
@@ -2248,7 +2261,7 @@ and (orientation: portrait) {
         height: 1400px;
         grid-gap: 1rem;
         display: grid;
-        background-color: #FFE5E6;
+        background-color: white;
     }
 
     .photo-last-grid .grid-sub {
@@ -5931,9 +5944,9 @@ and (orientation: landscape) {
     font-size: 42px;
     font-family: Barlow Condensed, sans-serif;
     font-weight: 700;
-    padding-top: 5rem;
+    padding-top: 1rem;
     border-bottom: 2px solid black;
-    width: 49%;
+    width: 36%;
     padding-bottom: 10px;
     /*text-align: center;*/
 }
@@ -5975,6 +5988,16 @@ and (orientation: landscape) {
     margin-right: auto;
 }
 
+.swipperHeading-1 {
+    /*margin-bottom: 0;*/
+    border: 1px solid red;
+    padding-bottom: 5px;
+    margin: 0;
+    left: 50rem;
+    /*text-align: left;*/
+}
+
+
 .grid h3 {
     text-align: center;
     font-size: 24px;
@@ -5988,12 +6011,20 @@ and (orientation: landscape) {
 
 .gridSubscripe {
     margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    /*position: absolute;*/
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     /*background: lightgrey;*/
     color: white;
     display: grid;
     text-decoration: none;
+    /*border: 1px solid orange;*/
+    /*left: 0;*/
+    /*margin-left: 0;*/
+    /*border: 1px solid red;*/
 }
 
 .gridSubscripe button {
@@ -6012,10 +6043,19 @@ and (orientation: landscape) {
     background-color: dimgray;
 }
 
+.gridSubscripe {
+    width: 25%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 1px solid red;*/
+}
 .gridSubscripe .fa {
+    justify-content: center;
     font-size: 20px;
     margin-right: 10px;
     margin-left: 10px;
+    /*width: 10%;*/
     color: white;
     /*margin-top: 5px;*/
 }
@@ -6139,7 +6179,7 @@ and (orientation: landscape) {
     grid-gap: 1rem;
     padding-left: 3rem;
     padding-right: 3rem;
-    background-color: #FFE5E6;
+    background-color: white;
     height: 230px;
     margin-left: 0;
     float: left;

@@ -2,7 +2,7 @@ import {useState, useEffect} from "react";
 import {Link, useNavigate, useParams} from "react-router-dom";
 import {MapContainer, TileLayer, Marker, Popup} from 'react-leaflet'
 import SwiperCore, {Navigation, Pagination, Scrollbar, A11y} from 'swiper'
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {Swiper, SwiperSlide} from 'swiper/react';
 // import 'swiper/swiper-bundle.css'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -13,6 +13,7 @@ import {db} from '../firebase.config'
 //spinner
 import {FaShare} from "react-icons/fa";
 import Footer from "../components/Footer";
+
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
 
 
@@ -91,17 +92,17 @@ function Listing() {
                     </Link>
                 )}
 
-                      <div className="shareIconDiv" onClick={() => {
-                navigator.clipboard.writeText(window.location.href)
-                setShareLinkCopied(true)
-                setTimeout(() => {
-                    setShareLinkCopied(false)
-                }, 2000)
-            }}>
-                <FaShare/>
-            </div>
+                <div className="shareIconDiv" onClick={() => {
+                    navigator.clipboard.writeText(window.location.href)
+                    setShareLinkCopied(true)
+                    setTimeout(() => {
+                        setShareLinkCopied(false)
+                    }, 2000)
+                }}>
+                    <FaShare/>
+                </div>
 
-            {shareLinkCopied && <p className='linkCopied'>Link Copied</p>}
+                {shareLinkCopied && <p className='linkCopied'>Link Copied</p>}
 
                 {/*location*/}
                 {/*<p className='listingLocation'>*/}
@@ -142,7 +143,10 @@ function Listing() {
                 <div id='map' className='leafletContainer'>
 
                     <MapContainer
-                        style={{height: '500px', width: '100%'}} center={[51.505, -0.09]} zoom={13}>
+                        style={{height: '500px', width: '100%'}}
+                        center={[listing.geolocation.lat, listing.geolocation.lng]}
+                        zoom={20}
+                        scrollWheelZoom={false}>
                         <TileLayer
                             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -154,9 +158,6 @@ function Listing() {
                         </Marker>
                     </MapContainer>
                 </div>
-
-
-
             </div>
         </main>
     )

@@ -47,6 +47,27 @@ import Warunee from "../asset/warunee-removebg-preview.png"
 function VideoBg() {
     const navigate = useNavigate()
 
+    //BMI calculation late
+    const [bmi, setBmi] = useState();
+    const [info, setInfo] = useState();
+    const [height, setHeight] = useState();
+    const [weight, setWeight] = useState();
+    const calBmi = () => {
+        let result = (
+            [Number(weight) / Number(height) / Number(height)] * 10000
+        ).toFixed(1);
+        setBmi(result);
+        if (result < 18.5) {
+            setInfo('Under Weight');
+        } else if (result > 18.5 && result <= 24.9) {
+            setInfo('Healthy');
+        } else if (result > 24.9 && result < 39) {
+            setInfo('Overweight');
+        } else {
+            setInfo('Obese')
+        }
+    }
+
     return (
         <>
             <div className='container-fluid'>
@@ -237,17 +258,28 @@ function VideoBg() {
                                 <form action="" className='call'>
                                     <div className='form-control-height'>
                                         <label htmlFor="height"></label>
-                                        <input type="text" name="name" id="height" className='height form-input-height'
-                                               placeholder='Place your height here'/>
+                                        <input type="text"
+                                               onChange={(e) => setHeight(e.target.value)}
+                                               name="name"
+                                               id="height"
+                                               className='height form-input-height'
+                                               placeholder='Place your height in cm'/>
                                     </div>
 
                                     <div className='form-control--weight'>
                                         <label htmlFor="weight"></label>
-                                        <input type="text" name="name" id="height" className="weight form-input-weight"
-                                               placeholder='Place your weight here'/>
+                                        <input type="text"
+                                               onChange={(e) => setWeight(e.target.value)}
+                                               name="name"
+                                               id="height"
+                                               className="weight form-input-weight"
+                                               placeholder='Place your weight in kg'/>
                                     </div>
-                                    <input type="submit" onClick="bmi()" value="calculate" id="submitting"
-                                           className='btn-c'/>
+
+                                    <input onClick={calBmi} value="calculate" id="submitting" className='btn-c'/>
+                                    <h6 style={{fontWeight: '200'}}> Your BMI calculation is..{bmi}..</h6>
+                                    <h6 style={{color: 'black'}}>{info}</h6>
+                                    {/*<button onClick={calBmi} type='submit' id='submitting' className='btn-c' >Calculate</button>*/}
                                 </form>
 
                                 <p id='result' className='results'></p>
