@@ -40,6 +40,9 @@ import Profile from "../asset/profile_ploy-removebg-preview (2).png"
 import Video from "../asset/video-2.mp4"
 import {Player} from 'video-react'
 import Warunee from "../asset/warunee-removebg-preview.png"
+import {HashLink} from 'react-router-hash-link';
+
+
 
 //section 6 testimonials said
 
@@ -90,9 +93,11 @@ function VideoBg() {
                         <br/>Version of You.</h1>
                     <p>Eat healthy, Stay Healthy.</p>
                     <div className='home-button'>
-                        <Button className='button'>
+                       <HashLink to='/#services'>
+                           <Button className='button'>
                             Services
                         </Button>
+                       </HashLink>
                     </div>
                     {/* dot*/}
                 </div>
@@ -151,7 +156,7 @@ function VideoBg() {
                                     you
                                     beauty sleep,And also help you to get through depression and anxiety.
                                     Read through more about the mental health benefits of exercise.</p>
-                                <a href="#" className='contacts'>
+                                <a onClick={() => navigate('/contact')} className='contacts'>
                                     <i className='fas fa-leaf'></i>
                                     Read More
                                 </a>
@@ -164,7 +169,7 @@ function VideoBg() {
 
                 {/*section 5 what we can do for you*/}
 
-                <section className='background-section5'>
+                <section className='background-section5' id='services'>
                     <div className='box container-sm'>
                         <h2 className='head-text'>What we can do for you?</h2>
                         {/*<div className='underline'></div>*/}
