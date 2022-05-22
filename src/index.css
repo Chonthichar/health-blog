@@ -1920,8 +1920,12 @@ and (orientation: portrait) {
     .top-box-1 {
         margin-top: 4.9rem;
         padding: 0;
+        width: 38%;
         margin-left: 1rem;
-        display: none;
+        font-size: 16px;
+        /*border: 1px solid red;*/
+        /*padding: 10px;*/
+        /*display: none;*/
     }
 
     .home-button .button {
