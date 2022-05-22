@@ -2306,7 +2306,7 @@ and (orientation: portrait) {
 
     .explore .photo-last-grid {
         /*border: 1px solid red;*/
-        height: 1400px;
+        height: 100%;
         grid-gap: 1rem;
         display: grid;
         background-color: white;
@@ -2353,14 +2353,15 @@ and (orientation: portrait) {
     }
 
     .photo-last-grid .circle-image {
+        display: none;
         margin-right: auto;
         margin-left: auto;
-        display: grid;
+        /*display: grid;*/
         grid-gap: 0rem;
         padding-left: 0rem;
         padding-right: 0rem;
         /*border: 1px solid red;*/
-        height: 1130px;
+        height: 0px;
         /*margin-left: 0;*/
         /*float: unset;*/
         font-size: 16px;
