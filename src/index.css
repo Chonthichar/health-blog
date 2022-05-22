@@ -2149,13 +2149,14 @@ and (orientation: portrait) {
 
     .back-ground .pageHeader {
         font-size: 26px;
+        top: 3rem;
     }
 
     .back-ground .exploreHeading {
         left: 40%;
         /*border: 1px solid red;*/
         font-size: 10px;
-        margin-top: 0;
+        margin-top: 1rem;
         margin-right: auto;
         margin-left: auto;
         /*position: relative;*/
@@ -5879,7 +5880,7 @@ and (orientation: landscape) {
     margin-bottom: 3rem;
     border-bottom: black solid 2px;
     padding-bottom: 1rem;
-    width: 50%;
+    width: 37%;
     padding-left: 0;
     text-align: left;
 }
@@ -5931,7 +5932,7 @@ and (orientation: landscape) {
 }
 
 .swiperSlideText {
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 2rem;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     padding: 1rem;
