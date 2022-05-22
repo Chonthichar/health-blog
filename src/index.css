@@ -1422,7 +1422,7 @@ div#profile {
     .home-container {
         width: 100%;
         /*border: 1px solid red;*/
-        height: 900px;
+        height: 800px;
         background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));
     }
 
@@ -1454,7 +1454,7 @@ div#profile {
         justify-content: center;
         text-align: center;
         left: 25%;
-        margin-top: 12rem;
+        margin-top: 13rem;
         font-weight: 300;
     }
 
