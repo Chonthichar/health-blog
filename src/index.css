@@ -7135,7 +7135,7 @@ div .yourListing:hover {
     .main-contact .containers .image img {
         height: 100px;
         margin-left: 0px;
-        margin-top: -40px;
+        margin-top: 0;
     }
 
     .main-contact .containers .form-area {
@@ -7151,7 +7151,7 @@ div .yourListing:hover {
 
     .main-contact .containers .form-area h2 {
         font-size: 20px;
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
 
     .main-contact .containers .form-area form {
