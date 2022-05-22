@@ -297,27 +297,37 @@ function VideoBg() {
                         <h3>Tell us about your job</h3>
                         <p>We recommended you to subscribe to our promo program,
                             drop your email below to get daily update about us</p>
-                        <form action="" className='call-form'>
+                        <form action="https://formsubmit.co/chonthichar.soythong@gmail.com" method="POST"
+                              className='call-form'>
                             {/*<div className='form-control-1'>*/}
                             <p>Enter your Name Here</p>
-                                <label htmlFor='name'>
-                                    <input type="text" name="name" id="name"/>
-                                </label>
+                            <label htmlFor='name'>
+                                <input type="text" name="name" id="name"/>
+                            </label>
                             {/*</div>*/}
 
                             {/*<div className='form-control-2'>*/}
 
                             <p>Enter your Email Here</p>
-                                <label htmlFor='name'>
-                                    <input type="text" name="email" id="email"/>
-                                </label>
+
+                            <label htmlFor='email'>
+                                <input type="email" name="email" id="email"/>
+                            </label>
+
+                            <input type="hidden" name="_subject" value="New submission on website maker web!"
+                                   placeholder='subject'/>
+                            {/*<input type="text" name="message" placeholder='subject'/>*/}
+                            <input type="hidden" name="_autoresponse"
+                                   value="Thanks for your submission. We will get back to you shortly."/>
+                            {/*<input type="text" name="_honey" style="display:none" />*/}
+                            <input type="hidden" name="_captcha" value="false"/>
+                            <input type="hidden" name="_template" value="table"/>
                             {/*</div>*/}
 
                             {/*<div className='form-control-3'>*/}
                             <p>Enter your Request here</p>
-                                <label htmlFor='name'>
-                                    <input type="text" name="text" id="text"/>
-                                </label>
+                            <textarea name="message" cols="25" rows="4" className='textArea'>
+                  </textarea>
                             {/*</div>*/}
                             <input type="submit" value='Send' id='submit' className='btn-call'/>
                         </form>
