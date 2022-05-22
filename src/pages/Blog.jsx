@@ -13,6 +13,7 @@ import Diet from "../asset/blog-food.jpg"
 import Heading1 from "../asset/blog-heading.jpg"
 import Heading2 from "../asset/blog-head2.jpg"
 import Heading3 from "../asset/blog-heading3.jpg"
+import {HashLink} from "react-router-hash-link";
 
 function Blog() {
 
@@ -20,30 +21,32 @@ function Blog() {
         <div className='explore container'>
             <header className='back-ground'>
                 <p className='pageHeader'>"About Blogs" <br/>Life Recipe</p>
-                <button className='exploreHeading'>View Blogs</button>
+                <HashLink to='/#blogs'>
+                    <button className='exploreHeading'>View Blogs</button>
+                </HashLink>
                 <img src={Heading1} alt="sale" className='photo-grid'/>
-                 <img src={Heading3} alt="sale" className='photo-grid-1'/>
-                 <img src={Heading2} alt="sale" className='photo-grid-2'/>
+                <img src={Heading3} alt="sale" className='photo-grid-1'/>
+                <img src={Heading2} alt="sale" className='photo-grid-2'/>
 
             </header>
             <main>
                 <Slider/>
 
                 <p className='exploreCategoryHeading'>Categories</p>
-                    <div className='gridBlogs'>
-                        <Link to='/category/rent'  style={{textDecoration: 'none'}}>
-                            <img src={Inspi}
-                                 alt="rent"
-                                 className='exploreCategories'/>
-                            <p>Inspiration & Mental Health and Sport</p>
-                        </Link>
-                        <Link to='/category/sale'  style={{textDecoration: 'none'}}>
-                            <img src={Diet}
-                                 alt="sale"
-                                 className='exploreCategories'/>
-                            <p style={{textDecoration:'none'}}>Food and Diet</p>
-                        </Link>
-                    </div>
+                <div className='gridBlogs' id='blogs'>
+                    <Link to='/category/rent' style={{textDecoration: 'none'}}>
+                        <img src={Inspi}
+                             alt="rent"
+                             className='exploreCategories'/>
+                        <p>Inspiration & Mental Health and Sport</p>
+                    </Link>
+                    <Link to='/category/sale' style={{textDecoration: 'none'}}>
+                        <img src={Diet}
+                             alt="sale"
+                             className='exploreCategories'/>
+                        <p style={{textDecoration: 'none'}}>Food and Diet</p>
+                    </Link>
+                </div>
             </main>
 
             <div className='photo-last-grid'>

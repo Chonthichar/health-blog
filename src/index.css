@@ -7140,7 +7140,6 @@ div .yourListing:hover {
 
     .main-contact .containers .form-area {
         width: 100%;
-
     }
 
     .containers .form-area form button {
@@ -7299,7 +7298,7 @@ div .yourListing:hover {
     margin-right: auto;
     left: 0;
     width: 100%;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     /*float: left;*/
     /*justify-content: left;*/
     /*margin-right: 10rem;*/

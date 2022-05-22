@@ -30,7 +30,7 @@ function Category() {
                 //Excute query
                 const querySnap = await getDocs(q)
 
-                const lastVisible = querySnap.docs[querySnap.docs.length-1]
+                const lastVisible = querySnap.docs[querySnap.docs.length - 1]
                 setLastFetchListing(lastVisible)
 
                 let listings = []
@@ -53,37 +53,37 @@ function Category() {
 
 
     //Pagination / Load more
-     const onFetchMoreListings = async () => {
-            try {
-                //    Get Reference
-                const listingsRef = collection(db, 'listings')
+    const onFetchMoreListings = async () => {
+        try {
+            //    Get Reference
+            const listingsRef = collection(db, 'listings')
 
-                //    create a query
-                const q = query(listingsRef, where('type', '==', params.categoryName),
-                    orderBy('timestamp', 'desc'),
-                    startAfter(lastFetchListing),
-                    limit(4))
+            //    create a query
+            const q = query(listingsRef, where('type', '==', params.categoryName),
+                orderBy('timestamp', 'desc'),
+                startAfter(lastFetchListing),
+                limit(4))
 
-                //Excute query
-                const querySnap = await getDocs(q)
+            //Excute query
+            const querySnap = await getDocs(q)
 
-                const lastVisible = querySnap.docs[querySnap.docs.length-1]
-                setLastFetchListing(lastVisible)
+            const lastVisible = querySnap.docs[querySnap.docs.length - 1]
+            setLastFetchListing(lastVisible)
 
-                let listings = []
-                querySnap.forEach((doc) => {
-                    return listings.push({
-                        id: doc.id,
-                        data: doc.data()
-                    })
+            let listings = []
+            querySnap.forEach((doc) => {
+                return listings.push({
+                    id: doc.id,
+                    data: doc.data()
                 })
+            })
 
-                setListings((prevState) => [...prevState, ...listings])
-                setLoading(false)
-            } catch (error) {
-                toast.error('could not fetch listing')
-            }
+            setListings((prevState) => [...prevState, ...listings])
+            setLoading(false)
+        } catch (error) {
+            toast.error('could not fetch listing')
         }
+    }
 
     return (
         <div className='.listing-conclusion container'>
@@ -96,7 +96,7 @@ function Category() {
                 <p className='check-out'>check out</p>
             </header>
             {loading ? (<p>loading...</p>) : listings && listings.length > 0 ? <>
-                    <ul className='categoryListings' style={{textDecoration: 'none'}}>
+                    <div className='categoryListings' style={{textDecoration: 'none'}}>
                         {listings.map((listing) => (
                             <ListingItem
                                 className='listingItem'
@@ -104,9 +104,9 @@ function Category() {
                                 id={listing.id}
                                 key={listing.id}/>
                         ))}
-                    </ul>
+                    </div>
                     <br/>
-                <br/>
+                    <br/>
                     {lastFetchListing && (
                         <p className='loadMore' onClick={onFetchMoreListings}>Load More..</p>
                     )}
