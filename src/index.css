@@ -1418,7 +1418,7 @@ div#profile {
 
 /*media query*/
 /* Portrait and Landscape */
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .home-container {
         width: 100%;
         /*border: 1px solid red;*/
