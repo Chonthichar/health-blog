@@ -1845,6 +1845,7 @@ div#profile {
         /*border: 1px red solid;*/
         /*margin-top: 33rem;*/
         left: 0;
+        display: none;
     }
 
     .btn-primary {
@@ -7055,6 +7056,8 @@ div .yourListing:hover {
     outline: none;
     resize: none;
     padding: 0px 5px;
+    color: black;
+    font-size: 18px;
 }
 
 .containers .form-area form textarea::placeholder {
