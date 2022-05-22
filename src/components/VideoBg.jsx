@@ -298,23 +298,27 @@ function VideoBg() {
                         <p>We recommended you to subscribe to our promo program,
                             drop your email below to get daily update about us</p>
                         <form action="" className='call-form'>
-                            <div className='form-control-1'>
+                            {/*<div className='form-control-1'>*/}
+                            <p>Enter your Name Here</p>
                                 <label htmlFor='name'>
-                                    <input type="text" name="name" id="name" placeholder='Enter your name here'/>
+                                    <input type="text" name="name" id="name"/>
                                 </label>
-                            </div>
+                            {/*</div>*/}
 
-                            <div className='form-control-2'>
-                                <label htmlFor='name'>
-                                    <input type="text" name="email" id="email" placeholder='Enter your email here'/>
-                                </label>
-                            </div>
+                            {/*<div className='form-control-2'>*/}
 
-                            <div className='form-control-3'>
+                            <p>Enter your Email Here</p>
                                 <label htmlFor='name'>
-                                    <input type="text" name="text" id="text" placeholder='Enter your  here'/>
+                                    <input type="text" name="email" id="email"/>
                                 </label>
-                            </div>
+                            {/*</div>*/}
+
+                            {/*<div className='form-control-3'>*/}
+                            <p>Enter your Request here</p>
+                                <label htmlFor='name'>
+                                    <input type="text" name="text" id="text"/>
+                                </label>
+                            {/*</div>*/}
                             <input type="submit" value='Send' id='submit' className='btn-call'/>
                         </form>
                     </div>
