@@ -677,7 +677,7 @@ div#profile {
 }
 
 .flex-columns .column .column-1 {
-    height: 100%;
+    /*height: 100%;*/
 }
 
 .flex-columns .column .column-2 {
@@ -1988,7 +1988,7 @@ and (orientation: portrait) {
     }
 
     .background-section5 {
-        height: 1250px;
+        height: 1100px;
     }
 
     .background-section6 .form-control-1, .background-section6 .form-control-2, .background-section6 .form-control-3 {
