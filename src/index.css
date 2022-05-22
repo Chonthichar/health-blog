@@ -2066,7 +2066,7 @@ and (orientation: portrait) {
 
 @media (max-width: 500px) {
     .textArea {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 }
     .background-section6 .call-form {
         display: grid;
