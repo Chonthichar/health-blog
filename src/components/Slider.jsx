@@ -53,6 +53,10 @@ function Slider() {
         return <p>Loading..</p>
     }
 
+    //incase no listing on the slide
+    if (listings.length === 0) {
+        return <></>
+    }
 
     return (
         <>

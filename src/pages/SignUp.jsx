@@ -33,24 +33,26 @@ function SignUp() {
 
         try {
             const auth = getAuth()
+
             const userCredential = await createUserWithEmailAndPassword
             (auth, email, password)
 
             const user = userCredential.user;
 
             updateProfile(auth.currentUser, {
-                displayName: name
+                displayName: name,
             })
 
             const formDataCopy = {...formData}
-            delete formDataCopy.password
+            delete formDataCopy.password //delete password out from firebase
             formDataCopy.timestamp = serverTimestamp()
 
             await setDoc(doc(db, 'users', user.uid), formDataCopy)
 
             navigate('/')
         } catch (error) {
-            toast.error('Something Went Wrong with registration')
+            console.log(error)
+            // toast.error('Something Went Wrong with registration')
         }
     }
 

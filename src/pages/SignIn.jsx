@@ -35,8 +35,8 @@ function SignIn() {
             if (userCredential.user) {
                 navigate('/')
             }
-        } catch
-            (error) {
+        } catch (error) {
+            console.log(error);
             toast.error('Bad User Credentials')
         }
     }
@@ -113,7 +113,7 @@ function SignIn() {
                         <button
                             className=' buttonSignIn'>
                             <FaArrowRight style={{
-                                 color: 'white',
+                                color: 'white',
                                 width: '100%',
                                 height: '50px',
                                 backgroundColor: 'rgb(78, 148, 79)',
@@ -135,8 +135,8 @@ function SignIn() {
                             </Link>
                         </div>
                     </div>
-                      {/* Google OAuth*/}
-                <OAuth/>
+                    {/* Google OAuth*/}
+                    <OAuth/>
                 </form>
             </div>
         </>

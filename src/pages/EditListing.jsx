@@ -68,9 +68,9 @@ function EditListing() {
             const docSnap = await getDoc(docRef)
             if (docSnap.exists()) {
                 setListing(docSnap.data())
-                setFormData({...docSnap.data(), address: docSnap.data().location })
+                setFormData({...docSnap.data(), address: docSnap.data().location})
                 setLoading(false)
-            }else {
+            } else {
                 navigate('/')
                 toast.error('Listing does not exits')
             }
@@ -196,7 +196,7 @@ function EditListing() {
             ...formData,
             imageUrls,
             geolocation,
-            timestamp: serverTimestamp()
+            timestamp: serverTimestamp(),
         }
 
         formDataCopy.location = address
@@ -205,11 +205,11 @@ function EditListing() {
         // location && (formDataCopy.location = location)
         !formDataCopy.offer && delete formDataCopy.discountedPrice
 
-        const docRef = await addDoc(collection(db, 'listings'),
-            formDataCopy)
-            setLoading(false )
-            toast.success('Listing saved')
-            navigate(`/category/${formDataCopy.type}/${docRef.id}`)
+        const docRef = doc(db, 'listing', params.listingId)
+        await updateDoc(docRef, formDataCopy)
+        setLoading(false)
+        toast.success('Listing saved')
+        navigate(`/category/${formDataCopy.type}/${docRef.id}`)
     }
 
 
@@ -250,7 +250,7 @@ function EditListing() {
             <header>
                 <p className='pageHeader'>Edit a listing</p>
             </header>
-            
+
             <main>
                 <form onSubmit={onSubmit}>
                     <label className='formLabel'>Inspiration / Food</label>
