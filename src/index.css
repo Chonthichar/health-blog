@@ -2150,7 +2150,7 @@ and (orientation: portrait) {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./asset/grass.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        height: 500px;
+        height: 200px;
     }
 
     .back-ground .pageHeader {
@@ -2286,6 +2286,7 @@ and (orientation: portrait) {
         /*top: 40%;*/
         left: 8%;
         width: 45%;
+        display: none;
 
     }
 
@@ -2298,6 +2299,7 @@ and (orientation: portrait) {
         /*display: none;*/
         width: 45%;
         left: 48%;
+        display: none;
     }
 
     .photo-grid:hover, .photo-grid-1:hover, .photo-grid-2:hover {
@@ -3159,7 +3161,7 @@ and (orientation: portrait) {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./asset/grass.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        height: 500px;
+        height: 200px;
     }
 
     .back-ground .pageHeader {
@@ -3169,11 +3171,12 @@ and (orientation: portrait) {
     }
 
     .back-ground .exploreHeading {
-        left: 42%;
+        left: 40%;
         /*border: 1px solid red;*/
         font-size: 18px;
+        /*margin-top: 4rem;*/
         color: white;
-        margin-top: 0;
+        margin-top: 1rem;
         margin-right: auto;
         margin-left: auto;
         /*position: relative;*/
@@ -3290,11 +3293,12 @@ and (orientation: portrait) {
         width: 28%;
         /*left: 60%;*/
         margin-top: 13rem;
+        display: none;
 
     }
 
     .back-ground .photo-grid-1 {
-        /*display: none;*/
+        display: none;
         width: 28%;
         left: 35%;
         margin-top: 13rem;
@@ -3302,7 +3306,7 @@ and (orientation: portrait) {
     }
 
     .back-ground .photo-grid-2 {
-        /*display: none;*/
+        display: none;
         width: 28%;
         left: 60%;
         margin-top: 13rem;
@@ -3616,6 +3620,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
         left: 8%;
         margin-top: 3rem;
         width: 30%;
+        display: none;
     }
 
     .back-ground .photo-grid-1 {
@@ -5956,7 +5961,7 @@ and (orientation: landscape) {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./asset/grass.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 180px;
 }
 
 .pageHeader {
