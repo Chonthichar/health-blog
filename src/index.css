@@ -501,9 +501,9 @@ nav a::after {
 
 #profile {
     position: absolute;
-    width: 38%;
-    height: 70%;
-    left: 50%;
+    width: 100%;
+    height: 2000px;
+    /*left: 50%;*/
     top: 15%;
     /*background-color: #CDCDCD;*/
     /*border: 2px solid #CDCDCD;*/
@@ -1901,7 +1901,7 @@ and (orientation: portrait) {
     .home-container {
         background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));
         width: 100%;
-        height: 900px;
+        height: 90px;
     }
 
     .home-container h1 {
@@ -6552,7 +6552,7 @@ and (orientation: landscape) {
     background: ghostwhite;
     /*margin-top: 21rem;*/
     width: 50%;
-    height: 800px;
+    /*height: 2000px;*/
     margin-right: auto;
     margin-left: auto;
     /*color: black;*/
