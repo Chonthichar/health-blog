@@ -1455,7 +1455,7 @@ div#profile {
         justify-content: center;
         text-align: center;
         left: 25%;
-        margin-top: 13rem;
+        margin-top: 20rem;
         font-weight: 300;
     }
 
@@ -1901,7 +1901,7 @@ and (orientation: portrait) {
     .home-container {
         background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));
         width: 100%;
-        height: 950px;
+        height: 900px;
     }
 
     .home-container h1 {
@@ -1939,7 +1939,7 @@ and (orientation: portrait) {
         justify-content: center;
         text-align: center;
         left: 25%;
-        margin-top: 10.5rem;
+        margin-top: 13rem;
     }
 
     .box-2 {
@@ -7392,6 +7392,9 @@ div .yourListing:hover {
     color: black;
     text-align: center;
 
+}
+.formButtonActive{
+    background: green;
 }
 
 

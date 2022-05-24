@@ -3,7 +3,7 @@
 function Spinner() {
     return (
         <div className='loadingSpinner'>
-                <div className='color'></div>
+                <div className='loadingSpinnerContainer'></div>
         </div>
     )
 }

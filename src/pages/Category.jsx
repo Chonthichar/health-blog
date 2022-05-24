@@ -35,6 +35,8 @@ function Category() {
 
                 let listings = []
                 querySnap.forEach((doc) => {
+                    console.log(doc.data())
+                    //important part need to set on others part
                     return listings.push({
                         id: doc.id,
                         data: doc.data()
@@ -86,7 +88,7 @@ function Category() {
     }
 
     return (
-        <div className='.listing-conclusion container'>
+        <div className='listing-conclusion container'>
             <header>
                 <p className='PageHeader category-pageHeader main-topic-blogs'>
                     {params.categoryName === 'rent'
@@ -95,16 +97,18 @@ function Category() {
                 </p>
                 <p className='check-out'>check out</p>
             </header>
-            {loading ? (<p>loading...</p>) : listings && listings.length > 0 ? <>
-                    <div className='categoryListings' style={{textDecoration: 'none'}}>
+            {loading ? (<p>loading...</p>) : listings && listings.length > 0 ?
+                <>
+                    <main className='categoryListings' style={{textDecoration: 'none'}}>
                         {listings.map((listing) => (
+                            // <h3 key={listing.id}>{listings.data.name}</h3>
                             <ListingItem
                                 className='listingItem'
                                 listing={listing.data}
                                 id={listing.id}
                                 key={listing.id}/>
                         ))}
-                    </div>
+                    </main>
                     <br/>
                     <br/>
                     {lastFetchListing && (

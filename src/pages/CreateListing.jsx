@@ -72,7 +72,7 @@ function CreateListing() {
 
     const onSubmit = async e => {
         e.preventDefault();
-
+        console.log(formData)
         setLoading(true)
 
         // if (discountedPrice >= regularPrice) {
@@ -231,7 +231,7 @@ function CreateListing() {
                             <button type='button'
                                     className={type === 'sale' ? 'formButtonActive' : 'formButton'}
                                     className='typeIs'
-                                    id='type-in'
+                                    id='sale'
                                     value='sale'
                                     onClick={onMutate}
                                     // className='inspiration-blog'
@@ -242,7 +242,7 @@ function CreateListing() {
                             <button type='button'
                                     className={type === 'rent' ? 'formButtonActive' : 'formButton'}
                                     className='typeName'
-                                    id='type-food'
+                                    id='rent'
                                     value='rent'
                                     onClick={onMutate}
                                     // className='diet-blog'
@@ -258,7 +258,7 @@ function CreateListing() {
                            id='name'
                            value={name}
                            onChange={onMutate}
-                           maxLength='2000'
+                           maxLength='100'
                            minLength='10'
                            placeholder='Add your Topic here'
                            required/>

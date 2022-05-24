@@ -39,7 +39,7 @@ function SignUp() {
 
             const user = userCredential.user;
 
-            updateProfile(auth.currentUser, {
+            await updateProfile(auth.currentUser, {
                 displayName: name,
             })
 
@@ -52,7 +52,7 @@ function SignUp() {
             navigate('/')
         } catch (error) {
             console.log(error)
-            // toast.error('Something Went Wrong with registration')
+            toast.error('Something Went Wrong with registration')
         }
     }
 
