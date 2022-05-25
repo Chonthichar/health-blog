@@ -455,7 +455,7 @@ nav a::after {
     /*position: absolute;*/
     width: 213px;
     height: 53px;
-    margin-left: 45px;
+    margin-left: 20%;
     /*left: 0%;*/
     /*top: 270px;*/
     background: #FFF0DC;
@@ -570,10 +570,10 @@ div#profile {
     justify-content: center;
     align-items: center;
     /*padding: 24px 32px;*/
-    margin-left: 45px;
+    margin-left: 20%;
     /*position: absolute;*/
-    width: 192px;
-    height: 68px;
+    width: 210px;
+    height: 50px;
     /*border: 5px solid black;*/
     /*padding-left: 45px;*/
     /*left: 132px;*/
@@ -585,6 +585,7 @@ div#profile {
     font-style: normal;
     border: none;
     text-decoration: none;
+    margin-top: 1rem;
 }
 
 /*background-section 2*/
@@ -1477,7 +1478,7 @@ div#profile {
         height: 25%;
         border-radius: 20px;
         left: 30%;
-        margin-top: 5rem;
+        margin-top: 6px;
         /*position: absolute;*/
         /*top: 60%;*/
     }
@@ -1487,7 +1488,7 @@ div#profile {
         height: 25%;
         border-radius: 20px;
         left: 30%;
-        margin-top: 5rem;
+        margin-top: 6rem;
         /*top: 60%;*/
     }
 
@@ -1506,7 +1507,7 @@ div#profile {
 
     .home-container #profile {
         width: 100%;
-        top: 30%;
+        top: 26%;
         height: 55%;
         left: 5%;
     }
