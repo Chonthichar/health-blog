@@ -1228,7 +1228,7 @@ div#profile {
 
 /*last section main footer*/
 #main-footer {
-    background: #575757;
+    background: rgb(255, 191, 134);
     color: white;
     /*border: red 1px solid;*/
     width: 100%;
@@ -7417,7 +7417,9 @@ div .yourListing:hover {
     background: green;
 }
 
-
+.Hashlink {
+    text-decoration: none;
+}
 
 
 

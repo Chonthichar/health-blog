@@ -95,8 +95,8 @@ function VideoBg() {
                     {/*<img src={Pho} alt="photo_2" className='dec-1'/>*/}
                     {/*<img src={Pho} alt="photo_2" className='dec-2'/>*/}
 
-                    <div className='home-button'>
-                       <HashLink to='/#services'>
+                    <div className='home-button' style={{textDecoration: 'none'}}>
+                       <HashLink to='/#services' classNam>
                            <Button className='button' style={{textDecoration: 'none'}}>
                             Services
                         </Button>
