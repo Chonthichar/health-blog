@@ -4908,8 +4908,9 @@ and (max-device-width: 1024px)
 and (orientation: landscape) {
     .home-container {
         width: 100%;
+    height: 100%;
         /*border: 1px solid red;*/
-        height: 800px;
+        /*height: 800px;*/
         background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));
     }
 
@@ -4928,7 +4929,8 @@ and (orientation: landscape) {
     }
 
     .top-box-1 {
-        margin-top: 11rem;
+        margin-top: 0rem;
+        left: 0;
     }
 
     .hamburger {
@@ -4943,16 +4945,20 @@ and (orientation: landscape) {
     .home-button .button {
         font-size: 18px;
         padding: 0;
-        height: 50px;
+        /*height: px;*/
         /*top: %;*/
         /*margin: 0;*/
         margin-left: auto;
         margin-right: auto;
+        margin-top: 1rem;
         justify-content: center;
         text-align: center;
-        left: 40%;
+        /*left: 10%;*/
         width: 24%;
+        /*top: 50%;*/
+        /*height: auto;*/
         font-weight: 300;
+        margin-bottom: 1rem;
     }
 
     .box-2 {
@@ -4960,8 +4966,9 @@ and (orientation: landscape) {
         height: 50%;
         border-radius: 20px;
         left: 45%;
-        margin-top: 12rem;
+        margin-top: 15rem;
         /*top: 60%;*/
+        display: none;
     }
 
     .box-1 {
@@ -4969,7 +4976,8 @@ and (orientation: landscape) {
         height: 50%;
         border-radius: 20px;
         left: 45%;
-        margin-top: 12rem;
+        margin-top: 15rem;
+        display: none;
         /*top: 60%;*/
     }
 
@@ -4992,6 +5000,7 @@ and (orientation: landscape) {
         width: 45%;
         top: 60%;
         height: 60%;
+        display: none;
         left: 35%;
     }
 
@@ -5411,7 +5420,7 @@ and (orientation: landscape) {
     .home-container {
         width: 100%;
         /*border: 1px solid red;*/
-        height: 800px;
+        /*height: 800px;*/
         background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));
     }
 
@@ -5430,7 +5439,7 @@ and (orientation: landscape) {
     }
 
     .top-box-1 {
-        margin-top: 11rem;
+        margin-top: 0rem;
     }
 
     .hamburger {
@@ -5453,9 +5462,11 @@ and (orientation: landscape) {
         justify-content: center;
         text-align: center;
         left: 40%;
-        margin-top: 22rem;
+        margin-top: 2rem;
+        top: 40%;
         width: 24%;
         font-weight: 300;
+        margin-bottom: 1rem;
     }
 
     .box-2 {
@@ -5464,6 +5475,7 @@ and (orientation: landscape) {
         border-radius: 20px;
         left: 45%;
         margin-top: 15rem;
+        display: none;
         /*top: 60%;*/
     }
 
@@ -5473,6 +5485,7 @@ and (orientation: landscape) {
         border-radius: 20px;
         left: 45%;
         margin-top: 15rem;
+        display: none;
         /*top: 60%;*/
     }
 
@@ -5481,6 +5494,7 @@ and (orientation: landscape) {
         width: 10%;
         top: 60%;
         display: none;
+
     }
 
     .spot-2 {
@@ -5496,6 +5510,7 @@ and (orientation: landscape) {
         top: 115%;
         height: 100%;
         left: 35%;
+        display: none;
     }
 
     .background-section2 {
