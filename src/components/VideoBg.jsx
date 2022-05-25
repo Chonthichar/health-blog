@@ -75,8 +75,12 @@ function VideoBg() {
     return (
         <>
             <div className='container-fluid'>
-                <div className='home-container container-fluid'>
+                <div className='home-container mh-100 mx-100'>
                     {/*<img src={Profile} alt="spot-group" className='profile'/>*/}
+                    <div className='top-box-1'>#1 Health care</div>
+                    <h1>Choose The Best
+                        <br/>Version of You.</h1>
+                    <p>Eat healthy, Stay Healthy.</p>
                     <img src={Spot} alt="spot-group" className='spot-1'/>
                     <img src={Spot} alt="spot-group" className='spot-2'/>
 
@@ -89,13 +93,10 @@ function VideoBg() {
                     {/*<img src={Pink} alt="backgroundpink" className='dec-3'/>*/}
                     {/*<img src={Pho} alt="photo_2" className='dec-1'/>*/}
                     {/*<img src={Pho} alt="photo_2" className='dec-2'/>*/}
-                    <div className='top-box-1'>#1 Health care</div>
-                    <h1>Choose The Best
-                        <br/>Version of You.</h1>
-                    <p>Eat healthy, Stay Healthy.</p>
+
                     <div className='home-button'>
                        <HashLink to='/#services'>
-                           <Button className='button'>
+                           <Button className='button' style={{textDecoration: 'none'}}>
                             Services
                         </Button>
                        </HashLink>

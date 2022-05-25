@@ -434,7 +434,9 @@ nav a::after {
 /*home-section 1*/
 .home-container {
     background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));
-    height: 720px;
+    height: 100%    ;
+
+    /*height: 720px;*/
     /*width: 1304px;*/
     top: 0;
     margin-top: 0;
@@ -450,12 +452,12 @@ nav a::after {
     align-items: center;
     padding: 16px;
     /*margin-left: 0;*/
-    position: absolute;
+    /*position: absolute;*/
     width: 213px;
     height: 53px;
     margin-left: 45px;
     /*left: 0%;*/
-    top: 270px;
+    /*top: 270px;*/
     background: #FFF0DC;
     border-radius: 100px;
     color: orange;
@@ -569,19 +571,20 @@ div#profile {
     align-items: center;
     /*padding: 24px 32px;*/
     margin-left: 45px;
-    position: absolute;
+    /*position: absolute;*/
     width: 192px;
     height: 68px;
     /*border: 5px solid black;*/
     /*padding-left: 45px;*/
     /*left: 132px;*/
-    top: 79%;
+    top: 100%;
     background: orange;
     border-radius: 100px;
     font-size: 24px;
     font-weight: 700;
     font-style: normal;
     border: none;
+    text-decoration: none;
 }
 
 /*background-section 2*/
@@ -1424,14 +1427,14 @@ div#profile {
     .home-container {
         width: 100%;
         /*border: 1px solid red;*/
-        height: 600px;
+        /*height: 6;*/
         background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));
     }
 
     .home-container h1 {
         font-size: 30px;
         padding-left: 0rem;
-        margin-top: 1rem;
+        margin-top: 3rem;
     }
 
     .home-container p {
@@ -1442,9 +1445,14 @@ div#profile {
     }
 
     .top-box-1 {
-        margin-top: 0rem;
+        /*display: none;*/
+        margin-top: 0.5rem;
         left: 0;
+        float: left;
         justify-content: center;
+        padding: 0px;
+        /*border: 1px solid red;*/
+        /*top: 60%;*/
     }
 
     .home-button .button {
@@ -1459,7 +1467,8 @@ div#profile {
         justify-content: center;
         text-align: center;
         left: 25%;
-        margin-top: 8%;
+        margin-top: 90%;
+        margin-bottom: 10px;
         font-weight: 300;
     }
 
@@ -1467,8 +1476,8 @@ div#profile {
         width: 40%;
         height: 25%;
         border-radius: 20px;
-        left: 21%;
-        margin-top: 9rem;
+        left: 30%;
+        margin-top: 5rem;
         /*position: absolute;*/
         /*top: 60%;*/
     }
@@ -1477,8 +1486,8 @@ div#profile {
         width: 40%;
         height: 25%;
         border-radius: 20px;
-        left: 22%;
-        margin-top: 9rem;
+        left: 30%;
+        margin-top: 5rem;
         /*top: 60%;*/
     }
 
@@ -1490,15 +1499,15 @@ div#profile {
 
     .spot-2 {
         left: 60%;
-        top: 40%;
+        top: 45%;
         width: 30%;
     }
 
 
     .home-container #profile {
         width: 100%;
-        top: 35%;
-        height: 50%;
+        top: 30%;
+        height: 55%;
         left: 5%;
     }
 
