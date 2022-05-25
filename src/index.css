@@ -1327,6 +1327,9 @@ div#profile {
     border: none;
     margin: 0;
 }
+#main-footer .social ul {
+    width: 50%;
+}
 
 
 /*}*/
@@ -5099,7 +5102,7 @@ and (orientation: landscape) {
         font-size: 18px;
         font-weight: 300;
         height: 45px;
-        width: 40%;
+        width: 60%;
     }
 
     .background-section5 {
@@ -5224,9 +5227,22 @@ and (orientation: landscape) {
 
     .background-section6 .request-call {
         width: 100%;
-        margin-top: 10%;
-        height: 550px;
-        margin-bottom: 0;
+        margin-top: 0%;
+        height: 100%;
+        margin-bottom: 1rem;
+    }
+    .textArea {
+        margin-top: 0;
+        /*height:100%;*/
+    }
+    #main-footer .social ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 30%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .background-section6 h3 {
@@ -5383,6 +5399,7 @@ and (orientation: landscape) {
         /*border: 1px red solid;*/
         /*margin-top: 33rem;*/
         left: 0;
+        display: none;
     }
 
     .btn-primary {
