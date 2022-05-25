@@ -1434,7 +1434,7 @@ div#profile {
     .home-container h1 {
         font-size: 30px;
         padding-left: 0rem;
-        margin-top: 3rem;
+        margin-top: 0rem;
     }
 
     .home-container p {
@@ -1467,7 +1467,7 @@ div#profile {
         justify-content: center;
         text-align: center;
         left: 25%;
-        margin-top: 90%;
+        margin-top: 100%;
         margin-bottom: 10px;
         font-weight: 300;
     }
