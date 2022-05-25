@@ -41,6 +41,7 @@ import Video from "../asset/video-2.mp4"
 import {Player} from 'video-react'
 import Warunee from "../asset/warunee-removebg-preview.png"
 import {HashLink} from 'react-router-hash-link';
+import Ploy from "../asset/ploy-removebg-preview.png"
 
 
 
@@ -82,7 +83,7 @@ function VideoBg() {
                     <div className='box-1'></div>
                     <div className='box-2'></div>
                     <div className='box-3'></div>
-                    <img src={Warunee} alt="spot-group" className='profile' id='profile'/>
+                    <img src={Ploy} alt="spot-group" className='profile' id='profile'/>
 
 
                     {/*<img src={Pink} alt="backgroundpink" className='dec-3'/>*/}
