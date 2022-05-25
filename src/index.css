@@ -1468,7 +1468,7 @@ div#profile {
         height: 25%;
         border-radius: 20px;
         left: 21%;
-        margin-top: 5rem;
+        margin-top: 9rem;
         /*position: absolute;*/
         /*top: 60%;*/
     }
@@ -1478,7 +1478,7 @@ div#profile {
         height: 25%;
         border-radius: 20px;
         left: 22%;
-        margin-top: 5rem;
+        margin-top: 9rem;
         /*top: 60%;*/
     }
 
@@ -1490,14 +1490,14 @@ div#profile {
 
     .spot-2 {
         left: 60%;
-        top: 50%;
+        top: 40%;
         width: 30%;
     }
 
 
     .home-container #profile {
         width: 100%;
-        top: 30%;
+        top: 40%;
         height: 50%;
         left: 5%;
     }
