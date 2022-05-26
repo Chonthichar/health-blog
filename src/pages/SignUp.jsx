@@ -197,7 +197,7 @@ function SignUp() {
                     </div>
 
                     {/* Google OAuth*/}
-                    <OAuth/>
+                    {/*<OAuth/>*/}
                 </form>
             </div>
         </>

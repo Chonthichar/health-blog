@@ -136,7 +136,7 @@ function SignIn() {
                         </div>
                     </div>
                     {/* Google OAuth*/}
-                    <OAuth/>
+                    {/*<OAuth/>*/}
                 </form>
             </div>
         </>

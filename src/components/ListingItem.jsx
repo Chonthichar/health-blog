@@ -6,7 +6,7 @@ import {FaEdit} from "react-icons/fa";
 function ListingItem({listing, id, onEdit, onDelete}) {
     return (
         <div className='container new'>
-            <li className=''>
+            {/*<li className=''>*/}
                 <Link to={`/category/${listing.type}/${id}`}
                       className='categoryListingLink' style={{textDecoration: 'none'}}>
                     <img src={listing.imageUrls[0]} alt={listing.name}
@@ -40,7 +40,8 @@ function ListingItem({listing, id, onEdit, onDelete}) {
                     </div>
                 </Link>
 
-                {onDelete && (
+            <div className='delete-text'>
+                  {onDelete && (
                     <FaTrash
                         className='removeIcon'
                         fill='rgb(231, 76,60)'
@@ -51,7 +52,8 @@ function ListingItem({listing, id, onEdit, onDelete}) {
 
                 {onEdit &&
                     <FaEdit className='editIcon' onClick={() => onEdit(id)}/>}
-            </li>
+            {/*</li>*/}
+            </div>
         </div>
     )
 }
