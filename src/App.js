@@ -27,6 +27,8 @@ function App() {
     return (
         <>
             <Router>
+                {/* eslint-disable-next-line no-restricted-globals */}
+                {/*  {location.pathname !== '/profile' && <Footer />}*/}
                 <Navbar/>
                 <Routes>
 
@@ -38,7 +40,12 @@ function App() {
 
                     <Route path='/profile' element={<PrivateRoute/>}>
                         <Route path='/profile' element={<Profile/>}/>
+                        {/* eslint-disable-next-line no-restricted-globals */}
+                        {/*  {location.path !== '/profile' && <Footer/>}*/}
+                        {/* eslint-disable-next-line no-restricted-globals */}
+                        {/*  {location.pathname !== '/profile' && <Footer/>}*/}
                     </Route>
+
 
 
                     <Route path='/create-listingBlog' element={<CreateListing />} />
@@ -50,10 +57,20 @@ function App() {
                     <Route path='/contact/:landlordId' element={<Contact />}/>
                     <Route path='/edit-listing/:listingId' element={<EditListing />}/>
                     <Route path='/writerContact/:landlordId' element={<WriterContact />}/>
+                    {/* eslint-disable-next-line no-restricted-globals */}
                 </Routes>
+                {/* eslint-disable-next-line no-restricted-globals */}
+                {/* {location.pathname !== '/profile' && <Footer/>}*/}
+                 {/*{location.pathname !== '/profile' && <Footer/>}*/}
                 <Footer/>
+                {/* eslint-disable-next-line no-restricted-globals */}
+
             </Router>
+            {/* eslint-disable-next-line no-restricted-globals */}
+            {/* {location.pathname !== '/profile' && <Footer />}*/}
             <ToastContainer/>
+            {/* eslint-disable-next-line no-restricted-globals */}
+
         </>
     )
 }

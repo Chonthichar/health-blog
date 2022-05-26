@@ -170,7 +170,7 @@ function Profile() {
                                 {/*<FaArrowRight/>*/}
                             </Link>
 
-                            <div style={{background: 'white', height: '200px'}}>
+                            <div className='yourList-first'>
                                 <p className='yourListing'>Checkout your listing</p>
                                 {/* loading*/}
                                 {!loading && listings?.length > 0 && (

@@ -1285,10 +1285,14 @@ Hashlink {
     width: 100%;
     /*height: 100px;*/
     /*height: 10px;*/
-    float: bottom;
-    bottom: 0;
+    /*float: bottom;*/
+    /*bottom: 0;*/
     text-align: center;
     margin-top: 2rem;
+    /*display: block;*/
+    overflow: hidden;
+    position: initial;
+    bottom: 0;
 }
 
 #main-footer a {
@@ -3190,7 +3194,7 @@ Hashlink {
         margin-left: auto;
     }
 
-   .categoryListingDetail .categoryListingLocation {
+    .categoryListingDetail .categoryListingLocation {
         text-decoration: none;
         /*font-size: 12px;*/
         /*border: 1px solid saddlebrown;*/
@@ -6845,6 +6849,14 @@ ul {
 
 .listingsList {
     /*border: 1px solid red;*/
+    height: 100%;
+    /*margin-bottom: 40rem;*/
+}
+
+.yourList-first {
+    background: white;
+    /*height: 10px;*/
+    /*margin-bottom: ;*/
 }
 
 .checkoutBlogs-Profile {
@@ -7141,10 +7153,14 @@ ul {
 
 .containers .image {
     width: 50%;
-    /*height: 200vh;*/
+    height: 200vh;
     display: flex;
     align-items: center;
     position: relative;
+    background-repeat: no-repeat;
+    background: center;
+
+
 }
 
 .containers .image::before {
@@ -7153,7 +7169,7 @@ ul {
     height: 100%;
     width: 100%;
     background-color: steelblue;
-    background: url("https://images.pexels.com/photos/786009/pexels-photo-786009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background: url("https://images.pexels.com/photos/786009/pexels-photo-786009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 center");
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     margin-left: 0;
     padding-left: 0;
@@ -7296,6 +7312,7 @@ ul {
         margin-top: 0;
         padding: 0;
     }
+
     .main-contact .containers {
         width: 98%;
         height: 100%;
@@ -7516,7 +7533,7 @@ ul {
 }
 
 .categoryListingImg {
-    width: 40%;
+    width: 80%;
     /*border: 1px solid black;*/
     /*background: whitesmoke;*/
     height: 100%;
@@ -7524,6 +7541,7 @@ ul {
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 3rem;
 }
 
 .categoryListingDetails {
@@ -7549,7 +7567,8 @@ ul {
 
 .categoryListingName {
     font-family: sans-serif;
-    font-size: 22px;
+    width: 100%;
+    font-size: 18px;
     text-decoration: none;
     padding-bottom: 5px;
     padding-top: 0;
@@ -7586,9 +7605,24 @@ ul {
     text-align: center;
 
 }
+.formButton {
+    color: dimgray;
+    text-align: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+}
 
 .formButtonActive {
-    background: green;
+    background: orange;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .Hashlink {
@@ -7604,15 +7638,18 @@ ul {
     font-size: 24px;
     margin-bottom: 1rem;
 }
+
 .removeIcon {
     color: black;
     /*size: 1rem;*/
 }
+
 .editIcon {
     color: black;
     /*display: inline-flex;*/
     /*size: 10rem;*/
 }
+
 /*div .container .new{*/
 /*    color: white;*/
 /*}*/

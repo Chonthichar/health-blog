@@ -227,29 +227,24 @@ function CreateListing() {
                 <form onSubmit={onSubmit}>
                     <div className='topic-blogs'>
                         <label className='formLabel'>Choose the categories</label>
-                        <div className='formButtons'>
-                            <button type='button'
-                                    className={type === 'sale' ? 'formButtonActive' : 'formButton'}
-                                    className='typeIs'
-                                    id='sale'
-                                    value='sale'
-                                    onClick={onMutate}
-                                    // className='inspiration-blog'
-                                    >
-                                Inspiration or
-                            </button>
-                            {/*<br/>*/}
-                            <button type='button'
-                                    className={type === 'rent' ? 'formButtonActive' : 'formButton'}
-                                    className='typeName'
-                                    id='rent'
-                                    value='rent'
-                                    onClick={onMutate}
-                                    // className='diet-blog'
-                                    >
-                               &nbsp;Diet
-                            </button>
-                        </div>
+                       <div className='formButtons'>
+                        <button type='button'
+                                className={type === 'sale' ? 'formButtonActive' : 'formButton'}
+                                id='type'
+                                value='sale'
+                                onClick={onMutate}>
+                            Inspirations
+                        </button>
+
+                        <button type='button'
+                                className={type === 'rent' ? 'formButtonActive' : 'formButton'}
+                                id='type'
+                                value='rent'
+                                onClick={onMutate}
+                        >
+                            &nbsp;&nbsp;Diet Topics
+                        </button>
+                    </div>
                     </div>
 
                     <label className='formLabel-name'>Topic</label>

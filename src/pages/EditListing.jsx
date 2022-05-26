@@ -14,8 +14,9 @@ function EditListing() {
     const [loading, setLoading] = useState(false)
     const [listing, setListing] = useState(false)
     const [formData, setFormData] = useState({
-        type: 'rent',
+       type: 'rent',
         name: '',
+        essay: '',
         bedRooms: 1,
         bathRooms: 1,
         parking: false,
@@ -32,6 +33,7 @@ function EditListing() {
     const {
         type,
         name,
+        essay,
         bedRooms,
         bathRooms,
         parking,
@@ -44,6 +46,7 @@ function EditListing() {
         latitude,
         longitude
     } = formData
+
 
     const auth = getAuth()
     const navigate = useNavigate()
@@ -246,14 +249,15 @@ function EditListing() {
     }
 
     return (
-        <div className='profile-createListing'>
+        // <div className='profile-createListing'>
+           <div className='createListing-page container'>
             <header>
-                <p className='pageHeader'>Edit a listing</p>
+                <p className='pageHeader-createListing'>Edit a listing</p>
             </header>
 
             <main>
                 <form onSubmit={onSubmit}>
-                    <label className='formLabel'>Inspiration / Food</label>
+
 
                     <div className='formButtons'>
                         <button type='button'
@@ -261,7 +265,7 @@ function EditListing() {
                                 id='type'
                                 value='sale'
                                 onClick={onMutate}>
-                            Sell
+                            Inspirations
                         </button>
 
                         <button type='button'
@@ -270,93 +274,22 @@ function EditListing() {
                                 value='rent'
                                 onClick={onMutate}
                         >
-                            Rent
+                            Diet
                         </button>
                     </div>
 
-                    <label className='formLabel'>Name</label>
+                    <label className='formLabel'>Topic</label>
                     <input type="text"
                            className='formInputName'
                            id='name'
                            value={name}
                            onChange={onMutate}
-                           maxLength='32'
+                           maxLength='80'
                            minLength='10'
                            required/>
 
-                    <div className='formRooms flex'>
-                        <div>
-                            <label className="formLabel">Bedrooms</label>
-                            <input type="number"
-                                   className='formInputSmall'
-                                   id='bedrooms'
-                                   value={bedRooms}
-                                   onChange={onMutate}
-                                   min='1'
-                                   max='50'
-                                   required/>
-                        </div>
 
-                        <div>
-                            <label className="formLabel">Bathrooms</label>
-                            <input type='number'
-                                   className='formInputSmall'
-                                   id='bathrooms'
-                                   value={bathRooms}
-                                   onChange={onMutate}
-                                   min='1'
-                                   max='50'
-                                   required/>
-                        </div>
-                    </div>
 
-                    <label className="formLabel">Parking spot</label>
-                    <div className='formButtons'>
-                        <button
-                            className={parking ? 'formButtonActive' :
-                                'formButton'}
-                            type='button'
-                            id='parking'
-                            value='true'
-                            onClick={onMutate}
-                            min='1'
-                            max='50'>
-                            Yes
-                        </button>
-                        <button className={
-                            !parking && parking !== null ? 'formButtonActive' : 'formButton'
-                        }
-                                type='button'
-                                id='parking'
-                                value={false}
-                                onClick={onMutate}
-                        >
-                            No
-                        </button>
-                    </div>
-
-                    <label className="formLabel">Furnished</label>
-                    <div className='formButtons'>
-                        <button
-                            className={furnished ? 'formButtonActive' :
-                                'formButton'}
-                            type='button'
-                            id='furnished'
-                            value={true}
-                            onClick={onMutate}>
-                            Yes
-                        </button>
-                        <button className={
-                            !furnished && furnished !== null ? 'formButtonActive' : 'formButton'
-                        }
-                                type='button'
-                                id='furnished'
-                                value={false}
-                                onClick={onMutate}
-                        >
-                            No
-                        </button>
-                    </div>
 
                     <label className="formLabel">Address</label>
                     <textarea
@@ -382,59 +315,18 @@ function EditListing() {
                         </div>
                     )}
 
-                    <label className="formLabel">Offer</label>
-                    <div className='formButtons'>
-                        <button
-                            className={offer ? 'formButtonActive' : 'formButton'}
-                            type='button'
-                            id='offer'
-                            value={true}
-                            onClick={onMutate}
-                        >
-                            Yes
-                        </button>
-                        <button
-                            className={
-                                !offer && offer !== null ? 'formButtonActive' : 'formButton'
-                            }
-                            type='Button'
-                            id='offer'
-                            value={false}
-                            onClick={onMutate}
-                        >
-                            No
-                        </button>
-                    </div>
+                    <label className='formLabel'
+                           htmlFor="" >Essay</label>
+                    <textarea type="text"
+                            className='formInputName-Essay'
+                            id='essay'
+                            value={essay}
+                            onChange={onMutate}
+                            maxLength='4000'
+                            minLength='10'
+                            placeholder='Add your Essay Here'
+                            required/>
 
-                    <label className="formLabel">Regular Price</label>
-                    <div className='formPriceDiv'>
-                        <input className='formInputSmall'
-                               type='number'
-                               id='regularPrice'
-                               value={regularPrice}
-                               onChange={onMutate}
-                               min='50'
-                               max={750000000}
-                               required/>
-                        {type === 'rent' && (
-                            <p className='formPriceText'>$ / Month</p>
-                        )}
-                    </div>
-
-                    {offer && (
-                        <>
-                            <label className="formLabel">Discounted Price</label>
-                            <input
-                                className='formInputSmall'
-                                type='number'
-                                id='discountedPrice'
-                                value={discountedPrice}
-                                onChange={onMutate}
-                                min='50'
-                                max='750000000'
-                            />
-                        </>
-                    )}
 
                     <label className="formLabel">Images</label>
                     <p className='imagesInfo'>The fiest image will be cover (max 6).</p>

@@ -13,6 +13,7 @@
     "gsap": "^3.10.3",
     "gsap-swiper": "^0.1.0",
     "leaflet": "^1.8.0",
+    "mdb-react-ui-kit": "^3.0.0",
     "mdbreact": "^5.2.0",
     "prop-types": "^15.8.1",
     "react": "^18.0.0",
