@@ -175,8 +175,8 @@ function Profile() {
                                 {/* loading*/}
                                 {!loading && listings?.length > 0 && (
                                     <>
-                                        <p className='listingText'> Your listings</p>
-                                        <ul className='listingsList'>
+                                        {/*<p className='listingText'> Your listings</p>*/}
+                                        <div className='listingsList'>
                                             {listings.map((listing) => (
                                                 <ListingItem
                                                     key={listing.id}
@@ -186,7 +186,7 @@ function Profile() {
                                                     onEdit={() => onEdit(listing.id)}
                                                 />
                                             ))}
-                                        </ul>
+                                        </div>
                                     </>
                                 )}
                             </div>

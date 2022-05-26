@@ -533,7 +533,7 @@ div#profile {
 
 .home-container h1 {
     /*top: 50%;*/
-    margin-top: 15%;
+    margin-top: 1%;
     padding-left: 45px;
     /*left: 20%;*/
     /*color: black;*/
@@ -563,14 +563,18 @@ div#profile {
     color: #FFC97D;
     padding-left: 45px;
 }
-
+Hashlink {
+    text-decoration: none;
+}
 .home-button .button {
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     /*padding: 24px 32px;*/
-    margin-left: 20%;
+    /*margin-left: 20%;*/
     /*position: absolute;*/
     width: 210px;
     height: 50px;
@@ -1443,15 +1447,16 @@ div#profile {
 
     .home-container h1 {
         font-size: 30px;
-        padding-left: 0rem;
-        margin-top: 0rem;
+        padding-left: 1rem;
+        margin-top: 1rem;
     }
 
     .home-container p {
         font-size: 20px;
         width: 100%;
         margin-top: 1rem;
-        padding-left: 0rem;
+        padding-left: 1rem;
+        color: white;
     }
 
     .top-box-1 {
@@ -1462,6 +1467,7 @@ div#profile {
         justify-content: center;
         padding: 0px;
         /*border: 1px solid red;*/
+        display: none;
         /*top: 60%;*/
     }
 
@@ -1477,7 +1483,7 @@ div#profile {
         justify-content: center;
         text-align: center;
         left: 25%;
-        margin-top: 100%;
+        margin-top: 10%;
         margin-bottom: 10px;
         font-weight: 300;
     }
@@ -1897,6 +1903,20 @@ div#profile {
 /*and (max-device-width: 568px)*/
 /*and (-webkit-min-device-pixel-ratio: 2)*/
 /*and (orientation: portrait) {*/
+/*    .home-container {*/
+/*        height: 100%;*/
+/*    }*/
+/*    .home-container #profile {*/
+/*        height: 500px;*/
+/*        top: 15%;*/
+/*    }*/
+/*    .box-1, .box-2 {*/
+/*        top: 7rem;*/
+/*    }*/
+/*    .spot-2 {*/
+/*        top: 34%;*/
+/*    }*/
+/*}*/
 
 /*    .navbarItem-container {*/
 
@@ -6733,8 +6753,17 @@ div .yourListing {
     border-radius: 10px;
 }
 
+
 div .yourListing:hover {
     background: darkorange;
+}
+
+ul {
+    /*display: none;*/
+}
+.listingsList {
+    border: 1px solid red;
+
 }
 
 .checkoutBlogs-Profile {
@@ -7370,6 +7399,9 @@ div .yourListing:hover {
     margin-right: auto;
     left: 0;
     width: 100%;
+    /*display: none;*/
+    font-size: 20px;
+    /*display: flex;*/
     /*border: 1px solid red;*/
     /*float: left;*/
     /*justify-content: left;*/

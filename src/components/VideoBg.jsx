@@ -42,6 +42,7 @@ import {Player} from 'video-react'
 import Warunee from "../asset/warunee-removebg-preview.png"
 import {HashLink} from 'react-router-hash-link';
 import Ploy from "../asset/ploy-removebg-preview.png"
+import Slider from "../components/ImgSlider"
 
 
 
@@ -49,6 +50,11 @@ import Ploy from "../asset/ploy-removebg-preview.png"
 
 
 function VideoBg() {
+    //slider show
+
+
+
+
     const navigate = useNavigate()
 
     //BMI calculation late
@@ -74,21 +80,22 @@ function VideoBg() {
 
     return (
         <>
-            <div className='container-fluid'>
-                <div className='home-container mh-100 mx-100'>
-                    {/*<img src={Profile} alt="spot-group" className='profile'/>*/}
 
+            <div className='container-fluid'>
+                <div className='home-container'>
+                    {/*<img src={Profile} alt="spot-group" className='profile'/>*/}
+                         <Slider/>
                     <h1>Choose The Best
                         <br/>Version of You.</h1>
                     <p>Eat healthy, Stay Healthy.</p>
                      <div className='top-box-1'>#1 Health care</div>
-                    <img src={Spot} alt="spot-group" className='spot-1'/>
-                    <img src={Spot} alt="spot-group" className='spot-2'/>
+                    {/*<img src={Spot} alt="spot-group" className='spot-1'/>*/}
+                    {/*<img src={Spot} alt="spot-group" className='spot-2'/>*/}
 
-                    <div className='box-1'></div>
-                    <div className='box-2'></div>
-                    <div className='box-3'></div>
-                    <img src={Ploy} alt="spot-group" className='profile' id='profile'/>
+                    {/*<div className='box-1'></div>*/}
+                    {/*<div className='box-2'></div>*/}
+                    {/*<div className='box-3'></div>*/}
+                    {/*<img src={Ploy} alt="spot-group" className='profile' id='profile'/>*/}
 
 
                     {/*<img src={Pink} alt="backgroundpink" className='dec-3'/>*/}
@@ -96,7 +103,7 @@ function VideoBg() {
                     {/*<img src={Pho} alt="photo_2" className='dec-2'/>*/}
 
                     <div className='home-button' style={{textDecoration: 'none'}}>
-                       <HashLink to='/#services' classNam>
+                       <HashLink to='/#services'>
                            <Button className='button' style={{textDecoration: 'none'}}>
                             Services
                         </Button>
