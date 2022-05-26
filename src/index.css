@@ -2280,7 +2280,7 @@ Hashlink {
 
     .back-ground .pageHeader {
         font-size: 26px;
-        top: 3rem;
+        top: 4rem;
     }
 
     .back-ground .exploreHeading {
@@ -2718,6 +2718,7 @@ Hashlink {
         margin-top: 0rem;
         margin-bottom: 0;
         font-size: 26px;
+        padding-top: 1.4rem;
     }
 
     .pageContainer .emailInput-forgot {
@@ -6101,7 +6102,7 @@ and (orientation: landscape) {
 }
 
 .swiperSlideText {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 2rem;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     padding: 1rem;
@@ -7590,7 +7591,8 @@ ul {
     /*border: 1px solid red;*/
     justify-content: right;
     float: right;
-    font-size: 1rem;
+    font-size: 30px;
+    margin-bottom: 1rem;
 }
 .removeIcon {
     color: black;

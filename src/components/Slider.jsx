@@ -98,7 +98,7 @@ function Slider() {
                     <img src={Ploy} alt="{Profile" className='profile-photo'/>
 
                     <h2>Warunee S.</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, cursus velit commodo</p>
+                    <p>Passionate in Health care consulting and love to encourage people to care and love more on themselves.</p>
                     <h3>Subscribe and Follow</h3>
                     <div className='gridSubscripe'>
                         <a href="https://www.facebook.com/Ploywaruneest" style={{textDecoration: 'none'}}>
