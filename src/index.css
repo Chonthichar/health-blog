@@ -7499,8 +7499,8 @@ ul {
 }
 
 .categoryListingLink {
-    border: 1px solid green;
-    width: 100%;
+    border: none;
+    width: 0%;
     margin-left: 0;
 }
 
@@ -7604,7 +7604,9 @@ ul {
 /*div .container .new{*/
 /*    color: white;*/
 /*}*/
-
+.listingItem {
+    /*border: 1px solid red;*/
+}
 
 
 
