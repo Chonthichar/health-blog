@@ -70,7 +70,7 @@ function Footer() {
     {/*        /!*</div>*!/*/}
     {/*        <div>*/}
     {/*            <h5 className='h-foot'>Member Guide</h5>*/}
-    {/*            <p>Apply to be a members for free tips and monthly health care guide</p>*/}
+    {/*            /!*<p>Apply to be a members for free tips and monthly health care guide</p>*!/*/}
     {/*            /!*<a href="#" className="btn btn-secondary">Join Us For Free</a>*!/*/}
     {/*        </div>*/}
     {/*        <div className="copy">*/}
