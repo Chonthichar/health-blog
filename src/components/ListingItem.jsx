@@ -5,7 +5,7 @@ import {FaEdit} from "react-icons/fa";
 
 function ListingItem({listing, id, onEdit, onDelete}) {
     return (
-        <div className='container new'>
+        <div className=''>
             {/*<li className=''>*/}
                 <Link to={`/category/${listing.type}/${id}`}
                       className='categoryListingLink' style={{textDecoration: 'none'}}>

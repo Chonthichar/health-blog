@@ -7590,14 +7590,15 @@ ul {
     /*border: 1px solid red;*/
     justify-content: right;
     float: right;
+    font-size: 1rem;
 }
 .removeIcon {
     color: black;
-    size: 5rem;
+    /*size: 1rem;*/
 }
 .editIcon {
     color: black;
-    display: inline-flex;
+    /*display: inline-flex;*/
     /*size: 10rem;*/
 }
 /*div .container .new{*/
