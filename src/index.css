@@ -434,7 +434,7 @@ nav a::after {
 /*home-section 1*/
 .home-container {
     background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));
-    height: 100%    ;
+    height: 100%;
 
     /*height: 720px;*/
     /*width: 1304px;*/
@@ -466,13 +466,14 @@ nav a::after {
     font-weight: 900;
     font-size: 22px;
 }
+
 .be-prepare {
     color: white;
     text-align: center;
     /*border: 1px solid white;*/
- padding-top: 6rem;
+    padding-top: 6rem;
     /*margin: 3rem;*/
-     margin-top: 0%;
+    margin-top: 0%;
     padding-left: 45px;
     /*padding-top: 2rem;*/
     /*left: 20%;*/
@@ -560,6 +561,7 @@ div#profile {
 .home-container h1 {
     /*top: 50%;*/
     margin-top: 0%;
+    margin-top: 0;
     padding-left: 45px;
     padding-top: 2rem;
     /*left: 20%;*/
@@ -596,9 +598,11 @@ div#profile {
     justify-content: right;
     margin-top: 2rem;
 }
+
 Hashlink {
     text-decoration: none;
 }
+
 .home-button .button {
     margin-right: auto;
     margin-left: auto;
@@ -625,7 +629,8 @@ Hashlink {
     text-decoration: none;
     margin-top: 1rem;
 }
-.home-button .button:hover{
+
+.home-button .button:hover {
     text-decoration: none;
     background: steelblue;
     border-bottom: none;
@@ -1189,6 +1194,7 @@ Hashlink {
     width: 100%;
     height: 40%;
 }
+
 .textArea {
     margin-top: 3.5rem;
 }
@@ -1371,6 +1377,7 @@ Hashlink {
     /*margin: 0;*/
 
 }
+
 #main-footer .social ul {
     width: 50%;
     /*border: 1px solid red;*/
@@ -1482,6 +1489,7 @@ Hashlink {
         padding-left: 0;
         padding-top: 8rem;
     }
+
     .home-container {
         width: 100%;
         /*border: 1px solid red;*/
@@ -1492,11 +1500,11 @@ Hashlink {
     .home-container h1 {
         font-size: 30px;
         padding-left: 1rem;
-        margin-top: 1rem;
+        /*margin-top: 1rem;*/
     }
 
     .home-container p {
-        font-size: 24px;
+        font-size: 34px;
         width: 100%;
         margin-top: 2rem;
         padding-left: 1rem;
@@ -1515,8 +1523,27 @@ Hashlink {
         /*top: 60%;*/
     }
 
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+
+    a:hover {
+        text-decoration: none;
+    }
+
+
+    a:active {
+        text-decoration: none;
+    }
+
     .home-button .button {
-        margin-top: 0;
+
+        margin-top: 1rem;
         font-size: 18px;
         padding: 0;
         height: 50px;
@@ -1529,7 +1556,7 @@ Hashlink {
         text-align: center;
         left: 25%;
         /*margin-top: 10%;*/
-        margin-bottom: 10px;
+        margin-bottom: 1rem;
         font-weight: 300;
     }
 
@@ -1834,6 +1861,7 @@ Hashlink {
         /*height: 100%;*/
         /*float: bottom;*/
     }
+
     #main-footer .social ul {
         width: 85%;
         margin-left: auto;
@@ -2168,8 +2196,9 @@ Hashlink {
 
 @media (max-width: 500px) {
     .textArea {
-    margin-top: 2.5rem;
-}
+        margin-top: 2.5rem;
+    }
+
     .background-section6 .call-form {
         display: grid;
         flex-direction: row;
@@ -2241,7 +2270,7 @@ Hashlink {
         font-size: 18px;
     }
 
-   .explore .back-ground {
+    .explore .back-ground {
         background-color: whitesmoke;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./asset/grass.jpg");
         background-repeat: no-repeat;
@@ -4988,7 +5017,7 @@ and (max-device-width: 1024px)
 and (orientation: landscape) {
     .home-container {
         width: 100%;
-    height: 100%;
+        height: 100%;
         /*border: 1px solid red;*/
         /*height: 800px;*/
         background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));
@@ -5306,10 +5335,12 @@ and (orientation: landscape) {
         height: 100%;
         margin-bottom: 1rem;
     }
+
     .textArea {
         margin-top: 0;
         /*height:100%;*/
     }
+
     #main-footer .social ul {
         margin: 0;
         padding: 0;
@@ -6806,6 +6837,7 @@ div .yourListing:hover {
 ul {
     /*display: none;*/
 }
+
 .listingsList {
     border: 1px solid red;
 
@@ -7535,7 +7567,8 @@ ul {
     text-align: center;
 
 }
-.formButtonActive{
+
+.formButtonActive {
     background: green;
 }
 

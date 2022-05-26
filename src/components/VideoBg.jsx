@@ -104,7 +104,7 @@ function VideoBg() {
 
                     <div className='home-button' style={{textDecoration: 'none'}}>
                        <HashLink to='/#services'>
-                           <Button className='button' style={{textDecoration: 'none'}}>
+                           <Button className='button' style={{textDecoration: 'inherit'}}>
                             Services
                         </Button>
                        </HashLink>
