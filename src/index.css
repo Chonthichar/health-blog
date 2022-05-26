@@ -3063,9 +3063,9 @@ Hashlink {
     }
 
     .linkCopied {
-        font-size: 14px;
+        font-size: 18px;
         /*border: blue 1px   solid;*/
-        color: red;
+        /*color: red;*/
         float: right;
         font-weight: normal;
     }
@@ -3095,8 +3095,9 @@ Hashlink {
     .listingDetails .listingEssay {
         padding: 0rem 0.5rem 0.5rem 1rem;
         font-size: 18px;
-        font-weight: 300;
-        /*line-height: 2rem;*/
+        font-weight: 200;
+        line-height: 1.5rem;
+        margin-top: 3rem;
     }
 
     .listingDetailList {
@@ -6645,9 +6646,9 @@ and (orientation: landscape) {
     margin-top: 0rem;
     /*border: 1px solid green;*/
     /*background: ;*/
-    background: url("./asset/pi.jpg") no-repeat bottom;
+    /*background: url("./asset/pi.jpg") no-repeat bottom;*/
     background-size: cover;
-    height: 1200px;
+    /*height: 1200px;*/
     width: 100%;
 }
 
@@ -7090,7 +7091,7 @@ ul {
     padding-top: 0;
     margin-top: 0;
     width: 100%;
-    min-height: 100vh;
+    min-height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7140,7 +7141,7 @@ ul {
 
 .containers .image {
     width: 50%;
-    height: 100vh;
+    /*height: 200vh;*/
     display: flex;
     align-items: center;
     position: relative;
@@ -7290,6 +7291,11 @@ ul {
     /*.main-contact {*/
     /*    height:  100px;*/
     /*}*/
+    .pageContainer {
+        height: 0;
+        margin-top: 0;
+        padding: 0;
+    }
     .main-contact .containers {
         width: 98%;
         height: 100%;
@@ -7321,6 +7327,7 @@ ul {
 
     .main-contact .containers .form-area {
         width: 100%;
+        height: 650px;
     }
 
     .containers .form-area form button {
@@ -7377,7 +7384,8 @@ ul {
 }
 
 .linkCopied {
-    font-size: 10px;
+    font-size: 12px;
+    padding-left: 20px;
     /*border: blue 1px solid;*/
     color: black;
     float: left;

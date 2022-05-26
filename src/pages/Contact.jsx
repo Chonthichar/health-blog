@@ -41,27 +41,27 @@ function Contact() {
             {/*    <p className='pageHeader'>Contact the writer</p>*/}
             {/*</header>*/}
 
-            {landlord !== null && (
-                <main>
-                    <div className='contactOwner'>
-                        <p className='ownerName'>contact {landlord?.name}</p>
-                    </div>
+            {/*{landlord !== null && (*/}
+            {/*    <main>*/}
+            {/*        <div className='contactOwner'>*/}
+            {/*            <p className='ownerName'>contact {landlord?.name}</p>*/}
+            {/*        </div>*/}
 
-                    <form className='messageForm'>
-                            <div className='messageDiv'>
-                                <label htmlFor="message" className='messageLabel'>
-                                    Message
-                                </label>
-                                <textarea name="message" id="message" className='textarea' value={message} onChange={onChange}>Message</textarea>
-                            </div>
+            {/*        <form className='messageForm'>*/}
+            {/*                <div className='messageDiv'>*/}
+            {/*                    <label htmlFor="message" className='messageLabel'>*/}
+            {/*                        Message*/}
+            {/*                    </label>*/}
+            {/*                    <textarea name="message" id="message" className='textarea' value={message} onChange={onChange}>Message</textarea>*/}
+            {/*                </div>*/}
 
-                        <a href={`mailto:${landlord.email}?Subject=${searchParams.get('listingName')}&body=${message}`}>
-                            <button className='primaryButton' type='button'>send Message</button>
-                        </a>
+            {/*            <a href={`mailto:${landlord.email}?Subject=${searchParams.get('listingName')}&body=${message}`}>*/}
+            {/*                <button className='primaryButton' type='button'>send Message</button>*/}
+            {/*            </a>*/}
 
-                    </form>
-                </main>
-            )}
+            {/*        </form>*/}
+            {/*    </main>*/}
+            {/*)}*/}
                          {/*section 5 contact*/}
 
             <div className="main-contact" id='main-contact'>
@@ -88,8 +88,8 @@ function Contact() {
                         <div class="social-icons">
                             <a href="https://www.linkedin.com/in/chonthichar-soythong-3842b31a3/"><FaLinkedin
                                 className='ico'/></a>
-                            <a href="https://www.facebook.com/chonthichar.soythong/"><FaFacebook className='ico'/></a>
-                            <a href="https://www.instagram.com/chonthicharsoythong/"><FaInstagram className='ico'/></a>
+                            <a href="https://www.facebook.com/Ploywaruneest"><FaFacebook className='ico'/></a>
+                            <a href="https://www.instagram.com/warunee2465/?hl=en"><FaInstagram className='ico'/></a>
                         </div>
 
                            {/*<div className='copys'>*/}
