@@ -456,6 +456,8 @@ nav a::after {
     width: 213px;
     height: 53px;
     margin-left: 20%;
+    /*margin-top: 20%;*/
+    top: 1rem;
     /*left: 0%;*/
     /*top: 270px;*/
     background: #FFF0DC;
@@ -463,6 +465,30 @@ nav a::after {
     color: orange;
     font-weight: 900;
     font-size: 22px;
+}
+.be-prepare {
+    color: white;
+    text-align: center;
+    /*border: 1px solid white;*/
+ padding-top: 6rem;
+    /*margin: 3rem;*/
+     margin-top: 0%;
+    padding-left: 45px;
+    /*padding-top: 2rem;*/
+    /*left: 20%;*/
+    /*color: black;*/
+    /*border: 1px solid black;*/
+    width: 100%;
+    /*margin-left: 45px;*/
+    /*height: 282px;*/
+    /*font-family: 'Popins';*/
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    /*color: #575757;*/
+    margin-bottom: 0;
 }
 
 .box-2 {
@@ -533,8 +559,9 @@ div#profile {
 
 .home-container h1 {
     /*top: 50%;*/
-    margin-top: 1%;
+    margin-top: 0%;
     padding-left: 45px;
+    padding-top: 2rem;
     /*left: 20%;*/
     /*color: black;*/
     /*border: 1px solid black;*/
@@ -554,14 +581,20 @@ div#profile {
 .home-container p {
     /*position: absolute;*/
     width: 100%;
+    /*border: 1px solid red;*/
+    text-align: right;
     /*top: 10%;*/
     font-style: normal;
-    font-weight: 500;
-    font-size: 60px;
+    font-weight: 700;
+    font-size: 70px;
     line-height: 130%;
     letter-spacing: -0.02em;
-    color: #FFC97D;
-    padding-left: 45px;
+    color: white;
+    padding-right: 10px;
+    /*padding-left: 45px;*/
+    float: right;
+    justify-content: right;
+    margin-top: 2rem;
 }
 Hashlink {
     text-decoration: none;
@@ -572,24 +605,30 @@ Hashlink {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    text-align: center;
     align-items: center;
     /*padding: 24px 32px;*/
     /*margin-left: 20%;*/
     /*position: absolute;*/
     width: 210px;
-    height: 50px;
+    height: 60px;
     /*border: 5px solid black;*/
     /*padding-left: 45px;*/
     /*left: 132px;*/
-    top: 100%;
+    /*top: 100%;*/
     background: orange;
     border-radius: 100px;
     font-size: 24px;
-    font-weight: 700;
+    /*font-weight: 700;*/
     font-style: normal;
     border: none;
     text-decoration: none;
     margin-top: 1rem;
+}
+.home-button .button:hover{
+    text-decoration: none;
+    background: steelblue;
+    border-bottom: none;
 }
 
 /*background-section 2*/
@@ -1438,6 +1477,11 @@ Hashlink {
 /*media query*/
 /* Portrait and Landscape */
 @media (max-width: 500px) {
+    .be-prepare {
+        font-size: 32px;
+        padding-left: 0;
+        padding-top: 8rem;
+    }
     .home-container {
         width: 100%;
         /*border: 1px solid red;*/
@@ -1452,9 +1496,9 @@ Hashlink {
     }
 
     .home-container p {
-        font-size: 20px;
+        font-size: 24px;
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 2rem;
         padding-left: 1rem;
         color: white;
     }
@@ -1472,6 +1516,7 @@ Hashlink {
     }
 
     .home-button .button {
+        margin-top: 0;
         font-size: 18px;
         padding: 0;
         height: 50px;
@@ -1483,7 +1528,7 @@ Hashlink {
         justify-content: center;
         text-align: center;
         left: 25%;
-        margin-top: 10%;
+        /*margin-top: 10%;*/
         margin-bottom: 10px;
         font-weight: 300;
     }

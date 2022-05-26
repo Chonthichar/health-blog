@@ -88,7 +88,7 @@ function VideoBg() {
                     {/*<h1 className='home-container'>Choose The Best*/}
                     {/*    <br/>Version of You.</h1>*/}
                     {/*<p>Eat healthy, Stay Healthy.</p>*/}
-                     <div className='top-box-1'>#1 Health care</div>
+                    {/* <div className='top-box-1'>#1 Health care</div>*/}
                     {/*<img src={Spot} alt="spot-group" className='spot-1'/>*/}
                     {/*<img src={Spot} alt="spot-group" className='spot-2'/>*/}
 
