@@ -14,6 +14,7 @@ import Heading1 from "../asset/blog-heading.jpg"
 import Heading2 from "../asset/blog-head2.jpg"
 import Heading3 from "../asset/blog-heading3.jpg"
 import {HashLink} from "react-router-hash-link";
+import Tree from "../asset/tree.jpeg"
 
 function Blog() {
 
@@ -26,7 +27,7 @@ function Blog() {
                 </HashLink>
                 <img src={Heading1} alt="sale" className='photo-grid'/>
                 <img src={Heading3} alt="sale" className='photo-grid-1'/>
-                <img src={Heading2} alt="sale" className='photo-grid-2'/>
+                <img src={Tree} alt="sale" className='photo-grid-2'/>
 
             </header>
             <main>

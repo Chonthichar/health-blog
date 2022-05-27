@@ -3755,11 +3755,13 @@ and (max-device-width: 1024px)
 and (-webkit-min-device-pixel-ratio: 2) {
     .explore .pageHeader {
         color: white;
+        padding-top: 6rem;
+        /*font-size: 26px;*/
     }
 
     .back-ground .exploreHeading {
-        margin-top: 0;
-        left: 43%;
+        margin-top: 2rem;
+        left: 42%;
     }
 
     .back-ground .photo-grid {
@@ -3770,20 +3772,23 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
 
     .back-ground .photo-grid-1 {
-        left: 35%;
-        margin-top: 3rem;
+        left: 20%;
+        display: none;
+        margin-top: 0rem;
+        padding-top: 0;
         width: 30%;
     }
 
     .back-ground .photo-grid-2 {
-        left: 62%;
-        margin-top: 3rem;
+        left: 55%;
+        display: none;
+        margin-top: 0rem;
         width: 30%;
     }
 
     .columnGridText .swipperHeading {
         font-size: 30px;
-        width: 50%;
+        width: 100%;
         text-align: center;
         /*margin-bottom: 0;*/
         /*padding: 0;*/
@@ -3806,6 +3811,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
     .grid p {
         font-size: 18px;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 
     .main .gridBlogs .exploreCategories {
@@ -3856,17 +3863,20 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
 
     .grid .gridSubscripe {
-        display: block;
+        /*display: block;*/
         padding: 0;
+        display: grid;
+        width: 100%;
         /*border: 1px solid red;*/
     }
 
     .grid .gridSubscripe button {
         /*display: inline-grid;*/
-        grid-template-columns: 1fr;
+        /*grid-template-columns: 1fr;*/
         padding: 0.3rem;
         font-size: 16px;
         width: 100%;
+        justify-content: center;
     }
 
     .columnGrid .grid h3 {
@@ -3898,6 +3908,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     header .pageHeader {
         margin-top: 0rem;
         margin-bottom: 0;
+        padding-top: 2rem;
         font-size: 26px;
     }
 
@@ -4035,7 +4046,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .home-container {
         width: 100%;
         /*border: 1px solid red;*/
-        height: 1100px;
+        height: 100%;
         background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 164, 91));
     }
 
@@ -4077,7 +4088,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
         justify-content: center;
         text-align: center;
         left: 35%;
-        margin-top: 12rem;
+        /*margin-top: 0rem;*/
+        margin-bottom: 1rem;
         width: 25%;
         font-weight: 300;
     }
@@ -6069,9 +6081,9 @@ and (orientation: landscape) {
     margin-bottom: 3rem;
     border-bottom: black solid 2px;
     padding-bottom: 1rem;
-    width: 37%;
+    width: 100%;
     padding-left: 0;
-    text-align: left;
+    text-align: center;
 }
 
 .swipperHeading-1 {
@@ -6245,11 +6257,13 @@ and (orientation: landscape) {
     margin-right: auto;
     /*position: absolute;*/
     width: 100%;
+    padding-left: 0;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 5px;
     /*background: lightgrey;*/
     color: white;
     display: grid;
+    /*height: 100%;*/
     text-decoration: none;
     /*border: 1px solid orange;*/
     /*left: 0;*/
@@ -6292,7 +6306,7 @@ and (orientation: landscape) {
 }
 
 .gridBlogs p {
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: #FE4A51;
     text-align: center;
     /*margin: 2rem;*/
@@ -6302,7 +6316,7 @@ and (orientation: landscape) {
     width: 100%;
     padding: 1rem;
     /*border-bottom: #FE4A51;*/
-    height: 70px;
+    height: 40%;
     /*margin-bottom: 3rem;*/
 }
 
@@ -6315,29 +6329,29 @@ and (orientation: landscape) {
 
 .photo-grid {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 25%;
     width: 15%;
-    height: 200px;
+    /*height: 200px;*/
     border: white solid 10px;
 }
 
 .photo-grid-1 {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 42%;
     width: 15%;
-    height: 200px;
+    /*height: 200px;*/
     border: white solid 10px;
 
 }
 
 .photo-grid-2 {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 59%;
     width: 15%;
-    height: 200px;
+    /*height: 140px;*/
     border: white solid 10px;
 }
 
