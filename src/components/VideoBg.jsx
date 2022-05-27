@@ -325,22 +325,24 @@ function VideoBg() {
                                 <input type="email" name="email" id="email"/>
                             </label>
 
-                            <input type="hidden" name="_subject" value="New submission on website maker web!"
-                                   placeholder='subject'/>
-                            {/*<input type="text" name="message" placeholder='subject'/>*/}
-                            <input type="hidden" name="_autoresponse"
-                                   value="Thanks for your submission. We will get back to you shortly."/>
-                            {/*<input type="text" name="_honey" style="display:none" />*/}
-                            <input type="hidden" name="_captcha" value="false"/>
-                            <input type="hidden" name="_template" value="table"/>
-                            {/*</div>*/}
+                            <input type="hidden" name="_next"
+                                   value="https://health-blog-nu.vercel.app/thank"/>
+                                <input type="hidden" name="_subject" value="New submission on website maker web!"
+                                       placeholder='subject'/>
+                                {/*<input type="text" name="message" placeholder='subject'/>*/}
+                                <input type="hidden" name="_autoresponse"
+                                       value="Thanks for your submission. We will get back to you shortly."/>
+                                {/*<input type="text" name="_honey" style="display:none" />*/}
+                                <input type="hidden" name="_captcha" value="false"/>
+                                <input type="hidden" name="_template" value="table"/>
+                                {/*</div>*/}
 
-                            {/*<div className='form-control-3'>*/}
-                            <p>Enter your Request here</p>
-                            <textarea name="message" cols="25" rows="4" className='textArea'>
+                                {/*<div className='form-control-3'>*/}
+                                <p>Enter your Request here</p>
+                                <textarea name="message" cols="25" rows="4" className='textArea'>
                   </textarea>
-                            {/*</div>*/}
-                            <input type="submit" value='Send' id='submit' className='btn-call'/>
+                                {/*</div>*/}
+                                <input type="submit" value='Send' id='submit' className='btn-call'/>
                         </form>
                     </div>
                 </section>
@@ -351,7 +353,7 @@ function VideoBg() {
 
             </div>
         </>
-    )
+)
 }
 
 export default VideoBg

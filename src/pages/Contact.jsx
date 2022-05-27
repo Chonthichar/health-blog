@@ -73,6 +73,7 @@ function Contact() {
                         <form action="https://formsubmit.co/chonthichar.soythong@gmail.com" method="POST">
                             <input type="text" name="name" placeholder="Your Name"/>
                             <input type="email" name="email" placeholder="Email Address"/>
+
                             <input type="hidden" name="_subject" value="New submission on website maker web!"
                                    placeholder='subject'/>
                             {/*<input type="text" name="message" placeholder='subject'/>*/}
@@ -81,6 +82,8 @@ function Contact() {
                             {/*<input type="text" name="_honey" style="display:none" />*/}
                             <input type="hidden" name="_captcha" value="false"/>
                             <input type="hidden" name="_template" value="table"/>
+                            <input type="hidden" name="_next"
+                                   value="https://health-blog-nu.vercel.app/thank"/>
                             <textarea name="message" cols="30" rows="5" placeholder="Your Message">
                   </textarea>
                             <button type="submit">Send Message</button>
