@@ -72,6 +72,7 @@ function EditListing() {
             const docSnap = await getDoc(docRef)
             if (docSnap.exists()) {
                 setListing(docSnap.data())
+                //recall old details from currently list
                 setFormData({...docSnap.data(), address: docSnap.data().location})
                 setLoading(false)
             } else {
@@ -209,6 +210,7 @@ function EditListing() {
         // location && (formDataCopy.location = location)
         !formDataCopy.offer && delete formDataCopy.discountedPrice
 
+        //update listing
         const docRef = doc(db, 'listing', params.listingId)
         await updateDoc(docRef, formDataCopy)
         setLoading(false)

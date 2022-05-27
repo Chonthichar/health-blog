@@ -16,7 +16,7 @@ const slideImages = [
   },
   {
     url: 'https://images.pexels.com/photos/209449/pexels-photo-209449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    caption:   <h2 className="be-prepare">"Health Care is very important"</h2>
+    caption:   <h2 className="be-prepare">"Get some more life's tips"</h2>
   },
 ];
 

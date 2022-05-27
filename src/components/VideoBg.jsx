@@ -45,14 +45,11 @@ import Ploy from "../asset/ploy-removebg-preview.png"
 import Slider from "../components/ImgSlider"
 
 
-
 //section 6 testimonials said
 
 
 function VideoBg() {
     //slider show
-
-
 
 
     const navigate = useNavigate()
@@ -84,7 +81,7 @@ function VideoBg() {
             <div className='container-fluid'>
                 <div className='home-container'>
                     {/*<img src={Profile} alt="spot-group" className='profile'/>*/}
-                         <Slider/>
+                    <Slider/>
                     {/*<h1 className='home-container'>Choose The Best*/}
                     {/*    <br/>Version of You.</h1>*/}
                     {/*<p>Eat healthy, Stay Healthy.</p>*/}
@@ -103,11 +100,11 @@ function VideoBg() {
                     {/*<img src={Pho} alt="photo_2" className='dec-2'/>*/}
 
                     <div className='home-button' style={{textDecoration: 'none'}}>
-                       <HashLink to='/#services'>
-                           <Button className='button' style={{textDecoration: 'inherit'}}>
-                            Services
-                        </Button>
-                       </HashLink>
+                        <HashLink to='/#services'>
+                            <Button className='button' style={{textDecoration: 'inherit'}}>
+                                Services
+                            </Button>
+                        </HashLink>
                     </div>
                     {/* dot*/}
                 </div>
@@ -121,11 +118,11 @@ function VideoBg() {
                     {/*<img src={Frame} alt="photo" className='svg-imgs'/>*/}
                     {/*<div className='blog'>*/}
                     {/*< ScrollButton/>*/}
-                    <h1>Why choose use <br/> for your healthy food</h1>
+                    <h1>Get to Know More, <br/>Who we are</h1>
                     {/*<div className='underline'></div>*/}
                     <p className='content-sec2'>Passionate in Health care consulting and love to encourage people to
                         care
-                        and love more on themselves. There are few's tips that I would like to share to you through my
+                        and love more on themselves. There are few's tips that We would like to share to you through my
                         experiences. Read through the articles below and decide whether you would like to sign up to be
                         our
                         member. You will receive Free online tips and good advise on daily workout schedule routine.
@@ -183,7 +180,7 @@ function VideoBg() {
                     <div className='box container-sm'>
                         <h2 className='head-text'>What we can do for you?</h2>
                         {/*<div className='underline'></div>*/}
-                        <p className='text-component'>Check Out What fit for your bussiness.</p>
+                        <p className='text-component'>Check Out What fit for you.</p>
 
 
                         <div className='process'>
@@ -193,16 +190,16 @@ function VideoBg() {
                                 <div className='box-5'></div>
                                 <FaPeopleCarry className='process-icon'/>
 
-                                <h3>How to?</h3>
-                                <p>How to?
-                                    Exercise and Depression
+                                <h3>WorkOut</h3>
+                                <p>
+                                    How workout help you get rid of depression.
                                     Exercise is powerful depression fighter. Press me.</p>
                             </div>
 
                             <div className='process-2'>
                                 <FaComment className='process-icon'/>
-                                <h3>How To?</h3>
-                                <p>Exercise and anxiety
+                                <h3>Meditation</h3>
+                                <p> How Workout and Meditation help you get rid of anxiety
                                     Exercise is very effective on anti anxiety-treatment. It relieves tension and
                                     stress.</p>
                             </div>
@@ -210,11 +207,10 @@ function VideoBg() {
 
                             <div className='process-3'>
                                 <FaHeart className='process-icon'/>
-                                <h3>How To?</h3>
-                                <p>Higher Self Esteem
+                                <h3>Higher Self Esteem</h3>
+                                <p>
                                     Daily work out is investment on yourself. Once it becomes your habit, it can foster
-                                    your
-                                    sense of self-worth.</p>
+                                    your sense of self-worth.</p>
                             </div>
                         </div>
                     </div>
@@ -309,8 +305,8 @@ function VideoBg() {
                     <div className='request-call'>
                         <img src={Line} alt="spot-group" className='line-1'/>
                         <h5>Our subscribe</h5>
-                        <h3>Tell us about your job</h3>
-                        <p>We recommended you to subscribe to our promo program,
+                        <h3>Tell us about your interest</h3>
+                        <p>We recommended you to send us an email to get our free promo program,
                             drop your email below to get daily update about us</p>
                         <form action="https://formsubmit.co/chonthichar.soythong@gmail.com" method="POST"
                               className='call-form'>
