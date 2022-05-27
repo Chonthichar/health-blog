@@ -7700,3 +7700,22 @@ ul {
   }
 }
 
+/*thank you page*/
+.thank-page {
+    text-align: center;
+    margin-top: 5rem;
+}
+.home-page {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background: #FB9333;
+    padding: 12px;
+    border-radius: 10px;
+}
+.home-page:hover {
+    background: steelblue;
+    color: white;
+}
+
+

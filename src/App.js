@@ -21,6 +21,7 @@ import Listing from "./pages/Listing";
 import Contact from "./pages/Contact"
 import EditListing from "./pages/EditListing";
 import WriterContact from "./pages/WriterContact"
+import Thank from "./components/Thank";
 
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
                     <Route path='/contact/:landlordId' element={<Contact />}/>
                     <Route path='/edit-listing/:listingId' element={<EditListing />}/>
                     <Route path='/writerContact/:landlordId' element={<WriterContact />}/>
+                    <Route path='/thank' element={<Thank/>}/>
                     {/* eslint-disable-next-line no-restricted-globals */}
                 </Routes>
                 {/* eslint-disable-next-line no-restricted-globals */}
