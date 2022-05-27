@@ -3290,29 +3290,29 @@ Hashlink {
         font-size: 18px;
     }
 
-    .back-ground {
+    .explore .back-ground {
         background-color: whitesmoke;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./asset/grass.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        height: 450px;
+        height: 200px;
     }
 
-    .back-ground .pageHeader {
+   .explore .back-ground .pageHeader {
         font-size: 28px;
         color: white;
+       padding-top: 2rem;
 
     }
 
-    .back-ground .exploreHeading {
-        left: 40%;
+   .explore .back-ground .exploreHeading {
+        left: 42%;
         /*border: 1px solid red;*/
         font-size: 18px;
         /*margin-top: 4rem;*/
         color: white;
+
         margin-top: 1rem;
-        margin-right: auto;
-        margin-left: auto;
         /*position: relative;*/
     }
 
@@ -3361,7 +3361,8 @@ Hashlink {
 
     .grid p {
         margin: 0;
-        padding: 0;
+        padding-right: 4rem;
+        padding-left: 4rem;
         font-size: 18px;
         /*background-color: #FE4A51;*/
     }
@@ -3372,18 +3373,23 @@ Hashlink {
         padding-bottom: 3px;
     }
 
-    .gridSubscripe {
+  .grid  .gridSubscripe {
         margin-top: 1rem;
-        grid-template-columns: 1fr;
+        /*grid-template-columns: 1fr;*/
         grid-gap: 10px;
         /*background: lightgrey;*/
         color: white;
         display: grid;
         text-decoration: none;
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
     }
 
-    .gridSubscripe button {
+   .grid .gridSubscripe button {
         display: flex;
+       text-align: center;
+       justify-content: center;
         /*padding: 5px;*/
         background-color: lightgrey;
         padding-bottom: 10px;
@@ -3392,6 +3398,9 @@ Hashlink {
         color: white;
         text-decoration: none;
         width: 100%;
+       padding-left: 0;
+       margin-left: 0;
+        /*border: 1px solid red;*/
     }
 
     .gridSubscripe button:hover {
@@ -3508,7 +3517,10 @@ Hashlink {
         padding-left: 0rem;
         padding-right: 0rem;
         /*border: 1px solid red;*/
-        height: 1130px;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
         /*margin-left: 0;*/
         /*float: unset;*/
         font-size: 20px;
@@ -3517,7 +3529,7 @@ Hashlink {
 
     .last-grid-1 {
         border-radius: 100%;
-        width: 150px;
+        width: 100%;
         height: 150px;
         margin-top: 2rem;
         box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.15);
