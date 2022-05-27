@@ -13,6 +13,7 @@ import {db} from '../firebase.config'
 //spinner
 import {FaShare} from "react-icons/fa";
 import Footer from "../components/Footer";
+import Spinner from "./Spinner";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
 
@@ -42,7 +43,7 @@ function Listing() {
     }, [navigate, params.listingId])
 
     if (loading) {
-        return (<p>Loading...</p>)
+        return (<Spinner/>)
     }
 
     return (

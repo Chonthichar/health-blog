@@ -4,6 +4,7 @@ import {collection, getDocs, query, where, orderBy, limit, startAfter,} from "fi
 import {db} from '../firebase.config'
 import {toast} from 'react-toastify'
 import ListingItem from "../components/ListingItem";
+import Spinner from "./Spinner";
 
 
 // import Spinner from '../components/Spinner'
@@ -97,7 +98,7 @@ function Category() {
                 </p>
                 <p className='check-out'>check out</p>
             </header>
-            {loading ? (<p>loading...</p>) : listings && listings.length > 0 ?
+            {loading ? (<p><Spinner/></p>) : listings && listings.length > 0 ?
                 <>
                     <main className='categoryListings' style={{textDecoration: 'none'}}>
                         {listings.map((listing) => (
@@ -112,7 +113,7 @@ function Category() {
                     <br/>
                     <br/>
                     {lastFetchListing && (
-                        <p className='loadMore' onClick={onFetchMoreListings}>Load More..</p>
+                        <p className='loadMore' onClick={onFetchMoreListings}><Spinner/></p>
                     )}
 
                 </>

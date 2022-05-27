@@ -6,6 +6,7 @@ import {db} from '../firebase.config'
 import {useNavigate, useParams} from "react-router-dom";
 import {toast} from "react-toastify";
 import {v4 as uuidv4} from 'uuid'
+import Spinner from "./Spinner";
 
 
 function EditListing() {
@@ -99,7 +100,7 @@ function EditListing() {
     }, [isMounted])
 
     if (loading) {
-        return (<p>loading..</p>)
+        return (<p><Spinner/></p>)
     }
 
     const onSubmit = async e => {
@@ -245,7 +246,7 @@ function EditListing() {
     }
 
     if (loading) {
-        return (<p>Loading...</p>)
+        return (<p><Spinner/></p>)
     }
 
     return (

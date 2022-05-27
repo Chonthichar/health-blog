@@ -6,6 +6,7 @@ import {db} from '../firebase.config'
 import {useNavigate} from "react-router-dom";
 import {toast} from "react-toastify";
 import {v4 as uuidv4} from 'uuid'
+import Spinner from "./Spinner";
 
 
 function CreateListing() {
@@ -67,7 +68,7 @@ function CreateListing() {
     }, [isMounted])
 
     if (loading) {
-        return (<p>loading..</p>)
+        return (<p><Spinner/></p>)
     }
 
     const onSubmit = async e => {
@@ -213,7 +214,7 @@ function CreateListing() {
     }
 
     if (loading) {
-        return (<p>Loading...</p>)
+        return (<p><Spinner/></p>)
     }
 
     return (

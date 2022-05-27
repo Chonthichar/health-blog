@@ -15,6 +15,7 @@ import {FaInstagram} from "react-icons/fa";
 import {FaSubscript} from "react-icons/fa";
 import {FaLinkedin} from "react-icons/fa";
 import Ploy from "../asset/blog-ploy.jpg"
+import Spinner from "../pages/Spinner";
 // import Spinner from "../../Spinner";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
@@ -50,7 +51,7 @@ function Slider() {
     }, [])
 
     if (loading) {
-        return <p>Loading..</p>
+        return <p><Spinner/></p>
     }
 
     //incase no listing on the slide
