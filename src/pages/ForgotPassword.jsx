@@ -33,7 +33,7 @@ function ForgotPassword() {
                 <main>
                     <form onSubmit={onSubmit}>
                            <header>
-                    <p className='pageHeader'>Forgot Password</p>
+                    <p className='pageHeader-fotgot-password'>Forgot Password</p>
                 </header>
                         <input type="email" className='emailInput-forgot'
                                placeholder='Email'
